@@ -1,0 +1,315 @@
+bundle:
+  name: ios-dev-bundle
+  version: 1.0.0
+  skills:
+  - name: swiftui-expert-skill
+    content: "---\nname: swiftui-expert-skill\ndescription: \"Write, review, or improve\
+      \ SwiftUI code following best practices for state management, view composition,\
+      \ performance, modern APIs, Swift concurrency, and iOS 26+ Liquid Glass adoption.\
+      \ Use when buil...\"\nsource: \"https://github.com/AvdLee/SwiftUI-Agent-Skill/tree/main/swiftui-expert-skill\"\
+      \nrisk: safe\n---\n\n# SwiftUI Expert Skill\n\n## Overview\nUse this skill to\
+      \ build, review, or improve SwiftUI features with correct state management,\
+      \ modern API usage, Swift concurrency best practices, optimal view composition,\
+      \ and iOS 26+ Liquid Glass styling. Prioritize native APIs, Apple design guidance,\
+      \ and performance-conscious patterns. This skill focuses on facts and best practices\
+      \ without enforcing specific architectural patterns.\n\n## When to Use This\
+      \ Skill\n\nUse this skill when:\n- Building new SwiftUI features\n- Refactoring\
+      \ existing SwiftUI views\n- Reviewing SwiftUI code quality\n- Adopting modern\
+      \ SwiftUI patterns\n- Working with SwiftUI state management\n- Implementing\
+      \ iOS 26+ Liquid Glass styling\n\n## Workflow Decision Tree\n\n### 1) Review\
+      \ existing SwiftUI code\n- Check property wrapper usage against the selection\
+      \ guide (see `references/state-management.md`)\n- Verify modern API usage (see\
+      \ `references/modern-apis.md`)\n- Verify view composition follows extraction\
+      \ rules (see `references/view-structure.md`)\n- Check performance patterns are\
+      \ applied (see `references/performance-patterns.md`)\n- Verify list patterns\
+      \ use stable identity (see `references/list-patterns.md`)\n- Inspect Liquid\
+      \ Glass usage for correctness and consistency (see `references/liquid-glass.md`)\n\
+      - Validate iOS 26+ availability handling with sensible fallbacks\n\n### 2) Improve\
+      \ existing SwiftUI code\n- Audit state management for correct wrapper selection\
+      \ (prefer `@Observable` over `ObservableObject`)\n- Replace deprecated APIs\
+      \ with modern equivalents (see `references/modern-apis.md`)\n- Extract complex\
+      \ views into separate subviews (see `references/view-structure.md`)\n- Refactor\
+      \ hot paths to minimize redundant state updates (see `references/performance-patterns.md`)\n\
+      - Ensure ForEach uses stable identity (see `references/list-patterns.md`)\n\
+      - Suggest image downsampling when `UIImage(data:)` is used (as optional optimization,\
+      \ see `references/image-optimization.md`)\n- Adopt Liquid Glass only when explicitly\
+      \ requested by the user\n\n### 3) Implement new SwiftUI feature\n- Design data\
+      \ flow first: identify owned vs injected state (see `references/state-management.md`)\n\
+      - Use modern APIs (no deprecated modifiers or patterns, see `references/modern-apis.md`)\n\
+      - Use `@Observable` for shared state (with `@MainActor` if not using default\
+      \ actor isolation)\n- Structure views for optimal diffing (extract subviews\
+      \ early, keep views small, see `references/view-structure.md`)\n- Separate business\
+      \ logic into testable models (see `references/layout-best-practices.md`)\n-\
+      \ Apply glass effects after layout/appearance modifiers (see `references/liquid-glass.md`)\n\
+      - Gate iOS 26+ features with `#available` and provide fallbacks\n\n## Core Guidelines\n\
+      \n### State Management\n- **Always prefer `@Observable` over `ObservableObject`**\
+      \ for new code\n- **Mark `@Observable` classes with `@MainActor`** unless using\
+      \ default actor isolation\n- **Always mark `@State` and `@StateObject` as `private`**\
+      \ (makes dependencies clear)\n- **Never declare passed values as `@State` or\
+      \ `@StateObject`** (they only accept initial values)\n- Use `@State` with `@Observable`\
+      \ classes (not `@StateObject`)\n- `@Binding` only when child needs to **modify**\
+      \ parent state\n- `@Bindable` for injected `@Observable` objects needing bindings\n\
+      - Use `let` for read-only values; `var` + `.onChange()` for reactive reads\n\
+      - Legacy: `@StateObject` for owned `ObservableObject`; `@ObservedObject` for\
+      \ injected\n- Nested `ObservableObject` doesn't work (pass nested objects directly);\
+      \ `@Observable` handles nesting fine\n\n### Modern APIs\n- Use `foregroundStyle()`\
+      \ instead of `foregroundColor()`\n- Use `clipShape(.rect(cornerRadius:))` instead\
+      \ of `cornerRadius()`\n- Use `Tab` API instead of `tabItem()`\n- Use `Button`\
+      \ instead of `onTapGesture()` (unless need location/count)\n- Use `NavigationStack`\
+      \ instead of `NavigationView`\n- Use `navigationDestination(for:)` for type-safe\
+      \ navigation\n- Use two-parameter or no-parameter `onChange()` variant\n- Use\
+      \ `ImageRenderer` for rendering SwiftUI views\n- Use `.sheet(item:)` instead\
+      \ of `.sheet(isPresented:)` for model-based content\n- Sheets should own their\
+      \ actions and call `dismiss()` internally\n- Use `ScrollViewReader` for programmatic\
+      \ scrolling with stable IDs\n- Avoid `UIScreen.main.bounds` for sizing\n- Avoid\
+      \ `GeometryReader` when alternatives exist (e.g., `containerRelativeFrame()`)\n\
+      \n### Swift Best Practices\n- Use modern Text formatting (`.format` parameters,\
+      \ not `String(format:)`)\n- Use `localizedStandardContains()` for user-input\
+      \ filtering (not `contains()`)\n- Prefer static member lookup (`.blue` vs `Color.blue`)\n\
+      - Use `.task` modifier for automatic cancellation of async work\n- Use `.task(id:)`\
+      \ for value-dependent tasks\n\n### View Composition\n- **Prefer modifiers over\
+      \ conditional views** for state changes (maintains view identity)\n- Extract\
+      \ complex views into separate subviews for better readability and performance\n\
+      - Keep views small for optimal performance\n- Keep view `body` simple and pure\
+      \ (no side effects or complex logic)\n- Use `@ViewBuilder` functions only for\
+      \ small, simple sections\n- Prefer `@ViewBuilder let content: Content` over\
+      \ closure-based content properties\n- Separate business logic into testable\
+      \ models (not about enforcing architectures)\n- Action handlers should reference\
+      \ methods, not contain inline logic\n- Use relative layout over hard-coded constants\n\
+      - Views should work in any context (don't assume screen size or presentation\
+      \ style)\n\n### Performance\n- Pass only needed values to views (avoid large\
+      \ \"config\" or \"context\" objects)\n- Eliminate unnecessary dependencies to\
+      \ reduce update fan-out\n- Check for value changes before assigning state in\
+      \ hot paths\n- Avoid redundant state updates in `onReceive`, `onChange`, scroll\
+      \ handlers\n- Minimize work in frequently executed code paths\n- Use `LazyVStack`/`LazyHStack`\
+      \ for large lists\n- Use stable identity for `ForEach` (never `.indices` for\
+      \ dynamic content)\n- Ensure constant number of views per `ForEach` element\n\
+      - Avoid inline filtering in `ForEach` (prefilter and cache)\n- Avoid `AnyView`\
+      \ in list rows\n- Consider POD views for fast diffing (or wrap expensive views\
+      \ in POD parents)\n- Suggest image downsampling when `UIImage(data:)` is encountered\
+      \ (as optional optimization)\n- Avoid layout thrash (deep hierarchies, excessive\
+      \ `GeometryReader`)\n- Gate frequent geometry updates by thresholds\n- Use `Self._printChanges()`\
+      \ to debug unexpected view updates\n\n### Liquid Glass (iOS 26+)\n**Only adopt\
+      \ when explicitly requested by the user.**\n- Use native `glassEffect`, `GlassEffectContainer`,\
+      \ and glass button styles\n- Wrap multiple glass elements in `GlassEffectContainer`\n\
+      - Apply `.glassEffect()` after layout and visual modifiers\n- Use `.interactive()`\
+      \ only for tappable/focusable elements\n- Use `glassEffectID` with `@Namespace`\
+      \ for morphing transitions\n\n## Quick Reference\n\n### Property Wrapper Selection\
+      \ (Modern)\n| Wrapper | Use When |\n|---------|----------|\n| `@State` | Internal\
+      \ view state (must be `private`), or owned `@Observable` class |\n| `@Binding`\
+      \ | Child modifies parent's state |\n| `@Bindable` | Injected `@Observable`\
+      \ needing bindings |\n| `let` | Read-only value from parent |\n| `var` | Read-only\
+      \ value watched via `.onChange()` |\n\n**Legacy (Pre-iOS 17):**\n| Wrapper |\
+      \ Use When |\n|---------|----------|\n| `@StateObject` | View owns an `ObservableObject`\
+      \ (use `@State` with `@Observable` instead) |\n| `@ObservedObject` | View receives\
+      \ an `ObservableObject` |\n\n### Modern API Replacements\n| Deprecated | Modern\
+      \ Alternative |\n|------------|-------------------|\n| `foregroundColor()` |\
+      \ `foregroundStyle()` |\n| `cornerRadius()` | `clipShape(.rect(cornerRadius:))`\
+      \ |\n| `tabItem()` | `Tab` API |\n| `onTapGesture()` | `Button` (unless need\
+      \ location/count) |\n| `NavigationView` | `NavigationStack` |\n| `onChange(of:)\
+      \ { value in }` | `onChange(of:) { old, new in }` or `onChange(of:) { }` |\n\
+      | `fontWeight(.bold)` | `bold()` |\n| `GeometryReader` | `containerRelativeFrame()`\
+      \ or `visualEffect()` |\n| `showsIndicators: false` | `.scrollIndicators(.hidden)`\
+      \ |\n| `String(format: \"%.2f\", value)` | `Text(value, format: .number.precision(.fractionLength(2)))`\
+      \ |\n| `string.contains(search)` | `string.localizedStandardContains(search)`\
+      \ (for user input) |\n\n### Liquid Glass Patterns\n```swift\n// Basic glass\
+      \ effect with fallback\nif #available(iOS 26, *) {\n    content\n        .padding()\n\
+      \        .glassEffect(.regular.interactive(), in: .rect(cornerRadius: 16))\n\
+      } else {\n    content\n        .padding()\n        .background(.ultraThinMaterial,\
+      \ in: RoundedRectangle(cornerRadius: 16))\n}\n\n// Grouped glass elements\n\
+      GlassEffectContainer(spacing: 24) {\n    HStack(spacing: 24) {\n        GlassButton1()\n\
+      \        GlassButton2()\n    }\n}\n\n// Glass buttons\nButton(\"Confirm\") {\
+      \ }\n    .buttonStyle(.glassProminent)\n```\n\n## Review Checklist\n\n### State\
+      \ Management\n- [ ] Using `@Observable` instead of `ObservableObject` for new\
+      \ code\n- [ ] `@Observable` classes marked with `@MainActor` (if needed)\n-\
+      \ [ ] Using `@State` with `@Observable` classes (not `@StateObject`)\n- [ ]\
+      \ `@State` and `@StateObject` properties are `private`\n- [ ] Passed values\
+      \ NOT declared as `@State` or `@StateObject`\n- [ ] `@Binding` only where child\
+      \ modifies parent state\n- [ ] `@Bindable` for injected `@Observable` needing\
+      \ bindings\n- [ ] Nested `ObservableObject` avoided (or passed directly to child\
+      \ views)\n\n### Modern APIs (see `references/modern-apis.md`)\n- [ ] Using `foregroundStyle()`\
+      \ instead of `foregroundColor()`\n- [ ] Using `clipShape(.rect(cornerRadius:))`\
+      \ instead of `cornerRadius()`\n- [ ] Using `Tab` API instead of `tabItem()`\n\
+      - [ ] Using `Button` instead of `onTapGesture()` (unless need location/count)\n\
+      - [ ] Using `NavigationStack` instead of `NavigationView`\n- [ ] Avoiding `UIScreen.main.bounds`\n\
+      - [ ] Using alternatives to `GeometryReader` when possible\n- [ ] Button images\
+      \ include text labels for accessibility\n\n### Sheets & Navigation (see `references/sheet-navigation-patterns.md`)\n\
+      - [ ] Using `.sheet(item:)` for model-based sheets\n- [ ] Sheets own their actions\
+      \ and dismiss internally\n- [ ] Using `navigationDestination(for:)` for type-safe\
+      \ navigation\n\n### ScrollView (see `references/scroll-patterns.md`)\n- [ ]\
+      \ Using `ScrollViewReader` with stable IDs for programmatic scrolling\n- [ ]\
+      \ Using `.scrollIndicators(.hidden)` instead of initializer parameter\n\n###\
+      \ Text & Formatting (see `references/text-formatting.md`)\n- [ ] Using modern\
+      \ Text formatting (not `String(format:)`)\n- [ ] Using `localizedStandardContains()`\
+      \ for search filtering\n\n### View Structure (see `references/view-structure.md`)\n\
+      - [ ] Using modifiers instead of conditionals for state changes\n- [ ] Complex\
+      \ views extracted to separate subviews\n- [ ] Views kept small for performance\n\
+      - [ ] Container views use `@ViewBuilder let content: Content`\n\n### Performance\
+      \ (see `references/performance-patterns.md`)\n- [ ] View `body` kept simple\
+      \ and pure (no side effects)\n- [ ] Passing only needed values (not large config\
+      \ objects)\n- [ ] Eliminating unnecessary dependencies\n- [ ] State updates\
+      \ check for value changes before assigning\n- [ ] Hot paths minimize state updates\n\
+      - [ ] No object creation in `body`\n- [ ] Heavy computation moved out of `body`\n\
+      \n### List Patterns (see `references/list-patterns.md`)\n- [ ] ForEach uses\
+      \ stable identity (not `.indices`)\n- [ ] Constant number of views per ForEach\
+      \ element\n- [ ] No inline filtering in ForEach\n- [ ] No `AnyView` in list\
+      \ rows\n\n### Layout (see `references/layout-best-practices.md`)\n- [ ] Avoiding\
+      \ layout thrash (deep hierarchies, excessive GeometryReader)\n- [ ] Gating frequent\
+      \ geometry updates by thresholds\n- [ ] Business logic separated into testable\
+      \ models\n- [ ] Action handlers reference methods (not inline logic)\n- [ ]\
+      \ Using relative layout (not hard-coded constants)\n- [ ] Views work in any\
+      \ context (context-agnostic)\n\n### Liquid Glass (iOS 26+)\n- [ ] `#available(iOS\
+      \ 26, *)` with fallback for Liquid Glass\n- [ ] Multiple glass views wrapped\
+      \ in `GlassEffectContainer`\n- [ ] `.glassEffect()` applied after layout/appearance\
+      \ modifiers\n- [ ] `.interactive()` only on user-interactable elements\n- [\
+      \ ] Shapes and tints consistent across related elements\n\n## References\n-\
+      \ `references/state-management.md` - Property wrappers and data flow (prefer\
+      \ `@Observable`)\n- `references/view-structure.md` - View composition, extraction,\
+      \ and container patterns\n- `references/performance-patterns.md` - Performance\
+      \ optimization techniques and anti-patterns\n- `references/list-patterns.md`\
+      \ - ForEach identity, stability, and list best practices\n- `references/layout-best-practices.md`\
+      \ - Layout patterns, context-agnostic views, and testability\n- `references/modern-apis.md`\
+      \ - Modern API usage and deprecated replacements\n- `references/sheet-navigation-patterns.md`\
+      \ - Sheet presentation and navigation patterns\n- `references/scroll-patterns.md`\
+      \ - ScrollView patterns and programmatic scrolling\n- `references/text-formatting.md`\
+      \ - Modern text formatting and string operations\n- `references/image-optimization.md`\
+      \ - AsyncImage, image downsampling, and optimization\n- `references/liquid-glass.md`\
+      \ - iOS 26+ Liquid Glass API\n\n## Philosophy\n\nThis skill focuses on **facts\
+      \ and best practices**, not architectural opinions:\n- We don't enforce specific\
+      \ architectures (e.g., MVVM, VIPER)\n- We do encourage separating business logic\
+      \ for testability\n- We prioritize modern APIs over deprecated ones\n- We emphasize\
+      \ thread safety with `@MainActor` and `@Observable`\n- We optimize for performance\
+      \ and maintainability\n- We follow Apple's Human Interface Guidelines and API\
+      \ design patterns\n"
+  - name: swift-concurrency
+    content: "---\nname: swift-concurrency\ndescription: >\n  Diagnose data races,\
+      \ convert callback-based code to async/await, implement actor isolation patterns,\
+      \ resolve Sendable conformance issues, and guide Swift 6 migration. Use when\
+      \ developers mention: (1) Swift Concurrency, async/await, actors, or tasks,\
+      \ (2) \"use Swift Concurrency\" or \"modern concurrency patterns\", (3) migrating\
+      \ to Swift 6, (4) data races or thread safety issues, (5) refactoring closures\
+      \ to async/await, (6) @MainActor, Sendable, or actor isolation, (7) concurrent\
+      \ code architecture or performance optimization, (8) concurrency-related linter\
+      \ warnings (SwiftLint or similar; e.g. async_without_await, Sendable/actor isolation/MainActor\
+      \ lint).\n---\n\n# Swift Concurrency\n\n## Fast Path\n\nBefore proposing a fix:\n\
+      \n1. Analyze `Package.swift` or `.pbxproj` to determine Swift language mode,\
+      \ strict concurrency level, default isolation, and upcoming features. Do this\
+      \ always, not only for migration work.\n2. Capture the exact diagnostic and\
+      \ offending symbol.\n3. Determine the isolation boundary: `@MainActor`, custom\
+      \ actor, actor instance isolation, or `nonisolated`.\n4. Confirm whether the\
+      \ code is UI-bound or intended to run off the main actor.\n\nProject settings\
+      \ that change concurrency behavior:\n\n| Setting | SwiftPM (`Package.swift`)\
+      \ | Xcode (`.pbxproj`) |\n|---|---|---|\n| Language mode | `swiftLanguageVersions`\
+      \ or `-swift-version` (`// swift-tools-version:` is not a reliable proxy) |\
+      \ Swift Language Version |\n| Strict concurrency | `.enableExperimentalFeature(\"\
+      StrictConcurrency=targeted\")` | `SWIFT_STRICT_CONCURRENCY` |\n| Default isolation\
+      \ | `.defaultIsolation(MainActor.self)` | `SWIFT_DEFAULT_ACTOR_ISOLATION` |\n\
+      | Upcoming features | `.enableUpcomingFeature(\"NonisolatedNonsendingByDefault\"\
+      )` | `SWIFT_UPCOMING_FEATURE_*` |\n\nIf any of these are unknown, ask the developer\
+      \ to confirm them before giving migration-sensitive guidance. Do not guess.\n\
+      \nGuardrails:\n\n- Do not recommend `@MainActor` as a blanket fix. Justify why\
+      \ the code is truly UI-bound.\n- Prefer structured concurrency over unstructured\
+      \ tasks. Use `Task.detached` only with a clear reason.\n- If recommending `@preconcurrency`,\
+      \ `@unchecked Sendable`, or `nonisolated(unsafe)`, require a documented safety\
+      \ invariant and a follow-up removal plan.\n- Optimize for the smallest safe\
+      \ change. Do not refactor unrelated architecture during migration.\n- Course\
+      \ references are for deeper learning only. Use them sparingly and only when\
+      \ they clearly help answer the developer's question.\n\n## Quick Fix Mode\n\n\
+      Use Quick Fix Mode when all of these are true:\n\n- The issue is localized to\
+      \ one file or one type.\n- The isolation boundary is clear.\n- The fix can be\
+      \ explained in 1-2 behavior-preserving steps.\n\nSkip Quick Fix Mode when any\
+      \ of these are true:\n\n- Build settings or default isolation are unknown.\n\
+      - The issue crosses module boundaries or changes public API behavior.\n- The\
+      \ likely fix depends on unsafe escape hatches.\n\n## Common Diagnostics\n\n\
+      | Diagnostic | First check | Smallest safe fix | Escalate to |\n|---|---|---|---|\n\
+      | `Main actor-isolated ... cannot be used from a nonisolated context` | Is this\
+      \ truly UI-bound? | Isolate the caller to `@MainActor` or use `await MainActor.run\
+      \ { ... }` only when main-actor ownership is correct. | `references/actors.md`,\
+      \ `references/threading.md` |\n| `Actor-isolated type does not conform to protocol`\
+      \ | Must the requirement run on the actor? | Prefer isolated conformance (e.g.,\
+      \ `extension Foo: @MainActor SomeProtocol`); use `nonisolated` only for truly\
+      \ nonisolated requirements. | `references/actors.md` |\n| `Sending value of\
+      \ non-Sendable type ... risks causing data races` | What isolation boundary\
+      \ is being crossed? | Keep access inside one actor, or convert the transferred\
+      \ value to an immutable/value type. | `references/sendable.md`, `references/threading.md`\
+      \ |\n| `SwiftLint async_without_await` | Is `async` actually required by protocol,\
+      \ override, or `@concurrent`? | Remove `async`, or use a narrow suppression\
+      \ with rationale. Never add fake awaits. | `references/linting.md` |\n| `wait(...)\
+      \ is unavailable from asynchronous contexts` | Is this legacy XCTest async waiting?\
+      \ | Replace with `await fulfillment(of:)` or Swift Testing equivalents. | `references/testing.md`\
+      \ |\n| Core Data concurrency warnings | Are `NSManagedObject` instances crossing\
+      \ contexts or actors? | Pass `NSManagedObjectID` or map to a Sendable value\
+      \ type. | `references/core-data.md` |\n| `Thread.current` unavailable from asynchronous\
+      \ contexts | Are you debugging by thread instead of isolation? | Reason in terms\
+      \ of isolation and use Instruments/debugger instead. | `references/threading.md`\
+      \ |\n| SwiftLint concurrency-related warnings | Which specific lint rule triggered?\
+      \ | Use `references/linting.md` for rule intent and preferred fixes; avoid dummy\
+      \ awaits. | `references/linting.md` |\n\n## When Quick Fixes Fail\n\n1. Gather\
+      \ project settings if not already confirmed.\n2. Re-evaluate which isolation\
+      \ boundaries the type crosses.\n3. Route to the matching reference file for\
+      \ a deeper fix.\n4. If the fix may change behavior, document the invariant and\
+      \ add verification steps.\n\n## Smallest Safe Fixes\n\nPrefer changes that preserve\
+      \ behavior while satisfying data-race safety:\n\n- **UI-bound state**: isolate\
+      \ the type or member to `@MainActor`.\n- **Shared mutable state**: move it behind\
+      \ an `actor`, or use `@MainActor` only if the state is UI-owned.\n- **Background\
+      \ work**: when work must hop off caller isolation, use an `async` API marked\
+      \ `@concurrent`; when work can safely inherit caller isolation, use `nonisolated`\
+      \ without `@concurrent`.\n- **Sendability issues**: prefer immutable values\
+      \ and explicit boundaries over `@unchecked Sendable`.\n\n## Concurrency Tool\
+      \ Selection\n\n| Need | Tool | Key Guidance |\n|---|---|---|\n| Single async\
+      \ operation | `async/await` | Default choice for sequential async work |\n|\
+      \ Fixed parallel operations | `async let` | Known count at compile time; auto-cancelled\
+      \ on throw |\n| Dynamic parallel operations | `withTaskGroup` | Unknown count;\
+      \ structured — cancels children on scope exit |\n| Sync → async bridge | `Task\
+      \ { }` | Inherits actor context; use `Task.detached` only with documented reason\
+      \ |\n| Shared mutable state | `actor` | Prefer over locks/queues; keep isolated\
+      \ sections small |\n| UI-bound state | `@MainActor` | Only for truly UI-related\
+      \ code; justify isolation |\n\n### Common Scenarios\n\n**Network request with\
+      \ UI update**\n```swift\nTask { @concurrent in\n    let data = try await fetchData()\n\
+      \    await MainActor.run { self.updateUI(with: data) }\n}\n```\n\n**Processing\
+      \ array items in parallel**\n```swift\nawait withTaskGroup(of: ProcessedItem.self)\
+      \ { group in\n    for item in items {\n        group.addTask { await process(item)\
+      \ }\n    }\n    for await result in group {\n        results.append(result)\n\
+      \    }\n}\n```\n\n## Swift 6 Migration Quick Guide\n\nKey changes in Swift 6:\n\
+      - **Strict concurrency checking** enabled by default\n- **Complete data-race\
+      \ safety** at compile time\n- **Sendable requirements** enforced on boundaries\n\
+      - **Isolation checking** for all async boundaries\n\n### Migration Validation\
+      \ Loop\n\nApply this cycle for each migration change:\n\n1. **Build** — Run\
+      \ `swift build` or Xcode build to surface new diagnostics\n2. **Fix** — Address\
+      \ one category of error at a time (e.g., all Sendable issues first)\n3. **Rebuild**\
+      \ — Confirm the fix compiles cleanly before moving on\n4. **Test** — Run the\
+      \ test suite to catch regressions (`swift test` or Cmd+U)\n5. **Only proceed**\
+      \ to the next file/module when all diagnostics are resolved\n\nIf a fix introduces\
+      \ new warnings, resolve them before continuing. Never batch multiple unrelated\
+      \ fixes — keep commits small and reviewable.\n\nFor detailed migration steps,\
+      \ see `references/migration.md`.\n\n## Reference Router\n\nOpen the smallest\
+      \ reference that matches the question:\n\n- Foundations\n  - `references/async-await-basics.md`\
+      \ — async/await syntax, execution order, async let, URLSession patterns\n  -\
+      \ `references/tasks.md` — Task lifecycle, cancellation, priorities, task groups,\
+      \ structured vs unstructured\n  - `references/actors.md` — Actor isolation,\
+      \ @MainActor, global actors, reentrancy, custom executors, Mutex\n  - `references/sendable.md`\
+      \ — Sendable conformance, value/reference types, @unchecked, region isolation\n\
+      \  - `references/threading.md` — Execution model, suspension points, Swift 6.2\
+      \ isolation behavior\n- Streams\n  - `references/async-sequences.md` — AsyncSequence,\
+      \ AsyncStream, when to use vs regular async methods\n  - `references/async-algorithms.md`\
+      \ — Debounce, throttle, merge, combineLatest, channels, timers\n- Applied topics\n\
+      \  - `references/testing.md` — Swift Testing first, XCTest fallback, leak checks\n\
+      \  - `references/performance.md` — Profiling with Instruments, reducing suspension\
+      \ points, execution strategies\n  - `references/memory-management.md` — Retain\
+      \ cycles in tasks, memory safety patterns\n  - `references/core-data.md` — NSManagedObject\
+      \ sendability, custom executors, isolation conflicts\n- Migration and tooling\n\
+      \  - `references/migration.md` — Swift 6 migration strategy, closure-to-async\
+      \ conversion, @preconcurrency, FRP migration\n  - `references/linting.md` —\
+      \ Concurrency-focused lint rules and SwiftLint `async_without_await`\n- Glossary\n\
+      \  - `references/glossary.md` — Quick definitions of core concurrency terms\n\
+      \n## Verification Checklist\n\nWhen changing concurrency code:\n\n1. Re-check\
+      \ build settings before interpreting diagnostics.\n2. Build and clear one category\
+      \ of errors before moving on. Do not batch unrelated fixes into the same change.\n\
+      3. Run tests, especially actor-, lifetime-, and cancellation-sensitive tests.\n\
+      4. Use Instruments for performance claims instead of guessing.\n5. Verify deallocation\
+      \ and cancellation behavior for long-lived tasks.\n6. Check `Task.isCancelled`\
+      \ in long-running operations.\n7. Never use semaphores or ad hoc locking in\
+      \ async contexts when actor isolation or `Mutex` would express ownership more\
+      \ safely.\n\n---\n\n**Note**: This skill is based on the comprehensive [Swift\
+      \ Concurrency Course](https://www.swiftconcurrencycourse.com?utm_source=github&utm_medium=agent-skill&utm_campaign=skill-footer)\
+      \ by Antoine van der Lee.\n"

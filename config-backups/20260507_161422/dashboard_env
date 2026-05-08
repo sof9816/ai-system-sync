@@ -1,0 +1,11 @@
+# GT AI System — Unified Environment Configuration
+# Kimi Code API (primary — all systems use this)
+KIMI_CODE_API_KEY=sk-kimi-c73dtqTeMaJPt1fDUpwXNzeyRW6DhnwWgpGemyCaExfHDywwfZC8hd21ISf7c54h
+KIMI_API_KEY=sk-kimi-c73dtqTeMaJPt1fDUpwXNzeyRW6DhnwWgpGemyCaExfHDywwfZC8hd21ISf7c54h
+# Legacy Moonshot/Kimi Platform — top up account to re-activate, then switch profile to "kimi"
+KIMI_MOONSHOT_API_KEY=sk-QETaTm4aabse0Xp0BLdXFzDixP7gLq5SZcCRPsDsATSyTvbk
+# Dashboard AI config
+DASHBOARD_AI_PROVIDER=kimi-coding
+DASHBOARD_AI_MODEL=kimi-k2.6
+DASHBOARD_AI_BASE_URL=https://api.kimi.com/coding
+DASHBOARD_AI_API_KEY=sk-kimi-c73dtqTeMaJPt1fDUpwXNzeyRW6DhnwWgpGemyCaExfHDywwfZC8hd21ISf7c54h

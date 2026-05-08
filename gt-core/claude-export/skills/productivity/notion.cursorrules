@@ -1,0 +1,79 @@
+# Skill: notion
+
+Description: Notion API via curl: pages, databases, blocks, search.
+
+# Notion API
+
+Use the Notion API via curl to create, read, update pages, databases (data sources), and blocks. No extra tools needed — just curl and a Notion API key.
+
+## Prerequisites
+
+1. Create an integration at https://notion.so/my-integrations
+2. Copy the API key (starts with `ntn_` or `secret_`)
+3. Store it in `~/.hermes/.env`:
+   ```
+   NOTION_API_KEY=ntn_your_key_here
+   ```
+4. **Important:** Share target pages/databases with your integration in Notion (click "..." → "Connect to" → your integration name)
+
+## API Basics
+
+All requests use this pattern:
+
+```bash
+curl -s -X GET "https://api.notion.com/v1/..." \
+  -H "Authorization: Bearer $NOTION_API_KEY" \
+  -H "Notion-Version: 2025-09-03" \
+  -H "Content-Type: application/json"
+```
+
+The `Notion-Version` header is required. This skill uses `2025-09-03` (latest). In this version, databases are called "data sources" in the API.
+
+## Common Operations
+
+### Search
+
+```bash
+curl -s -X POST "https://api.notion.com/v1/search" \
+  -H "Authorization: Bearer $NOTION_API_KEY" \
+  -H "Notion-Version: 2025-09-03" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "page title"}'
+```
+
+### Get Page
+
+```bash
+curl -s "https://api.notion.com/v1/pages/{page_id}" \
+  -H "Authorization: Bearer $NOTION_API_KEY" \
+  -H "Notion-Version: 2025-09-03"
+```
+
+### Get Page Content (blocks)
+
+```bash
+curl -s "https://api.notion.com/v1/blocks/{page_id}/children" \
+  -H "Authorization: Bearer $NOTION_API_KEY" \
+  -H "Notion-Version: 2025-09-03"
+```
+
+### Create Page in a Database
+
+```bash
+curl -s -X POST "https://api.notion.com/v1/pages" \
+  -H "Authorization: Bearer $NOTION_API_KEY" \
+  -H "Notion-Version: 2025-09-03" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "parent": {"database_id": "xxx"},
+    "properties": {
+      "Name": {"title": [{"text": {"content": "New Item"}}]},
+      "Status": {"select": {"name": "Todo"}}
+    }
+  }'
+```
+
+### Query a Database
+
+```bash
+curl -s -X POST "https://api.notion.com/v1/data_sources/{data_source

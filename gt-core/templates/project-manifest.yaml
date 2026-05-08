@@ -1,0 +1,24 @@
+project:
+  name: "MyProject"
+  type: "ios"
+  description: "A sample iOS project using SwiftUI."
+
+gt_system:
+  skills:
+    - "ios-development/swiftui-expert"
+    - "ios-development/uikit-expert"
+  agents:
+    - "cto"
+    - "reviewer"
+    - "architect"
+  memory_vault: "obsidian://vault/projects/my-project"
+  config_profile: "default"
+
+dependencies:
+  swift_version: "5.9"
+  xcode_version: "15.0"
+  ios_deployment_target: "16.0"
+
+team:
+  lead: "cto"
+  reviewer: "reviewer"

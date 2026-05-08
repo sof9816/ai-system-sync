@@ -1,0 +1,127 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GT Config Schema",
+  "description": "Unified configuration schema for the GT core system.",
+  "type": "object",
+  "required": ["ai", "providers", "agents", "integrations", "secrets"],
+  "properties": {
+    "ai": {
+      "type": "object",
+      "description": "AI model and provider preferences.",
+      "required": ["primary_provider", "model"],
+      "properties": {
+        "primary_provider": {
+          "type": "string",
+          "description": "Name of the primary AI provider.",
+          "enum": ["kimi-coding", "openrouter", "anthropic", "openai", "gemini"]
+        },
+        "backup_provider": {
+          "type": "string",
+          "description": "Name of the fallback AI provider.",
+          "enum": ["kimi-coding", "openrouter", "anthropic", "openai", "gemini"]
+        },
+        "model": {
+          "type": "string",
+          "description": "Specific model identifier to use."
+        },
+        "thinking": {
+          "type": "string",
+          "description": "Level of reasoning/thinking to apply.",
+          "enum": ["none", "minimal", "low", "medium", "high", "xhigh"],
+          "default": "medium"
+        }
+      }
+    },
+    "providers": {
+      "type": "object",
+      "description": "Configuration for each AI provider.",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["base_url", "api_key_env", "active"],
+        "properties": {
+          "base_url": {
+            "type": "string",
+            "format": "uri",
+            "description": "Base API endpoint for the provider."
+          },
+          "api_key_env": {
+            "type": "string",
+            "description": "Environment variable name holding the API key."
+          },
+          "active": {
+            "type": "boolean",
+            "description": "Whether the provider is currently active.",
+            "default": false
+          }
+        }
+      }
+    },
+    "agents": {
+      "type": "object",
+      "description": "Configuration for each agent persona.",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["skills_dir", "config_file"],
+        "properties": {
+          "skills_dir": {
+            "type": "string",
+            "description": "Filesystem path to the agent's skills directory."
+          },
+          "config_file": {
+            "type": "string",
+            "description": "Filesystem path to the agent's specific config file."
+          }
+        }
+      }
+    },
+    "integrations": {
+      "type": "object",
+      "description": "External tool and service integrations.",
+      "properties": {
+        "obsidian": {
+          "type": "object",
+          "properties": {
+            "vault_path": {
+              "type": "string",
+              "description": "Path to the Obsidian vault."
+            }
+          }
+        },
+        "ghostty": {
+          "type": "object",
+          "properties": {
+            "config_path": {
+              "type": "string",
+              "description": "Path to the Ghostty configuration file."
+            }
+          }
+        },
+        "claude_code": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Whether Claude Code integration is enabled.",
+              "default": false
+            }
+          }
+        }
+      }
+    },
+    "secrets": {
+      "type": "object",
+      "description": "Secret management configuration.",
+      "required": ["rotation_policy", "vault_file"],
+      "properties": {
+        "rotation_policy": {
+          "type": "string",
+          "description": "Policy for secret rotation (e.g., '90d')."
+        },
+        "vault_file": {
+          "type": "string",
+          "description": "Path to the secrets vault file."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://gt-core/schemas/project-manifest-schema.json",
+  "title": "Project Manifest Schema",
+  "description": "Schema for validating GT project manifest YAML files",
+  "type": "object",
+  "required": ["project"],
+  "properties": {
+    "project": {
+      "type": "object",
+      "required": ["name", "type"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the project"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["ios", "web", "python", "node", "flutter", "misc"],
+          "description": "Project type"
+        },
+        "description": {
+          "type": "string",
+          "description": "Short description of the project"
+        }
+      },
+      "additionalProperties": false
+    },
+    "gt_system": {
+      "type": "object",
+      "properties": {
+        "skills": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of skill paths"
+        },
+        "agents": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of agent names"
+        },
+        "memory_vault": {
+          "type": "string",
+          "description": "Path in Obsidian memory vault"
+        },
+        "config_profile": {
+          "type": "string",
+          "description": "Configuration profile string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "dependencies": {
+      "type": "object",
+      "description": "Project dependencies and versions",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "team": {
+      "type": "object",
+      "properties": {
+        "lead": {
+          "type": "string",
+          "description": "Team lead agent name"
+        },
+        "reviewer": {
+          "type": "string",
+          "description": "Reviewer agent name"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

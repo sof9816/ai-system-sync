@@ -1,0 +1,32 @@
+# =============================================================================
+# KIMI CODE API (primary — all GT AI systems use this)
+# Hermes maps provider "kimi-coding" → KIMI_API_KEY (checked first)
+# =============================================================================
+KIMI_API_KEY=sk-kimi-c73dtqTeMaJPt1fDUpwXNzeyRW6DhnwWgpGemyCaExfHDywwfZC8hd21ISf7c54h
+KIMI_BASE_URL=https://api.kimi.com/coding
+KIMI_CODE_API_KEY=sk-kimi-c73dtqTeMaJPt1fDUpwXNzeyRW6DhnwWgpGemyCaExfHDywwfZC8hd21ISf7c54h
+KIMI_CODING_BASE_URL=https://api.kimi.com/coding
+
+# Legacy Moonshot API (account suspended — kept for reference only)
+# KIMI_MOONSHOT_API_KEY=sk-QETaTm4aabse0Xp0BLdXFzDixP7gLq5SZcCRPsDsATSyTvbk
+# KIMI_MOONSHOT_BASE_URL=https://api.moonshot.ai/v1
+
+# =============================================================================
+# Dashboard AI config
+# =============================================================================
+DASHBOARD_AI_PROVIDER=kimi-coding
+DASHBOARD_AI_MODEL=kimi-k2.6
+DASHBOARD_AI_BASE_URL=https://api.kimi.com/coding
+DASHBOARD_AI_API_KEY=sk-kimi-c73dtqTeMaJPt1fDUpwXNzeyRW6DhnwWgpGemyCaExfHDywwfZC8hd21ISf7c54h
+
+# =============================================================================
+# Telegram
+# =============================================================================
+TELEGRAM_BOT_TOKEN=8213387754:AAH7wCdy6mMUe6UKVVIAum4HmIQ0dml70y0
+TELEGRAM_ALLOWED_USERS=38814376
+TELEGRAM_HOME_CHANNEL=38814376
+
+# =============================================================================
+# Obsidian Vault
+# =============================================================================
+OBSIDIAN_VAULT_PATH=/Users/gt/Library/Mobile Documents/iCloud~md~obsidian/Documents/GT Vault

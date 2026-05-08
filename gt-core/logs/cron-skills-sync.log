@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/gt/Public/MyFiles/agent-home/gt-core/scripts/sync-skills.py", line 44, in <module>
+    def run_cmd(cmd: list[str], cwd: Path | None = None) -> tuple[bool, str]:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/gt/Public/MyFiles/agent-home/gt-core/scripts/sync-skills.py", line 44, in <module>
+    def run_cmd(cmd: list[str], cwd: Path | None = None) -> tuple[bool, str]:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/gt/Public/MyFiles/agent-home/gt-core/scripts/sync-skills.py", line 44, in <module>
+    def run_cmd(cmd: list[str], cwd: Path | None = None) -> tuple[bool, str]:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/gt/Public/MyFiles/agent-home/gt-core/scripts/sync-skills.py", line 44, in <module>
+    def run_cmd(cmd: list[str], cwd: Path | None = None) -> tuple[bool, str]:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'

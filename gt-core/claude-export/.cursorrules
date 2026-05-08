@@ -1,0 +1,18 @@
+# GT Skills — Root Cursor Rules
+
+These rules reference all exported GT skills for Claude Code.
+
+## notion
+- Category: productivity
+- File: skills/productivity/notion.md
+- Description: Notion API via curl: pages, databases, blocks, search.
+
+## arxiv
+- Category: research
+- File: skills/research/arxiv.md
+- Description: Search arXiv papers by keyword, author, category, or ID.
+
+## hermes-agent-skill-authoring
+- Category: software-development
+- File: skills/software-development/hermes-agent-skill-authoring.md
+- Description: Author in-repo SKILL.md: frontmatter, validator, structure.

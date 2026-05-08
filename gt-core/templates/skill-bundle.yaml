@@ -1,0 +1,15 @@
+bundle:
+  name: "example-bundle"
+  version: "1.0.0"
+  skills:
+    - name: example-skill
+      content: |
+        ---
+        name: example-skill
+        description: |
+          An example skill description.
+        ---
+
+        # Example Skill
+
+        This is the full content of the skill.

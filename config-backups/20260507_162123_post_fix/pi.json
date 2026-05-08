@@ -1,0 +1,7 @@
+{
+  "provider": "kimi-coding",
+  "model": "kimi-k2.6",
+  "apiKeyEnv": "KIMI_CODE_API_KEY",
+  "skillsDir": "/Users/gt/Public/MyFiles/agent-home/skills",
+  "baseUrl": "https://api.kimi.com/coding"
+}

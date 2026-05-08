@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "name": "CarPlaySounds",
+    "bundle_id": "com.gt.carplaysounds",
+    "description": "CarPlay app with entrance/exit/arrive-home sounds and custom car widgets (Toyota Camry MVP)",
+    "path": "/Users/gt/Public/MyFiles/agent-home/projects/ios/CarPlaySounds",
+    "features": [
+      "GPS-triggered entrance sound",
+      "GPS-triggered exit sound",
+      "Arrive home sound",
+      "CarPlay widgets",
+      "Toyota Camry widget pack",
+      "Photo widgets for car screen"
+    ],
+    "status": "scaffolded",
+    "created_at": "2026-04-30T20:52:39.251434"
+  }
+]

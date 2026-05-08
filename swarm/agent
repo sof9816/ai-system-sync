@@ -1,0 +1,22 @@
+#!/bin/bash
+# GT Swarm Agent CLI Wrapper
+# Usage: agent cto "review this code"
+#        agent --list
+#        agent --swarm "launch a startup"
+
+AGENT_HOME="/Users/gt/Public/MyFiles/agent-home"
+SWARM_PY="$AGENT_HOME/swarm/swarm.py"
+PYTHON="/Users/gt/.hermes/hermes-agent/venv/bin/python"
+
+if [ ! -x "$PYTHON" ]; then
+    echo "Error: Hermes Python venv not found at $PYTHON"
+    exit 1
+fi
+
+if [ ! -f "$SWARM_PY" ]; then
+    echo "Error: Swarm script not found at $SWARM_PY"
+    exit 1
+fi
+
+# Pass through all arguments
+exec "$PYTHON" "$SWARM_PY" "$@"

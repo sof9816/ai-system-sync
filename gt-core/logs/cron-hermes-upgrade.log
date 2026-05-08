@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-05-09T02:00:01.618332",
+  "suggestions": [
+    {
+      "type": "new_skill",
+      "skill": "senior-engineer",
+      "week": 19,
+      "count": 18,
+      "reason": "senior-engineer used 18 times in week 19"
+    },
+    {
+      "type": "model_change",
+      "reason": "Success rate 50.0% < 80%",
+      "current_rate": 50.0
+    },
+    {
+      "type": "thinking_adjust",
+      "reason": "3 token spikes > 2160",
+      "spikes": 3
+    },
+    {
+      "type": "provider_change",
+      "reason": "Avg response 12318ms > 8000ms",
+      "avg_ms": 12318.333333333334
+    },
+    {
+      "type": "dependency",
+      "package": "hermes-agent",
+      "latest": "0.10.0",
+      "action": "Check if hermes-agent needs upgrade to 0.10.0"
+    },
+    {
+      "type": "dependency",
+      "package": "pi",
+      "latest": "0.1.2",
+      "action": "Check if pi needs upgrade to 0.1.2"
+    },
+    {
+      "type": "dependency",
+      "package": "dashboard",
+      "latest": "0.0.1",
+      "action": "Check if dashboard needs upgrade to 0.0.1"
+    }
+  ],
+  "stats": {
+    "sessions": 20,
+    "skills": {
+      "senior-engineer": 18
+    },
+    "errors": {
+      "PermissionDeniedError": 1,
+      "OpenAI PermissionDenied": 1,
+      "403 Forbidden": 1,
+      "Access Terminated": 1,
+      "Missing File": 2,
+      "Playback Failed": 2,
+      "Sandbox Restriction": 1,
+      "Stat Path Failure": 1,
+      "CoreData Error": 1,
+      "Xcode Signing": 1,
+      "Swift Main Attribute": 1
+    }
+  },
+  "research": [
+    {
+      "source": "r/LocalLLaMA",
+      "title": "z-lab released gemma-4-26B-A4B-it-DFlash. Anybody tried it yet?",
+      "category": "model_release",
+      "priority": "medium",
+      "action": "Update model aliases and test compatibility"
+    },
+    {
+      "source": "r/LocalLLaMA",
+      "title": "Reports suggest DeepSeek is seeking $7.35 billion in funding and plans to release its V4.1 update next month.",
+      "category": "model_release",
+      "priority": "medium",
+      "action": "Update model aliases and test compatibility"
+    },
+    {
+      "source": "r/LocalLLaMA",
+      "title": "(Rant ;)) Make your benchmarks realistic",
+      "category": "performance_benchmark",
+      "priority": "medium",
+      "action": "Benchmark against current GT default model"
+    },
+    {
+      "source": "r/ClaudeAI",
+      "title": "POV: Anthropic releases their new model",
+      "category": "model_release",
+      "priority": "medium",
+      "action": "Update model aliases and test compatibility"
+    },
+    {
+      "source": "r/ClaudeAI",
+      "title": "Uh.. what happened to skills?",
+      "category": "new_skill_category",
+      "priority": "medium",
+      "action": "Consider adding support to GT"
+    }
+  ]
+}
