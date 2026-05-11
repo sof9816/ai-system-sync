@@ -1,0 +1,18 @@
+name: daily-digest
+description: Daily AI/tech digest sent via Telegram Bot API
+version: "1.0.0"
+author: gt-core
+entrypoint: daily-digest.py
+language: python
+schedule: "0 8 * * *"
+env:
+  - TELEGRAM_BOT_TOKEN
+  - TELEGRAM_CHAT_ID
+  - TELEGRAM_MTProto_PROXY
+sources:
+  - Hacker News (top AI stories)
+  - GitHub Trending (top repos)
+  - Reddit r/LocalLLaMA, r/ClaudeAI (top discussions)
+outputs:
+  - Telegram message (Markdown + emojis)
+  - Local log: logs/digest-YYYYMMDD.md

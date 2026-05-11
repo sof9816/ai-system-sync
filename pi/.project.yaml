@@ -1,0 +1,26 @@
+name: pi
+type: json-config
+description: PI (Project Intelligence) — lightweight project registry and metadata store
+skills:
+  - json-processing
+  - project-management
+agents:
+  - architect
+  - backend-dev
+version: "0.1.0"
+author: "GT System"
+gt_system:
+  project_id: pi
+  memory_vault: "GT Vault/projects/pi"
+  category: core-infrastructure
+  priority: medium
+  tags:
+    - registry
+    - metadata
+    - projects
+  related_projects:
+    - dashboard
+    - gt-core
+  notes: |
+    Simple JSON-based project registry consumed by other GT tools.
+    Tracks active projects and their basic metadata.

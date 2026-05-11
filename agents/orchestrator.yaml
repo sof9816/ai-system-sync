@@ -4,8 +4,14 @@ role: Task Orchestrator & Agent Router
 model: kimi-for-coding
 provider: kimi-coding
 skills:
+  - using-superpowers
   - context-manager
   - architecture
+  - caveman
+  - brainstorming
+  - obsidian
+  - grill-me
+  - context7
 memory_dir: /Users/gt/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/GT\ Vault/hermes/agents/orchestrator
 tools:
   - terminal

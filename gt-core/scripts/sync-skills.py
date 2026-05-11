@@ -41,7 +41,7 @@ def log(msg: str):
     print(f"[sync-skills] {msg}", flush=True)
 
 
-def run_cmd(cmd: list[str], cwd: Path | None = None) -> tuple[bool, str]:
+def run_cmd(cmd: list, cwd: Path = None) -> tuple:
     """Run a shell command and return (ok, output_or_error)."""
     try:
         env = os.environ.copy()
@@ -97,9 +97,13 @@ def validate_skills(repo: Path, validate_script: Path) -> tuple[bool, str]:
 
 
 def sync_skills(src: Path, dst: Path) -> tuple[bool, str]:
-    """Sync skill files from src to dst using rsync if available, else shutil.copytree."""
+    """Sync skill files from src to dst. If dst is symlink to src, skip copy."""
     if not src.exists():
         return True, f"source does not exist: {src}"
+
+    # If dst is already symlink to src, nothing to copy
+    if dst.is_symlink() and dst.resolve() == src.resolve():
+        return True, f"dst is symlink to src; skipping copy"
 
     dst.mkdir(parents=True, exist_ok=True)
 

@@ -18,13 +18,59 @@ providers:
     api_key_env: ANTHROPIC_API_KEY
     active: false
 
+skills:
+  # Always load these skills at the start of every chat
+  default:
+    - caveman
+    - brainstorming
+    - obsidian
+    - grill-me
+    - context7
+
+  # Project-type specific skill bundles
+  project_bundles:
+    ios:
+      - ios-developer
+      - swiftui-pro
+      - swift-concurrency-pro
+      - swift-testing-pro
+      - xcode-build-orchestrator
+      - xcode-project-analyzer
+      - mobile-security-coder
+      - mobile-ui
+      - miswag-ios-developer
+    node:
+      - frontend-developer
+      - testing-patterns
+    python:
+      - testing-patterns
+    flutter:
+      - mobile-ui
+
+  # Auto-update these skills based on active project
+  auto_update:
+    - miswag-ios-developer
+    - ios-developer
+
 agents:
   hermes:
     skills_dir: /Users/gt/Public/MyFiles/agent-home/gt-core/skills/hermes
     config_file: /Users/gt/Public/MyFiles/agent-home/gt-core/config/hermes.yaml
+    default_skills:
+      - caveman
+      - brainstorming
+      - obsidian
+      - grill-me
+      - context7
   pi:
     skills_dir: /Users/gt/Public/MyFiles/agent-home/gt-core/skills/pi
     config_file: /Users/gt/Public/MyFiles/agent-home/gt-core/config/pi.yaml
+    default_skills:
+      - caveman
+      - brainstorming
+      - obsidian
+      - grill-me
+      - context7
 
 integrations:
   obsidian:

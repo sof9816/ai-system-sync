@@ -1,0 +1,26 @@
+name: hermes
+type: config
+description: Hermes Agent Configuration — runtime settings, provider config, and memory directory
+skills:
+  - config-management
+  - ai-provider-integration
+agents:
+  - devops
+version: "0.1.0"
+author: "GT System"
+gt_system:
+  project_id: hermes
+  memory_vault: "GT Vault/projects/hermes"
+  category: core-infrastructure
+  priority: critical
+  tags:
+    - config
+    - hermes
+    - provider
+    - runtime
+  related_projects:
+    - gt-core
+    - dashboard
+  notes: |
+    Runtime configuration for the Hermes agent framework.
+    Contains provider settings (kimi-coding), model config, and memory paths.

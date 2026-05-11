@@ -1,8 +1,1446 @@
 {
   "version": "1.0.0",
-  "exported_at": "2026-05-08T22:29:58Z",
+  "exported_at": "2026-05-10T06:36:26Z",
   "source_repo": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo",
   "skills": {
+    "apple-notes": {
+      "category": "apple",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/apple/apple-notes/SKILL.md",
+      "claude_path": "skills/apple/apple-notes.md",
+      "description": "Manage Apple Notes via memo CLI: create, search, edit.",
+      "version": "1.0.0",
+      "tags": [
+        "Notes",
+        "Apple",
+        "macOS",
+        "note-taking"
+      ]
+    },
+    "apple-reminders": {
+      "category": "apple",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/apple/apple-reminders/SKILL.md",
+      "claude_path": "skills/apple/apple-reminders.md",
+      "description": "Apple Reminders via remindctl: add, list, complete.",
+      "version": "1.0.0",
+      "tags": [
+        "Reminders",
+        "tasks",
+        "todo",
+        "macOS",
+        "Apple"
+      ]
+    },
+    "findmy": {
+      "category": "apple",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/apple/findmy/SKILL.md",
+      "claude_path": "skills/apple/findmy.md",
+      "description": "Track Apple devices/AirTags via FindMy.app on macOS.",
+      "version": "1.0.0",
+      "tags": [
+        "FindMy",
+        "AirTag",
+        "location",
+        "tracking",
+        "macOS",
+        "Apple"
+      ]
+    },
+    "imessage": {
+      "category": "apple",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/apple/imessage/SKILL.md",
+      "claude_path": "skills/apple/imessage.md",
+      "description": "Send and receive iMessages/SMS via the imsg CLI on macOS.",
+      "version": "1.0.0",
+      "tags": [
+        "iMessage",
+        "SMS",
+        "messaging",
+        "macOS",
+        "Apple"
+      ]
+    },
+    "macos-computer-use": {
+      "category": "apple",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/apple/macos-computer-use/SKILL.md",
+      "claude_path": "skills/apple/macos-computer-use.md",
+      "description": "|",
+      "version": "1.0.0",
+      "tags": [
+        "computer-use",
+        "macos",
+        "desktop",
+        "automation",
+        "gui"
+      ]
+    },
+    "architecture": {
+      "category": "architecture",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/architecture/architecture/SKILL.md",
+      "claude_path": "skills/architecture/architecture.md",
+      "description": "Architectural decision-making framework. Requirements analysis, trade-off evaluation, ADR documentation. Use when making architecture decisions or analyzing system design.",
+      "version": "",
+      "tags": []
+    },
+    "architecture-patterns": {
+      "category": "architecture",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/architecture/architecture-patterns/SKILL.md",
+      "claude_path": "skills/architecture/architecture-patterns.md",
+      "description": "Implement proven backend architecture patterns including Clean Architecture, Hexagonal Architecture, and Domain-Driven Design. Use when architecting complex backend systems or refactoring existing ...",
+      "version": "",
+      "tags": []
+    },
+    "claude-code": {
+      "category": "autonomous-ai-agents",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/autonomous-ai-agents/claude-code/SKILL.md",
+      "claude_path": "skills/autonomous-ai-agents/claude-code.md",
+      "description": "Delegate coding to Claude Code CLI (features, PRs).",
+      "version": "2.2.0",
+      "tags": [
+        "Coding-Agent",
+        "Claude",
+        "Anthropic",
+        "Code-Review",
+        "Refactoring",
+        "PTY",
+        "Automation"
+      ]
+    },
+    "codex": {
+      "category": "autonomous-ai-agents",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/autonomous-ai-agents/codex/SKILL.md",
+      "claude_path": "skills/autonomous-ai-agents/codex.md",
+      "description": "Delegate coding to OpenAI Codex CLI (features, PRs).",
+      "version": "1.0.0",
+      "tags": [
+        "Coding-Agent",
+        "Codex",
+        "OpenAI",
+        "Code-Review",
+        "Refactoring"
+      ]
+    },
+    "hermes-agent": {
+      "category": "autonomous-ai-agents",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/autonomous-ai-agents/hermes-agent/SKILL.md",
+      "claude_path": "skills/autonomous-ai-agents/hermes-agent.md",
+      "description": "Configure, extend, or contribute to Hermes Agent.",
+      "version": "2.1.0",
+      "tags": [
+        "hermes",
+        "setup",
+        "configuration",
+        "multi-agent",
+        "spawning",
+        "cli",
+        "gateway",
+        "development"
+      ]
+    },
+    "opencode": {
+      "category": "autonomous-ai-agents",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/autonomous-ai-agents/opencode/SKILL.md",
+      "claude_path": "skills/autonomous-ai-agents/opencode.md",
+      "description": "Delegate coding to OpenCode CLI (features, PR review).",
+      "version": "1.2.0",
+      "tags": [
+        "Coding-Agent",
+        "OpenCode",
+        "Autonomous",
+        "Refactoring",
+        "Code-Review"
+      ]
+    },
+    "pi-coding-agent": {
+      "category": "autonomous-ai-agents",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/autonomous-ai-agents/pi-coding-agent/SKILL.md",
+      "claude_path": "skills/autonomous-ai-agents/pi-coding-agent.md",
+      "description": "Delegate coding tasks to pi.dev CLI. Best practices for prompt chunking, hybrid Hermes/pi workflows, and recovery when pi chokes.",
+      "version": "1.0.0",
+      "tags": [
+        "pi.dev",
+        "coding-agent",
+        "delegation",
+        "cli",
+        "autonomous-ai-agents"
+      ]
+    },
+    "swarm-orchestration": {
+      "category": "autonomous-ai-agents",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/autonomous-ai-agents/swarm-orchestration/SKILL.md",
+      "claude_path": "skills/autonomous-ai-agents/swarm-orchestration.md",
+      "description": "Multi-agent swarm management: parallel execution, max 3 concurrent agents, test checkpoints, swarm vs sequential mode, and distributed error handling.",
+      "version": "1.0.0",
+      "tags": [
+        "swarm",
+        "multi-agent",
+        "orchestration",
+        "parallel",
+        "distributed",
+        "autonomous-ai-agents"
+      ]
+    },
+    "architecture-diagram": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/architecture-diagram/SKILL.md",
+      "claude_path": "skills/creative/architecture-diagram.md",
+      "description": "Dark-themed SVG architecture/cloud/infra diagrams as HTML.",
+      "version": "1.0.0",
+      "tags": [
+        "architecture",
+        "diagrams",
+        "SVG",
+        "HTML",
+        "visualization",
+        "infrastructure",
+        "cloud"
+      ]
+    },
+    "ascii-art": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/ascii-art/SKILL.md",
+      "claude_path": "skills/creative/ascii-art.md",
+      "description": "ASCII art: pyfiglet, cowsay, boxes, image-to-ascii.",
+      "version": "4.0.0",
+      "tags": [
+        "ASCII",
+        "Art",
+        "Banners",
+        "Creative",
+        "Unicode",
+        "Text-Art",
+        "pyfiglet",
+        "figlet",
+        "cowsay",
+        "boxes"
+      ]
+    },
+    "ascii-video": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/ascii-video/SKILL.md",
+      "claude_path": "skills/creative/ascii-video.md",
+      "description": "ASCII video: convert video/audio to colored ASCII MP4/GIF.",
+      "version": "",
+      "tags": []
+    },
+    "baoyu-comic": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/baoyu-comic/SKILL.md",
+      "claude_path": "skills/creative/baoyu-comic.md",
+      "description": "Knowledge comics (\u77e5\u8bc6\u6f2b\u753b): educational, biography, tutorial.",
+      "version": "1.56.1",
+      "tags": [
+        "comic",
+        "knowledge-comic",
+        "creative",
+        "image-generation"
+      ]
+    },
+    "baoyu-infographic": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/baoyu-infographic/SKILL.md",
+      "claude_path": "skills/creative/baoyu-infographic.md",
+      "description": "Infographics: 21 layouts x 21 styles (\u4fe1\u606f\u56fe, \u53ef\u89c6\u5316).",
+      "version": "1.56.1",
+      "tags": [
+        "infographic",
+        "visual-summary",
+        "creative",
+        "image-generation"
+      ]
+    },
+    "brainstorming": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/brainstorming/SKILL.md",
+      "claude_path": "skills/creative/brainstorming.md",
+      "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.",
+      "version": "",
+      "tags": []
+    },
+    "caveman": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/caveman/SKILL.md",
+      "claude_path": "skills/creative/caveman.md",
+      "description": ">",
+      "version": "",
+      "tags": []
+    },
+    "claude-design": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/claude-design/SKILL.md",
+      "claude_path": "skills/creative/claude-design.md",
+      "description": "Design one-off HTML artifacts (landing, deck, prototype).",
+      "version": "1.0.0",
+      "tags": [
+        "design",
+        "html",
+        "prototype",
+        "ux",
+        "ui",
+        "creative",
+        "artifact",
+        "deck",
+        "motion",
+        "design-system"
+      ]
+    },
+    "comfyui": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/comfyui/SKILL.md",
+      "claude_path": "skills/creative/comfyui.md",
+      "description": "Generate images, video, and audio with ComfyUI \u2014 install, launch, manage nodes/models, run workflows with parameter injection. Uses the official comfy-cli for lifecycle and direct REST/WebSocket API for execution.",
+      "version": "5.0.0",
+      "tags": {
+        "tags": [
+          "comfyui",
+          "image-generation",
+          "stable-diffusion",
+          "flux",
+          "sd3",
+          "wan-video",
+          "hunyuan-video",
+          "creative",
+          "generative-ai",
+          "video-generation"
+        ]
+      }
+    },
+    "creative-ideation": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/creative-ideation/SKILL.md",
+      "claude_path": "skills/creative/creative-ideation.md",
+      "description": "Generate project ideas via creative constraints.",
+      "version": "1.0.0",
+      "tags": [
+        "Creative",
+        "Ideation",
+        "Projects",
+        "Brainstorming",
+        "Inspiration"
+      ]
+    },
+    "design-md": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/design-md/SKILL.md",
+      "claude_path": "skills/creative/design-md.md",
+      "description": "Author/validate/export Google's DESIGN.md token spec files.",
+      "version": "1.0.0",
+      "tags": [
+        "design",
+        "design-system",
+        "tokens",
+        "ui",
+        "accessibility",
+        "wcag",
+        "tailwind",
+        "dtcg",
+        "google"
+      ]
+    },
+    "excalidraw": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/excalidraw/SKILL.md",
+      "claude_path": "skills/creative/excalidraw.md",
+      "description": "Hand-drawn Excalidraw JSON diagrams (arch, flow, seq).",
+      "version": "1.0.0",
+      "tags": [
+        "Excalidraw",
+        "Diagrams",
+        "Flowcharts",
+        "Architecture",
+        "Visualization",
+        "JSON"
+      ]
+    },
+    "humanizer": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/humanizer/SKILL.md",
+      "claude_path": "skills/creative/humanizer.md",
+      "description": "Humanize text: strip AI-isms and add real voice.",
+      "version": "2.5.1",
+      "tags": [
+        "writing",
+        "editing",
+        "humanize",
+        "anti-ai-slop",
+        "voice",
+        "prose",
+        "text"
+      ]
+    },
+    "json-canvas": {
+      "category": "json-canvas",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/json-canvas/SKILL.md",
+      "claude_path": "skills/json-canvas/json-canvas.md",
+      "description": "Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections. Use when working with .canvas files, creating visual canvases, mind maps, flowcharts, or when the user mentions Canvas files in Obsidian.",
+      "version": "",
+      "tags": []
+    },
+    "manim-video": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/manim-video/SKILL.md",
+      "claude_path": "skills/creative/manim-video.md",
+      "description": "Manim CE animations: 3Blue1Brown math/algo videos.",
+      "version": "1.0.0",
+      "tags": []
+    },
+    "p5js": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/p5js/SKILL.md",
+      "claude_path": "skills/creative/p5js.md",
+      "description": "p5.js sketches: gen art, shaders, interactive, 3D.",
+      "version": "1.0.0",
+      "tags": [
+        "creative-coding",
+        "generative-art",
+        "p5js",
+        "canvas",
+        "interactive",
+        "visualization",
+        "webgl",
+        "shaders",
+        "animation"
+      ]
+    },
+    "pixel-art": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/pixel-art/SKILL.md",
+      "claude_path": "skills/creative/pixel-art.md",
+      "description": "Pixel art w/ era palettes (NES, Game Boy, PICO-8).",
+      "version": "2.0.0",
+      "tags": [
+        "creative",
+        "pixel-art",
+        "arcade",
+        "snes",
+        "nes",
+        "gameboy",
+        "retro",
+        "image",
+        "video"
+      ]
+    },
+    "popular-web-designs": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/popular-web-designs/SKILL.md",
+      "claude_path": "skills/creative/popular-web-designs.md",
+      "description": "54 real design systems (Stripe, Linear, Vercel) as HTML/CSS.",
+      "version": "1.0.0",
+      "tags": []
+    },
+    "pretext": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/pretext/SKILL.md",
+      "claude_path": "skills/creative/pretext.md",
+      "description": "Use when building creative browser demos with @chenglou/pretext \u2014 DOM-free text layout for ASCII art, typographic flow around obstacles, text-as-geometry games, kinetic typography, and text-powered generative art. Produces single-file HTML demos by default.",
+      "version": "1.0.0",
+      "tags": [
+        "creative-coding",
+        "typography",
+        "pretext",
+        "ascii-art",
+        "canvas",
+        "generative",
+        "text-layout",
+        "kinetic-typography"
+      ]
+    },
+    "sketch": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/sketch/SKILL.md",
+      "claude_path": "skills/creative/sketch.md",
+      "description": "Throwaway HTML mockups: 2-3 design variants to compare.",
+      "version": "1.0.0",
+      "tags": [
+        "sketch",
+        "mockup",
+        "design",
+        "ui",
+        "prototype",
+        "html",
+        "variants",
+        "exploration",
+        "wireframe",
+        "comparison"
+      ]
+    },
+    "songwriting-and-ai-music": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/songwriting-and-ai-music/SKILL.md",
+      "claude_path": "skills/creative/songwriting-and-ai-music.md",
+      "description": "Songwriting craft and Suno AI music prompts.",
+      "version": "",
+      "tags": []
+    },
+    "touchdesigner-mcp": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/touchdesigner-mcp/SKILL.md",
+      "claude_path": "skills/creative/touchdesigner-mcp.md",
+      "description": "Control a running TouchDesigner instance via twozero MCP \u2014 create operators, set parameters, wire connections, execute Python, build real-time visuals. 36 native tools.",
+      "version": "1.1.0",
+      "tags": [
+        "TouchDesigner",
+        "MCP",
+        "twozero",
+        "creative-coding",
+        "real-time-visuals",
+        "generative-art",
+        "audio-reactive",
+        "VJ",
+        "installation",
+        "GLSL"
+      ]
+    },
+    "ui-ux-designer": {
+      "category": "creative",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/creative/ui-ux-designer/SKILL.md",
+      "claude_path": "skills/creative/ui-ux-designer.md",
+      "description": ">",
+      "version": "1.0.0",
+      "tags": []
+    },
+    "jupyter-live-kernel": {
+      "category": "data-science",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/data-science/jupyter-live-kernel/SKILL.md",
+      "claude_path": "skills/data-science/jupyter-live-kernel.md",
+      "description": "Iterative Python via live Jupyter kernel (hamelnb).",
+      "version": "1.0.0",
+      "tags": [
+        "jupyter",
+        "notebook",
+        "repl",
+        "data-science",
+        "exploration",
+        "iterative"
+      ]
+    },
+    "defuddle": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/defuddle/SKILL.md",
+      "claude_path": "skills/software-development/defuddle.md",
+      "description": "Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the user provides a URL to read or analyze, for online documentation, articles, blog posts, or any standard web page. Do NOT use for URLs ending in .md \u2014 those are already markdown, use WebFetch directly.",
+      "version": "",
+      "tags": []
+    },
+    "kanban-orchestrator": {
+      "category": "devops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/devops/kanban-orchestrator/SKILL.md",
+      "claude_path": "skills/devops/kanban-orchestrator.md",
+      "description": "Decomposition playbook + specialist-roster conventions + anti-temptation rules for an orchestrator profile routing work through Kanban. The \"don't do the work yourself\" rule and the basic lifecycle are auto-injected into every kanban worker's system prompt; this skill is the deeper playbook when you're specifically playing the orchestrator role.",
+      "version": "2.0.0",
+      "tags": [
+        "kanban",
+        "multi-agent",
+        "orchestration",
+        "routing"
+      ]
+    },
+    "kanban-worker": {
+      "category": "devops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/devops/kanban-worker/SKILL.md",
+      "claude_path": "skills/devops/kanban-worker.md",
+      "description": "Pitfalls, examples, and edge cases for Hermes Kanban workers. The lifecycle itself is auto-injected into every worker's system prompt as KANBAN_GUIDANCE (from agent/prompt_builder.py); this skill is what you load when you want deeper detail on specific scenarios.",
+      "version": "2.0.0",
+      "tags": [
+        "kanban",
+        "multi-agent",
+        "collaboration",
+        "workflow",
+        "pitfalls"
+      ]
+    },
+    "webhook-subscriptions": {
+      "category": "devops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/devops/webhook-subscriptions/SKILL.md",
+      "claude_path": "skills/devops/webhook-subscriptions.md",
+      "description": "Webhook subscriptions: event-driven agent runs.",
+      "version": "1.1.0",
+      "tags": [
+        "webhook",
+        "events",
+        "automation",
+        "integrations",
+        "notifications",
+        "push"
+      ]
+    },
+    "dogfood": {
+      "category": "dogfood",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/dogfood/dogfood/SKILL.md",
+      "claude_path": "skills/dogfood/dogfood.md",
+      "description": "Exploratory QA of web apps: find bugs, evidence, reports.",
+      "version": "1.0.0",
+      "tags": [
+        "qa",
+        "testing",
+        "browser",
+        "web",
+        "dogfood"
+      ]
+    },
+    "himalaya": {
+      "category": "email",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/email/himalaya/SKILL.md",
+      "claude_path": "skills/email/himalaya.md",
+      "description": "Himalaya CLI: IMAP/SMTP email from terminal.",
+      "version": "1.1.0",
+      "tags": [
+        "Email",
+        "IMAP",
+        "SMTP",
+        "CLI",
+        "Communication"
+      ]
+    },
+    "game-dev-orchestration": {
+      "category": "gaming",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/gaming/game-dev-orchestration/SKILL.md",
+      "claude_path": "skills/gaming/game-dev-orchestration.md",
+      "description": "Orchestrate game development projects (especially pygame/Godot) using Hermes + pi.dev swarm. Covers: reconnaissance, grill-me planning, pi.dev task file creation, Obsidian documentation, and build verification.",
+      "version": "1.0.0",
+      "tags": [
+        "game-dev",
+        "pygame",
+        "godot",
+        "swarm",
+        "pi.dev",
+        "orchestration"
+      ]
+    },
+    "game-development": {
+      "category": "gaming",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/gaming/game-development/SKILL.md",
+      "claude_path": "skills/gaming/game-development.md",
+      "description": "General game development patterns, game loop, state management, physics, collision, animation, asset pipeline, performance optimization, and cross-platform considerations. Use when designing or reviewing game projects.",
+      "version": "",
+      "tags": []
+    },
+    "godot": {
+      "category": "gaming",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/gaming/godot/SKILL.md",
+      "claude_path": "skills/gaming/godot.md",
+      "description": "Godot Engine 4.x patterns, GDScript best practices, node tree architecture, signals, scene composition, and export/deployment. Use when developing or reviewing Godot projects.",
+      "version": "",
+      "tags": []
+    },
+    "minecraft-modpack-server": {
+      "category": "gaming",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/gaming/minecraft-modpack-server/SKILL.md",
+      "claude_path": "skills/gaming/minecraft-modpack-server.md",
+      "description": "Host modded Minecraft servers (CurseForge, Modrinth).",
+      "version": "",
+      "tags": []
+    },
+    "pokemon-player": {
+      "category": "gaming",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/gaming/pokemon-player/SKILL.md",
+      "claude_path": "skills/gaming/pokemon-player.md",
+      "description": "Play Pokemon via headless emulator + RAM reads.",
+      "version": "",
+      "tags": []
+    },
+    "codebase-inspection": {
+      "category": "github",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/github/codebase-inspection/SKILL.md",
+      "claude_path": "skills/github/codebase-inspection.md",
+      "description": "Inspect codebases w/ pygount: LOC, languages, ratios.",
+      "version": "1.0.0",
+      "tags": [
+        "LOC",
+        "Code Analysis",
+        "pygount",
+        "Codebase",
+        "Metrics",
+        "Repository"
+      ]
+    },
+    "github-auth": {
+      "category": "github",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/github/github-auth/SKILL.md",
+      "claude_path": "skills/github/github-auth.md",
+      "description": "GitHub auth setup: HTTPS tokens, SSH keys, gh CLI login.",
+      "version": "1.1.0",
+      "tags": [
+        "GitHub",
+        "Authentication",
+        "Git",
+        "gh-cli",
+        "SSH",
+        "Setup"
+      ]
+    },
+    "github-code-review": {
+      "category": "github",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/github/github-code-review/SKILL.md",
+      "claude_path": "skills/github/github-code-review.md",
+      "description": "Review PRs: diffs, inline comments via gh or REST.",
+      "version": "1.1.0",
+      "tags": [
+        "GitHub",
+        "Code-Review",
+        "Pull-Requests",
+        "Git",
+        "Quality"
+      ]
+    },
+    "github-issues": {
+      "category": "github",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/github/github-issues/SKILL.md",
+      "claude_path": "skills/github/github-issues.md",
+      "description": "Create, triage, label, assign GitHub issues via gh or REST.",
+      "version": "1.1.0",
+      "tags": [
+        "GitHub",
+        "Issues",
+        "Project-Management",
+        "Bug-Tracking",
+        "Triage"
+      ]
+    },
+    "github-pr-workflow": {
+      "category": "github",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/github/github-pr-workflow/SKILL.md",
+      "claude_path": "skills/github/github-pr-workflow.md",
+      "description": "GitHub PR lifecycle: branch, commit, open, CI, merge.",
+      "version": "1.1.0",
+      "tags": [
+        "GitHub",
+        "Pull-Requests",
+        "CI/CD",
+        "Git",
+        "Automation",
+        "Merge"
+      ]
+    },
+    "github-repo-management": {
+      "category": "github",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/github/github-repo-management/SKILL.md",
+      "claude_path": "skills/github/github-repo-management.md",
+      "description": "Clone/create/fork repos; manage remotes, releases.",
+      "version": "1.1.0",
+      "tags": [
+        "GitHub",
+        "Repositories",
+        "Git",
+        "Releases",
+        "Secrets",
+        "Configuration"
+      ]
+    },
+    "app-store-optimization": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/app-store-optimization/SKILL.md",
+      "claude_path": "skills/ios-development/app-store-optimization.md",
+      "description": "Complete App Store Optimization (ASO) toolkit for researching, optimizing, and tracking mobile app performance on Apple App Store and Google Play Store",
+      "version": "",
+      "tags": []
+    },
+    "core-data-expert": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/core-data-expert/SKILL.md",
+      "claude_path": "skills/ios-development/core-data-expert.md",
+      "description": "Expert Core Data guidance (iOS/macOS): stack setup, fetch requests & NSFetchedResultsController, saving/merge conflicts, threading & Swift Concurrency, batch operations & persistent history, migrations, performance, and NSPersistentCloudKitContainer/CloudKit sync.",
+      "version": "",
+      "tags": []
+    },
+    "hig-foundations": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/hig-foundations/SKILL.md",
+      "claude_path": "skills/ios-development/hig-foundations.md",
+      "description": ">",
+      "version": "1.0.0",
+      "tags": []
+    },
+    "hig-patterns": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/hig-patterns/SKILL.md",
+      "claude_path": "skills/ios-development/hig-patterns.md",
+      "description": ">",
+      "version": "1.0.0",
+      "tags": []
+    },
+    "ios-developer": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/ios-developer/SKILL.md",
+      "claude_path": "skills/ios-development/ios-developer.md",
+      "description": ">",
+      "version": "",
+      "tags": []
+    },
+    "ios-marketing-capture": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/ios-marketing-capture/SKILL.md",
+      "claude_path": "skills/ios-development/ios-marketing-capture.md",
+      "description": "Use when the user wants to automate capture of marketing screenshots for a SwiftUI iOS app across multiple locales, devices, or appearances. Covers full-screen shots, isolated element renders (carousel cards, widgets), and reproducible output naming. Triggers on marketing screenshots, locale screenshots, widget renders, App Store assets, fastlane-alternative, simctl screenshots.",
+      "version": "",
+      "tags": []
+    },
+    "miswag-ios-developer": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/miswag-ios-developer/SKILL.md",
+      "claude_path": "skills/ios-development/miswag-ios-developer.md",
+      "description": "Senior iOS Development rules, guidelines, and project architecture specifically for the Miswag iOS project. Use this skill WHENEVER working on any feature, bug fix, or refactor in this repository.",
+      "version": "",
+      "tags": []
+    },
+    "mobile-security-coder": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/mobile-security-coder/SKILL.md",
+      "claude_path": "skills/ios-development/mobile-security-coder.md",
+      "description": ">",
+      "version": "",
+      "tags": []
+    },
+    "mobile-ui": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/mobile-ui/SKILL.md",
+      "claude_path": "skills/ios-development/mobile-ui.md",
+      "description": "Mobile UI design patterns, iOS Human Interface Guidelines, responsive design, touch targets, gestures, accessibility, and SwiftUI component best practices.",
+      "version": "1.0.0",
+      "tags": [
+        "iOS",
+        "SwiftUI",
+        "UI",
+        "mobile",
+        "HIG",
+        "accessibility",
+        "design",
+        "touch"
+      ]
+    },
+    "release-whats-changed": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/release-whats-changed/SKILL.md",
+      "claude_path": "skills/ios-development/release-whats-changed.md",
+      "description": "Generate structured release notes or \"what changed\" summaries for this repository. Use when the user asks what changed between releases, wants a changelog between release branches/tags, or asks for changes in the new version. By default, compare the newest release branch to the immediately previous release branch unless the user specifies refs.",
+      "version": "",
+      "tags": []
+    },
+    "spm-build-analysis": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/spm-build-analysis/SKILL.md",
+      "claude_path": "skills/ios-development/spm-build-analysis.md",
+      "description": "Analyze Swift Package Manager dependencies, package plugins, module variants, and CI-oriented build overhead that slow Xcode builds. Use when a developer suspects packages, plugins, or dependency graph shape are hurting clean or incremental build performance, mentions SPM slowness, package resolution time, build plugin overhead, duplicate module builds from configuration drift, circular dependencies between modules, oversized modules needing splitting, or modularization best practices.",
+      "version": "",
+      "tags": []
+    },
+    "swift-concurrency": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/swift-concurrency/SKILL.md",
+      "claude_path": "skills/ios-development/swift-concurrency.md",
+      "description": ">",
+      "version": "",
+      "tags": []
+    },
+    "swift-concurrency-pro": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/swift-concurrency-pro/SKILL.md",
+      "claude_path": "skills/ios-development/swift-concurrency-pro.md",
+      "description": "Reviews Swift code for concurrency correctness, modern API usage, and common async/await pitfalls. Use when reading, writing, or reviewing Swift concurrency code.",
+      "version": "",
+      "tags": []
+    },
+    "swift-testing-expert": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/swift-testing-expert/SKILL.md",
+      "claude_path": "skills/ios-development/swift-testing-expert.md",
+      "description": "Expert guidance for Swift Testing: test structure, #expect/#require macros, traits and tags, parameterized tests, test plans, parallel execution, async waiting patterns, and XCTest migration. Use when writing new Swift tests, modernizing XCTest suites, debugging flaky tests, or improving test quality and maintainability in Apple-platform or Swift server projects.",
+      "version": "",
+      "tags": []
+    },
+    "swift-testing-pro": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/swift-testing-pro/SKILL.md",
+      "claude_path": "skills/ios-development/swift-testing-pro.md",
+      "description": "Writes, reviews, and improves Swift Testing code using modern APIs and best practices. Use when reading, writing, or reviewing projects that use Swift Testing.",
+      "version": "",
+      "tags": []
+    },
+    "swiftdata-expert-skill": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/swiftdata-expert-skill/SKILL.md",
+      "claude_path": "skills/ios-development/swiftdata-expert-skill.md",
+      "description": "Expert guidance for designing, implementing, migrating, and debugging SwiftData persistence in Swift and SwiftUI apps. Use when working with @Model schemas, @Relationship/@Attribute rules, Query or FetchDescriptor data access, ModelContainer/ModelContext configuration, CloudKit sync, SchemaMigrationPlan/history APIs, ModelActor concurrency isolation, or Core Data to SwiftData adoption/coexistence.",
+      "version": "",
+      "tags": []
+    },
+    "swiftdata-pro": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/swiftdata-pro/SKILL.md",
+      "claude_path": "skills/ios-development/swiftdata-pro.md",
+      "description": "Writes, reviews, and improves SwiftData code using modern APIs and best practices. Use when reading, writing, or reviewing projects that use SwiftData.",
+      "version": "",
+      "tags": []
+    },
+    "swiftui-expert-skill": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/swiftui-expert-skill/SKILL.md",
+      "claude_path": "skills/ios-development/swiftui-expert-skill.md",
+      "description": "Write, review, or improve SwiftUI code following best practices for state management, view composition, performance, modern APIs, Swift concurrency, and iOS 26+ Liquid Glass adoption. Use when buil...",
+      "version": "",
+      "tags": []
+    },
+    "swiftui-pro": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/swiftui-pro/SKILL.md",
+      "claude_path": "skills/ios-development/swiftui-pro.md",
+      "description": "Comprehensively reviews SwiftUI code for best practices on modern APIs, maintainability, and performance. Use when reading, writing, or reviewing SwiftUI projects.",
+      "version": "",
+      "tags": []
+    },
+    "xcode-build-benchmark": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/xcode-build-benchmark/SKILL.md",
+      "claude_path": "skills/ios-development/xcode-build-benchmark.md",
+      "description": "Benchmark Xcode clean and incremental builds with repeatable inputs, timing summaries, and timestamped `.build-benchmark/` artifacts. Use when a developer wants a baseline, wants to compare before and after changes, asks to measure build performance, mentions build times, build duration, how long builds take, or wants to know if builds got faster or slower.",
+      "version": "",
+      "tags": []
+    },
+    "xcode-build-fixer": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/xcode-build-fixer/SKILL.md",
+      "claude_path": "skills/ios-development/xcode-build-fixer.md",
+      "description": "Apply approved Xcode build optimization changes following best practices, then re-benchmark to verify improvement. Use when a developer has an approved optimization plan from xcode-build-orchestrator, wants to apply specific build fixes, needs help implementing build setting changes, script phase guards, source-level compilation fixes, or SPM restructuring that was recommended by an analysis skill.",
+      "version": "",
+      "tags": []
+    },
+    "xcode-build-orchestrator": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/xcode-build-orchestrator/SKILL.md",
+      "claude_path": "skills/ios-development/xcode-build-orchestrator.md",
+      "description": "Orchestrate Xcode build optimization by benchmarking first, running the specialist analysis skills, prioritizing findings, requesting explicit approval, delegating approved fixes to xcode-build-fixer, and re-benchmarking after changes. Use when a developer wants an end-to-end build optimization workflow, asks to speed up Xcode builds, wants a full build audit, or needs a recommend-first optimization pass covering compilation, project settings, and packages.",
+      "version": "",
+      "tags": []
+    },
+    "xcode-compilation-analyzer": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/xcode-compilation-analyzer/SKILL.md",
+      "claude_path": "skills/ios-development/xcode-compilation-analyzer.md",
+      "description": "Analyze Swift and mixed-language compile hotspots using build timing summaries and Swift frontend diagnostics, then produce a recommend-first source-level optimization plan. Use when a developer reports slow compilation, type-checking warnings, expensive clean-build compile phases, long CompileSwiftSources tasks, warn-long-function-bodies output, or wants to speed up Swift type checking.",
+      "version": "",
+      "tags": []
+    },
+    "xcode-project-analyzer": {
+      "category": "ios-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/ios-development/xcode-project-analyzer/SKILL.md",
+      "claude_path": "skills/ios-development/xcode-project-analyzer.md",
+      "description": "Audit Xcode project configuration, build settings, scheme behavior, and script phases to find build-time improvements with explicit approval gates. Use when a developer wants project-level build analysis, slow incremental builds, guidance on target dependencies, build settings review, run script phase analysis, parallelization improvements, or module-map and DEFINES_MODULE configuration.",
+      "version": "",
+      "tags": []
+    },
+    "native-mcp": {
+      "category": "mcp",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mcp/native-mcp/SKILL.md",
+      "claude_path": "skills/mcp/native-mcp.md",
+      "description": "MCP client: connect servers, register tools (stdio/HTTP).",
+      "version": "1.0.0",
+      "tags": [
+        "MCP",
+        "Tools",
+        "Integrations"
+      ]
+    },
+    "gif-search": {
+      "category": "media",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/media/gif-search/SKILL.md",
+      "claude_path": "skills/media/gif-search.md",
+      "description": "Search/download GIFs from Tenor via curl + jq.",
+      "version": "1.1.0",
+      "tags": [
+        "GIF",
+        "Media",
+        "Search",
+        "Tenor",
+        "API"
+      ]
+    },
+    "heartmula": {
+      "category": "media",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/media/heartmula/SKILL.md",
+      "claude_path": "skills/media/heartmula.md",
+      "description": "HeartMuLa: Suno-like song generation from lyrics + tags.",
+      "version": "1.0.0",
+      "tags": [
+        "music",
+        "audio",
+        "generation",
+        "ai",
+        "heartmula",
+        "heartcodec",
+        "lyrics",
+        "songs"
+      ]
+    },
+    "songsee": {
+      "category": "media",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/media/songsee/SKILL.md",
+      "claude_path": "skills/media/songsee.md",
+      "description": "Audio spectrograms/features (mel, chroma, MFCC) via CLI.",
+      "version": "1.0.0",
+      "tags": [
+        "Audio",
+        "Visualization",
+        "Spectrogram",
+        "Music",
+        "Analysis"
+      ]
+    },
+    "spotify": {
+      "category": "media",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/media/spotify/SKILL.md",
+      "claude_path": "skills/media/spotify.md",
+      "description": "Spotify: play, search, queue, manage playlists and devices.",
+      "version": "1.0.0",
+      "tags": [
+        "spotify",
+        "music",
+        "playback",
+        "playlists",
+        "media"
+      ]
+    },
+    "youtube-content": {
+      "category": "media",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/media/youtube-content/SKILL.md",
+      "claude_path": "skills/media/youtube-content.md",
+      "description": "YouTube transcripts to summaries, threads, blogs.",
+      "version": "",
+      "tags": []
+    },
+    "evaluation": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/evaluation/SKILL.md",
+      "claude_path": "skills/mlops/evaluation.md",
+      "description": "W&B: log ML experiments, sweeps, model registry, dashboards.",
+      "version": "1.0.0",
+      "tags": [
+        "MLOps",
+        "Weights And Biases",
+        "WandB",
+        "Experiment Tracking",
+        "Hyperparameter Tuning",
+        "Model Registry",
+        "Collaboration",
+        "Real-Time Visualization",
+        "PyTorch",
+        "TensorFlow",
+        "HuggingFace"
+      ]
+    },
+    "evaluating-llms-harness": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/evaluation/lm-evaluation-harness/SKILL.md",
+      "claude_path": "skills/mlops/evaluating-llms-harness.md",
+      "description": "lm-eval-harness: benchmark LLMs (MMLU, GSM8K, etc.).",
+      "version": "1.0.0",
+      "tags": [
+        "Evaluation",
+        "LM Evaluation Harness",
+        "Benchmarking",
+        "MMLU",
+        "HumanEval",
+        "GSM8K",
+        "EleutherAI",
+        "Model Quality",
+        "Academic Benchmarks",
+        "Industry Standard"
+      ]
+    },
+    "weights-and-biases": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/evaluation/weights-and-biases/SKILL.md",
+      "claude_path": "skills/mlops/weights-and-biases.md",
+      "description": "W&B: log ML experiments, sweeps, model registry, dashboards.",
+      "version": "1.0.0",
+      "tags": [
+        "MLOps",
+        "Weights And Biases",
+        "WandB",
+        "Experiment Tracking",
+        "Hyperparameter Tuning",
+        "Model Registry",
+        "Collaboration",
+        "Real-Time Visualization",
+        "PyTorch",
+        "TensorFlow",
+        "HuggingFace"
+      ]
+    },
+    "huggingface-hub": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/huggingface-hub/SKILL.md",
+      "claude_path": "skills/mlops/huggingface-hub.md",
+      "description": "HuggingFace hf CLI: search/download/upload models, datasets.",
+      "version": "1.0.0",
+      "tags": []
+    },
+    "inference": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/inference/SKILL.md",
+      "claude_path": "skills/mlops/inference.md",
+      "description": "vLLM: high-throughput LLM serving, OpenAI API, quantization.",
+      "version": "1.0.0",
+      "tags": [
+        "vLLM",
+        "Inference Serving",
+        "PagedAttention",
+        "Continuous Batching",
+        "High Throughput",
+        "Production",
+        "OpenAI API",
+        "Quantization",
+        "Tensor Parallelism"
+      ]
+    },
+    "llama-cpp": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/inference/llama-cpp/SKILL.md",
+      "claude_path": "skills/mlops/llama-cpp.md",
+      "description": "llama.cpp local GGUF inference + HF Hub model discovery.",
+      "version": "2.1.2",
+      "tags": [
+        "llama.cpp",
+        "GGUF",
+        "Quantization",
+        "Hugging Face Hub",
+        "CPU Inference",
+        "Apple Silicon",
+        "Edge Deployment",
+        "AMD GPUs",
+        "Intel GPUs",
+        "NVIDIA",
+        "URL-first"
+      ]
+    },
+    "obliteratus": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/inference/obliteratus/SKILL.md",
+      "claude_path": "skills/mlops/obliteratus.md",
+      "description": "OBLITERATUS: abliterate LLM refusals (diff-in-means).",
+      "version": "2.0.0",
+      "tags": [
+        "Abliteration",
+        "Uncensoring",
+        "Refusal-Removal",
+        "LLM",
+        "Weight-Projection",
+        "SVD",
+        "Mechanistic-Interpretability",
+        "HuggingFace",
+        "Model-Surgery"
+      ]
+    },
+    "outlines": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/inference/outlines/SKILL.md",
+      "claude_path": "skills/mlops/outlines.md",
+      "description": "Outlines: structured JSON/regex/Pydantic LLM generation.",
+      "version": "1.0.0",
+      "tags": [
+        "Prompt Engineering",
+        "Outlines",
+        "Structured Generation",
+        "JSON Schema",
+        "Pydantic",
+        "Local Models",
+        "Grammar-Based Generation",
+        "vLLM",
+        "Transformers",
+        "Type Safety"
+      ]
+    },
+    "serving-llms-vllm": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/inference/vllm/SKILL.md",
+      "claude_path": "skills/mlops/serving-llms-vllm.md",
+      "description": "vLLM: high-throughput LLM serving, OpenAI API, quantization.",
+      "version": "1.0.0",
+      "tags": [
+        "vLLM",
+        "Inference Serving",
+        "PagedAttention",
+        "Continuous Batching",
+        "High Throughput",
+        "Production",
+        "OpenAI API",
+        "Quantization",
+        "Tensor Parallelism"
+      ]
+    },
+    "models": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/models/SKILL.md",
+      "claude_path": "skills/mlops/models.md",
+      "description": "SAM: zero-shot image segmentation via points, boxes, masks.",
+      "version": "1.0.0",
+      "tags": [
+        "Multimodal",
+        "Image Segmentation",
+        "Computer Vision",
+        "SAM",
+        "Zero-Shot"
+      ]
+    },
+    "audiocraft-audio-generation": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/models/audiocraft/SKILL.md",
+      "claude_path": "skills/mlops/audiocraft-audio-generation.md",
+      "description": "AudioCraft: MusicGen text-to-music, AudioGen text-to-sound.",
+      "version": "1.0.0",
+      "tags": [
+        "Multimodal",
+        "Audio Generation",
+        "Text-to-Music",
+        "Text-to-Audio",
+        "MusicGen"
+      ]
+    },
+    "segment-anything-model": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/models/segment-anything/SKILL.md",
+      "claude_path": "skills/mlops/segment-anything-model.md",
+      "description": "SAM: zero-shot image segmentation via points, boxes, masks.",
+      "version": "1.0.0",
+      "tags": [
+        "Multimodal",
+        "Image Segmentation",
+        "Computer Vision",
+        "SAM",
+        "Zero-Shot"
+      ]
+    },
+    "research": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/research/SKILL.md",
+      "claude_path": "skills/mlops/research.md",
+      "description": "DSPy: declarative LM programs, auto-optimize prompts, RAG.",
+      "version": "1.0.0",
+      "tags": [
+        "Prompt Engineering",
+        "DSPy",
+        "Declarative Programming",
+        "RAG",
+        "Agents",
+        "Prompt Optimization",
+        "LM Programming",
+        "Stanford NLP",
+        "Automatic Optimization",
+        "Modular AI"
+      ]
+    },
+    "dspy": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/research/dspy/SKILL.md",
+      "claude_path": "skills/mlops/dspy.md",
+      "description": "DSPy: declarative LM programs, auto-optimize prompts, RAG.",
+      "version": "1.0.0",
+      "tags": [
+        "Prompt Engineering",
+        "DSPy",
+        "Declarative Programming",
+        "RAG",
+        "Agents",
+        "Prompt Optimization",
+        "LM Programming",
+        "Stanford NLP",
+        "Automatic Optimization",
+        "Modular AI"
+      ]
+    },
+    "training": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/training/SKILL.md",
+      "claude_path": "skills/mlops/training.md",
+      "description": "Unsloth: 2-5x faster LoRA/QLoRA fine-tuning, less VRAM.",
+      "version": "1.0.0",
+      "tags": [
+        "Fine-Tuning",
+        "Unsloth",
+        "Fast Training",
+        "LoRA",
+        "QLoRA",
+        "Memory-Efficient",
+        "Optimization",
+        "Llama",
+        "Mistral",
+        "Gemma",
+        "Qwen"
+      ]
+    },
+    "axolotl": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/training/axolotl/SKILL.md",
+      "claude_path": "skills/mlops/axolotl.md",
+      "description": "Axolotl: YAML LLM fine-tuning (LoRA, DPO, GRPO).",
+      "version": "1.0.0",
+      "tags": [
+        "Fine-Tuning",
+        "Axolotl",
+        "LLM",
+        "LoRA",
+        "QLoRA",
+        "DPO",
+        "KTO",
+        "ORPO",
+        "GRPO",
+        "YAML",
+        "HuggingFace",
+        "DeepSpeed",
+        "Multimodal"
+      ]
+    },
+    "fine-tuning-with-trl": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/training/trl-fine-tuning/SKILL.md",
+      "claude_path": "skills/mlops/fine-tuning-with-trl.md",
+      "description": "TRL: SFT, DPO, PPO, GRPO, reward modeling for LLM RLHF.",
+      "version": "1.0.0",
+      "tags": [
+        "Post-Training",
+        "TRL",
+        "Reinforcement Learning",
+        "Fine-Tuning",
+        "SFT",
+        "DPO",
+        "PPO",
+        "GRPO",
+        "RLHF",
+        "Preference Alignment",
+        "HuggingFace"
+      ]
+    },
+    "unsloth": {
+      "category": "mlops",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/mlops/training/unsloth/SKILL.md",
+      "claude_path": "skills/mlops/unsloth.md",
+      "description": "Unsloth: 2-5x faster LoRA/QLoRA fine-tuning, less VRAM.",
+      "version": "1.0.0",
+      "tags": [
+        "Fine-Tuning",
+        "Unsloth",
+        "Fast Training",
+        "LoRA",
+        "QLoRA",
+        "Memory-Efficient",
+        "Optimization",
+        "Llama",
+        "Mistral",
+        "Gemma",
+        "Qwen"
+      ]
+    },
+    "obsidian": {
+      "category": "note-taking",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/note-taking/obsidian/SKILL.md",
+      "claude_path": "skills/note-taking/obsidian.md",
+      "description": "Read, search, create, and edit notes in the Obsidian vault.",
+      "version": "",
+      "tags": []
+    },
+    "obsidian-bases": {
+      "category": "obsidian-bases",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/obsidian-bases/SKILL.md",
+      "claude_path": "skills/obsidian-bases/obsidian-bases.md",
+      "description": "Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries. Use when working with .base files, creating database-like views of notes, or when the user mentions Bases, table views, card views, filters, or formulas in Obsidian.",
+      "version": "",
+      "tags": []
+    },
+    "obsidian-cli": {
+      "category": "obsidian-cli",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/obsidian-cli/SKILL.md",
+      "claude_path": "skills/obsidian-cli/obsidian-cli.md",
+      "description": "Interact with Obsidian vaults using the Obsidian CLI to read, create, search, and manage notes, tasks, properties, and more. Also supports plugin and theme development with commands to reload plugins, run JavaScript, capture errors, take screenshots, and inspect the DOM. Use when the user asks to interact with their Obsidian vault, manage notes, search vault content, perform vault operations from the command line, or develop and debug Obsidian plugins and themes.",
+      "version": "",
+      "tags": []
+    },
+    "obsidian-markdown": {
+      "category": "obsidian-markdown",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/obsidian-markdown/SKILL.md",
+      "claude_path": "skills/obsidian-markdown/obsidian-markdown.md",
+      "description": "Create and edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, properties, and other Obsidian-specific syntax. Use when working with .md files in Obsidian, or when the user mentions wikilinks, callouts, frontmatter, tags, embeds, or Obsidian notes.",
+      "version": "",
+      "tags": []
+    },
+    "airtable": {
+      "category": "productivity",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/productivity/airtable/SKILL.md",
+      "claude_path": "skills/productivity/airtable.md",
+      "description": "Airtable REST API via curl. Records CRUD, filters, upserts.",
+      "version": "1.1.0",
+      "tags": [
+        "Airtable",
+        "Productivity",
+        "Database",
+        "API"
+      ]
+    },
+    "google-workspace": {
+      "category": "productivity",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/productivity/google-workspace/SKILL.md",
+      "claude_path": "skills/productivity/google-workspace.md",
+      "description": "Google OAuth2 client credentials (downloaded from Google Cloud Console)",
+      "version": "1.0.1",
+      "tags": [
+        "Google",
+        "Gmail",
+        "Calendar",
+        "Drive",
+        "Sheets",
+        "Docs",
+        "Contacts",
+        "Email",
+        "OAuth"
+      ]
+    },
+    "linear": {
+      "category": "productivity",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/productivity/linear/SKILL.md",
+      "claude_path": "skills/productivity/linear.md",
+      "description": "Linear: manage issues, projects, teams via GraphQL + curl.",
+      "version": "1.0.0",
+      "tags": [
+        "Linear",
+        "Project Management",
+        "Issues",
+        "GraphQL",
+        "API",
+        "Productivity"
+      ]
+    },
+    "maps": {
+      "category": "productivity",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/productivity/maps/SKILL.md",
+      "claude_path": "skills/productivity/maps.md",
+      "description": "Geocode, POIs, routes, timezones via OpenStreetMap/OSRM.",
+      "version": "1.2.0",
+      "tags": [
+        "maps",
+        "geocoding",
+        "places",
+        "routing",
+        "distance",
+        "directions",
+        "nearby",
+        "location",
+        "openstreetmap",
+        "nominatim",
+        "overpass",
+        "osrm"
+      ]
+    },
+    "nano-pdf": {
+      "category": "productivity",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/productivity/nano-pdf/SKILL.md",
+      "claude_path": "skills/productivity/nano-pdf.md",
+      "description": "Edit PDF text/typos/titles via nano-pdf CLI (NL prompts).",
+      "version": "1.0.0",
+      "tags": [
+        "PDF",
+        "Documents",
+        "Editing",
+        "NLP",
+        "Productivity"
+      ]
+    },
     "notion": {
       "category": "productivity",
       "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/productivity/notion/SKILL.md",
@@ -15,6 +1453,61 @@
         "Notes",
         "Database",
         "API"
+      ]
+    },
+    "ocr-and-documents": {
+      "category": "productivity",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/productivity/ocr-and-documents/SKILL.md",
+      "claude_path": "skills/productivity/ocr-and-documents.md",
+      "description": "Extract text from PDFs/scans (pymupdf, marker-pdf).",
+      "version": "2.3.0",
+      "tags": [
+        "PDF",
+        "Documents",
+        "Research",
+        "Arxiv",
+        "Text-Extraction",
+        "OCR"
+      ]
+    },
+    "powerpoint": {
+      "category": "productivity",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/productivity/powerpoint/SKILL.md",
+      "claude_path": "skills/productivity/powerpoint.md",
+      "description": "Create, read, edit .pptx decks, slides, notes, templates.",
+      "version": "",
+      "tags": []
+    },
+    "teams-meeting-pipeline": {
+      "category": "productivity",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/productivity/teams-meeting-pipeline/SKILL.md",
+      "claude_path": "skills/productivity/teams-meeting-pipeline.md",
+      "description": "Operate the Teams meeting summary pipeline via Hermes CLI \u2014 summarize meetings, inspect pipeline status, replay jobs, manage Microsoft Graph subscriptions.",
+      "version": "1.1.0",
+      "tags": [
+        "Teams",
+        "Microsoft Graph",
+        "Meetings",
+        "Productivity",
+        "Operations"
+      ]
+    },
+    "godmode": {
+      "category": "red-teaming",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/red-teaming/godmode/SKILL.md",
+      "claude_path": "skills/red-teaming/godmode.md",
+      "description": "Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN.",
+      "version": "1.0.0",
+      "tags": [
+        "jailbreak",
+        "red-teaming",
+        "G0DM0D3",
+        "Parseltongue",
+        "GODMODE",
+        "uncensoring",
+        "safety-bypass",
+        "prompt-engineering",
+        "L1B3RT4S"
       ]
     },
     "arxiv": {
@@ -32,6 +1525,202 @@
         "API"
       ]
     },
+    "blogwatcher": {
+      "category": "research",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/research/blogwatcher/SKILL.md",
+      "claude_path": "skills/research/blogwatcher.md",
+      "description": "Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool.",
+      "version": "2.0.0",
+      "tags": [
+        "RSS",
+        "Blogs",
+        "Feed-Reader",
+        "Monitoring"
+      ]
+    },
+    "llm-wiki": {
+      "category": "research",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/research/llm-wiki/SKILL.md",
+      "claude_path": "skills/research/llm-wiki.md",
+      "description": "Karpathy's LLM Wiki: build/query interlinked markdown KB.",
+      "version": "2.1.0",
+      "tags": [
+        "wiki",
+        "knowledge-base",
+        "research",
+        "notes",
+        "markdown",
+        "rag-alternative"
+      ]
+    },
+    "polymarket": {
+      "category": "research",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/research/polymarket/SKILL.md",
+      "claude_path": "skills/research/polymarket.md",
+      "description": "Query Polymarket: markets, prices, orderbooks, history.",
+      "version": "1.0.0",
+      "tags": []
+    },
+    "research-paper-writing": {
+      "category": "research",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/research/research-paper-writing/SKILL.md",
+      "claude_path": "skills/research/research-paper-writing.md",
+      "description": "Write ML papers for NeurIPS/ICML/ICLR: design\u2192submit.",
+      "version": "1.1.0",
+      "tags": [
+        "Research",
+        "Paper Writing",
+        "Experiments",
+        "ML",
+        "AI",
+        "NeurIPS",
+        "ICML",
+        "ICLR",
+        "ACL",
+        "AAAI",
+        "COLM",
+        "LaTeX",
+        "Citations",
+        "Statistical Analysis"
+      ]
+    },
+    "openhue": {
+      "category": "smart-home",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/smart-home/openhue/SKILL.md",
+      "claude_path": "skills/smart-home/openhue.md",
+      "description": "Control Philips Hue lights, scenes, rooms via OpenHue CLI.",
+      "version": "1.0.0",
+      "tags": [
+        "Smart-Home",
+        "Hue",
+        "Lights",
+        "IoT",
+        "Automation"
+      ]
+    },
+    "xurl": {
+      "category": "social-media",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/social-media/xurl/SKILL.md",
+      "claude_path": "skills/social-media/xurl.md",
+      "description": "X/Twitter via xurl CLI: post, search, DM, media, v2 API.",
+      "version": "1.1.1",
+      "tags": [
+        "twitter",
+        "x",
+        "social-media",
+        "xurl",
+        "official-api"
+      ]
+    },
+    "claude-code-guide": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/claude-code-guide/SKILL.md",
+      "claude_path": "skills/software-development/claude-code-guide.md",
+      "description": "Master guide for using Claude Code effectively. Includes configuration templates, prompting strategies \\\\\\\"Thinking\\\\\\\" keywords, debugging techniques, and best practices for interacting wit...",
+      "version": "",
+      "tags": []
+    },
+    "clean-code": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/clean-code/SKILL.md",
+      "claude_path": "skills/software-development/clean-code.md",
+      "description": "Applies principles from Robert C. Martin's 'Clean Code'. Use this skill when writing, reviewing, or refactoring code to ensure high quality, readability, and maintainability. Covers naming, functio...",
+      "version": "",
+      "tags": []
+    },
+    "code-reviewer": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/code-reviewer/SKILL.md",
+      "claude_path": "skills/software-development/code-reviewer.md",
+      "description": "Elite code review expert specializing in modern AI-powered code",
+      "version": "",
+      "tags": []
+    },
+    "concise-planning": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/concise-planning/SKILL.md",
+      "claude_path": "skills/software-development/concise-planning.md",
+      "description": "Use when a user asks for a plan for a coding task, to generate a clear, actionable, and atomic checklist.",
+      "version": "",
+      "tags": []
+    },
+    "context7": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/context7/SKILL.md",
+      "claude_path": "skills/software-development/context7.md",
+      "description": "Use Upstash Context7 to pull version-specific documentation and code examples from source repositories into LLM context. Connects via MCP server or REST API.",
+      "version": "1.0.0",
+      "tags": [
+        "mcp",
+        "documentation",
+        "context",
+        "upstash",
+        "context7"
+      ]
+    },
+    "daily-digest-builder": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/daily-digest-builder/SKILL.md",
+      "claude_path": "skills/software-development/daily-digest-builder.md",
+      "description": "Build automated daily digest systems with scraping, Telegram bots, and cron jobs. Use this skill when creating news aggregators, monitoring dashboards, scheduled report bots, or any recurring content-delivery pipeline.",
+      "version": "",
+      "tags": []
+    },
+    "dashboard-architect": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/dashboard-architect/SKILL.md",
+      "claude_path": "skills/software-development/dashboard-architect.md",
+      "description": ">",
+      "version": "1.0.0",
+      "tags": []
+    },
+    "debugging-hermes-tui-commands": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/debugging-hermes-tui-commands/SKILL.md",
+      "claude_path": "skills/software-development/debugging-hermes-tui-commands.md",
+      "description": "Debug Hermes TUI slash commands: Python, gateway, Ink UI.",
+      "version": "1.0.0",
+      "tags": [
+        "debugging",
+        "hermes-agent",
+        "tui",
+        "slash-commands",
+        "typescript",
+        "python"
+      ]
+    },
+    "error-handling-patterns": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/error-handling-patterns/SKILL.md",
+      "claude_path": "skills/software-development/error-handling-patterns.md",
+      "description": "Master error handling patterns across languages including exceptions, Result types, error propagation, and graceful degradation to build resilient applications. Use when implementing error handling...",
+      "version": "",
+      "tags": []
+    },
+    "frontend-developer": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/frontend-developer/SKILL.md",
+      "claude_path": "skills/software-development/frontend-developer.md",
+      "description": ">",
+      "version": "1.0.0",
+      "tags": []
+    },
+    "grill-me": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/grill-me/SKILL.md",
+      "claude_path": "skills/software-development/grill-me.md",
+      "description": "Interview the user relentlessly about a plan or design until reaching shared understanding, resolving each branch of the decision tree. Use when user wants to stress-test a plan, get grilled on their design, or mentions \"grill me\".",
+      "version": "",
+      "tags": []
+    },
+    "gt-centralized-system": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/gt-centralized-system/SKILL.md",
+      "claude_path": "skills/software-development/gt-centralized-system.md",
+      "description": ">",
+      "version": "1.0.0",
+      "tags": []
+    },
     "hermes-agent-skill-authoring": {
       "category": "software-development",
       "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/hermes-agent-skill-authoring/SKILL.md",
@@ -44,6 +1733,210 @@
         "hermes-agent",
         "conventions",
         "skill-md"
+      ]
+    },
+    "node-inspect-debugger": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/node-inspect-debugger/SKILL.md",
+      "claude_path": "skills/software-development/node-inspect-debugger.md",
+      "description": "Debug Node.js via --inspect + Chrome DevTools Protocol CLI.",
+      "version": "1.0.0",
+      "tags": [
+        "debugging",
+        "nodejs",
+        "node-inspect",
+        "cdp",
+        "breakpoints",
+        "ui-tui"
+      ]
+    },
+    "plan": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/plan/SKILL.md",
+      "claude_path": "skills/software-development/plan.md",
+      "description": "Plan mode: write markdown plan to .hermes/plans/, no exec.",
+      "version": "1.0.0",
+      "tags": [
+        "planning",
+        "plan-mode",
+        "implementation",
+        "workflow"
+      ]
+    },
+    "python-debugpy": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/python-debugpy/SKILL.md",
+      "claude_path": "skills/software-development/python-debugpy.md",
+      "description": "Debug Python: pdb REPL + debugpy remote (DAP).",
+      "version": "1.0.0",
+      "tags": [
+        "debugging",
+        "python",
+        "pdb",
+        "debugpy",
+        "breakpoints",
+        "dap",
+        "post-mortem"
+      ]
+    },
+    "requesting-code-review": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/requesting-code-review/SKILL.md",
+      "claude_path": "skills/software-development/requesting-code-review.md",
+      "description": "Pre-commit review: security scan, quality gates, auto-fix.",
+      "version": "2.0.0",
+      "tags": [
+        "code-review",
+        "security",
+        "verification",
+        "quality",
+        "pre-commit",
+        "auto-fix"
+      ]
+    },
+    "senior-engineer": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/senior-engineer/SKILL.md",
+      "claude_path": "skills/software-development/senior-engineer.md",
+      "description": "Senior software engineer patterns, code review, architecture decisions, and mentoring. Use this skill when designing systems, reviewing code at depth, making trade-off decisions, or guiding less experienced developers.",
+      "version": "",
+      "tags": []
+    },
+    "spike": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/spike/SKILL.md",
+      "claude_path": "skills/software-development/spike.md",
+      "description": "Throwaway experiments to validate an idea before build.",
+      "version": "1.0.0",
+      "tags": [
+        "spike",
+        "prototype",
+        "experiment",
+        "feasibility",
+        "throwaway",
+        "exploration",
+        "research",
+        "planning",
+        "mvp",
+        "proof-of-concept"
+      ]
+    },
+    "subagent-driven-development": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/subagent-driven-development/SKILL.md",
+      "claude_path": "skills/software-development/subagent-driven-development.md",
+      "description": "Execute plans via delegate_task subagents (2-stage review).",
+      "version": "1.1.0",
+      "tags": [
+        "delegation",
+        "subagent",
+        "implementation",
+        "workflow",
+        "parallel"
+      ]
+    },
+    "systematic-debugging": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/systematic-debugging/SKILL.md",
+      "claude_path": "skills/software-development/systematic-debugging.md",
+      "description": "4-phase root cause debugging: understand bugs before fixing.",
+      "version": "1.1.0",
+      "tags": [
+        "debugging",
+        "troubleshooting",
+        "problem-solving",
+        "root-cause",
+        "investigation"
+      ]
+    },
+    "test-driven-development": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/test-driven-development/SKILL.md",
+      "claude_path": "skills/software-development/test-driven-development.md",
+      "description": "TDD: enforce RED-GREEN-REFACTOR, tests before code.",
+      "version": "1.1.0",
+      "tags": [
+        "testing",
+        "tdd",
+        "development",
+        "quality",
+        "red-green-refactor"
+      ]
+    },
+    "testing-patterns": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/testing-patterns/SKILL.md",
+      "claude_path": "skills/software-development/testing-patterns.md",
+      "description": "Jest testing patterns, factory functions, mocking strategies, and TDD workflow. Use when writing unit tests, creating test factories, or following TDD red-green-refactor cycle.",
+      "version": "",
+      "tags": []
+    },
+    "writing-plans": {
+      "category": "software-development",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/software-development/writing-plans/SKILL.md",
+      "claude_path": "skills/software-development/writing-plans.md",
+      "description": "Write implementation plans: bite-sized tasks, paths, code.",
+      "version": "1.1.0",
+      "tags": [
+        "planning",
+        "design",
+        "implementation",
+        "workflow",
+        "documentation"
+      ]
+    },
+    "context-manager": {
+      "category": "superpowers",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/superpowers/context-manager/SKILL.md",
+      "claude_path": "skills/superpowers/context-manager.md",
+      "description": ">",
+      "version": "",
+      "tags": []
+    },
+    "deep-research": {
+      "category": "superpowers",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/superpowers/deep-research/SKILL.md",
+      "claude_path": "skills/superpowers/deep-research.md",
+      "description": "Execute autonomous multi-step research using Google Gemini Deep Research Agent. Use for: market analysis, competitive landscaping, literature reviews, technical research, due diligence. Takes 2-10 ...",
+      "version": "",
+      "tags": []
+    },
+    "memory-systems": {
+      "category": "superpowers",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/superpowers/memory-systems/SKILL.md",
+      "claude_path": "skills/superpowers/memory-systems.md",
+      "description": "Design short-term, long-term, and graph-based memory architectures",
+      "version": "",
+      "tags": []
+    },
+    "using-superpowers": {
+      "category": "superpowers",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/superpowers/using-superpowers/SKILL.md",
+      "claude_path": "skills/superpowers/using-superpowers.md",
+      "description": "Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying questions",
+      "version": "1.0.0",
+      "tags": [
+        "superpowers",
+        "skills",
+        "workflow",
+        "rules"
+      ]
+    },
+    "yuanbao": {
+      "category": "yuanbao",
+      "source": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/yuanbao/yuanbao/SKILL.md",
+      "claude_path": "skills/yuanbao/yuanbao.md",
+      "description": "Yuanbao (\u5143\u5b9d) groups: @mention users, query info/members.",
+      "version": "1.0.0",
+      "tags": [
+        "yuanbao",
+        "mention",
+        "at",
+        "group",
+        "members",
+        "\u5143\u5b9d",
+        "\u6d3e",
+        "\u827e\u7279"
       ]
     }
   }

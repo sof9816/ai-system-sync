@@ -99,3 +99,104 @@
     }
   ]
 }
+{
+  "generated_at": "2026-05-10T02:00:03.243325",
+  "suggestions": [
+    {
+      "type": "new_skill",
+      "skill": "senior-engineer",
+      "week": 19,
+      "count": 18,
+      "reason": "senior-engineer used 18 times in week 19"
+    },
+    {
+      "type": "model_change",
+      "reason": "Success rate 50.0% < 80%",
+      "current_rate": 50.0
+    },
+    {
+      "type": "thinking_adjust",
+      "reason": "3 token spikes > 2160",
+      "spikes": 3
+    },
+    {
+      "type": "provider_change",
+      "reason": "Avg response 12318ms > 8000ms",
+      "avg_ms": 12318.333333333334
+    },
+    {
+      "type": "dependency",
+      "package": "hermes-agent",
+      "latest": "error: HTTP Error 404: Not Found",
+      "action": "Check if hermes-agent needs upgrade to error: HTTP Error 404: Not Found"
+    },
+    {
+      "type": "dependency",
+      "package": "pi",
+      "latest": "0.1.2",
+      "action": "Check if pi needs upgrade to 0.1.2"
+    },
+    {
+      "type": "dependency",
+      "package": "dashboard",
+      "latest": "0.0.1",
+      "action": "Check if dashboard needs upgrade to 0.0.1"
+    }
+  ],
+  "stats": {
+    "sessions": 20,
+    "skills": {
+      "senior-engineer": 18
+    },
+    "errors": {
+      "PermissionDeniedError": 1,
+      "OpenAI PermissionDenied": 1,
+      "403 Forbidden": 1,
+      "Access Terminated": 1,
+      "Missing File": 2,
+      "Playback Failed": 2,
+      "Sandbox Restriction": 1,
+      "Stat Path Failure": 1,
+      "CoreData Error": 1,
+      "Xcode Signing": 1,
+      "Swift Main Attribute": 1
+    }
+  },
+  "research": [
+    {
+      "source": "r/LocalLLaMA (mock)",
+      "title": "New budget inference provider drops GPT-4-class pricing to $0.30/M tokens",
+      "category": "cost_effective_api",
+      "priority": "high",
+      "action": "Evaluate new provider for GT system integration"
+    },
+    {
+      "source": "r/ClaudeAI (mock)",
+      "title": "Claude 4 Sonnet released with 200k context and tool use improvements",
+      "category": "model_release",
+      "priority": "high",
+      "action": "Update model aliases and test compatibility"
+    },
+    {
+      "source": "r/LocalLLaMA (mock)",
+      "title": "MCP (Model Context Protocol) skills trending \u2014 40% more repos this month",
+      "category": "new_skill_category",
+      "priority": "medium",
+      "action": "Consider adding MCP skill support to GT"
+    },
+    {
+      "source": "r/ClaudeAI (mock)",
+      "title": "OpenAI deprecates GPT-3.5-turbo-0613 in 60 days",
+      "category": "model_deprecation",
+      "priority": "high",
+      "action": "Audit and migrate any GPT-3.5-turbo-0613 references"
+    },
+    {
+      "source": "r/LocalLLaMA (mock)",
+      "title": "Kimi k2.6 tops coding benchmarks \u2014 15% better than Claude 3.7 Sonnet",
+      "category": "performance_benchmark",
+      "priority": "medium",
+      "action": "Benchmark Kimi k2.6 against current GT default model"
+    }
+  ]
+}

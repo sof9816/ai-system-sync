@@ -33,7 +33,21 @@ except ImportError as _imp_err:
 
 AGENT_HOME = Path("/Users/gt/Public/MyFiles/agent-home")
 AGENTS_DIR = AGENT_HOME / "agents"
+SKILLS_REPO = AGENT_HOME / "gt-core" / "skills-repo"
 OBSIDIAN_BASE = Path.home() / "Library/Mobile Documents/iCloud~md~obsidian/Documents/GT Vault/hermes/agents"
+
+# Skill search paths (highest priority first)
+SKILL_SEARCH_ROOTS: list[Path] = [
+    AGENT_HOME / "skills",
+    Path.home() / ".kimi" / "skills",
+    Path.home() / ".claude" / "skills",
+    Path.home() / ".agents" / "skills",
+    Path.home() / ".hermes" / "skills",
+    SKILLS_REPO,
+]
+
+_IOS_INDICATORS = [".xcodeproj", ".xcworkspace", "Package.swift", "Podfile"]
+_IOS_SKILLS = ["ios-developer", "xcode-build-orchestrator", "miswag-ios-developer"]
 
 # Valid agent names from disk configs
 _VALID_AGENTS = {f.stem for f in AGENTS_DIR.glob("*.yaml")}
@@ -48,6 +62,79 @@ def _validate_agents(agent_names: List[str]) -> List[str]:
         else:
             print(f"[⚠] Agent '{name}' not found in {AGENTS_DIR} — skipping", file=sys.stderr)
     return valid
+
+
+def _is_ios_project(cwd: Path | None = None) -> bool:
+    """Detect if the current working directory is an iOS project."""
+    root = cwd or Path.cwd()
+    # Walk up to find project root (nearest .git or filesystem root)
+    current = root.resolve()
+    while True:
+        for indicator in _IOS_INDICATORS:
+            if list(current.glob(indicator)):
+                return True
+        # Also check for significant Swift file presence
+        if list(current.glob("*.swift")):
+            return True
+        parent = current.parent
+        if parent == current:
+            break
+        current = parent
+    return False
+
+
+def _find_skill_path(skill_name: str) -> Path | None:
+    """Search for a skill directory or file across all skill roots.
+
+    Supports canonical layout ``<root>/<name>/SKILL.md``, flat layout
+    ``<root>/<name>.md``, and one extra level of category nesting
+    ``<root>/<category>/<name>/SKILL.md`` (used in the skills-repo).
+    """
+    for root in SKILL_SEARCH_ROOTS:
+        if not root.exists():
+            continue
+        # 1. Canonical subdirectory layout
+        canonical = root / skill_name / "SKILL.md"
+        if canonical.exists():
+            return canonical
+        # 2. Flat .md layout
+        flat = root / f"{skill_name}.md"
+        if flat.exists():
+            return flat
+        # 3. One-level category nesting (e.g. creative/caveman)
+        for category_dir in root.iterdir():
+            if not category_dir.is_dir():
+                continue
+            nested = category_dir / skill_name / "SKILL.md"
+            if nested.exists():
+                return nested
+    return None
+
+
+def load_skill_text(skill_name: str) -> str | None:
+    """Load the raw text of a skill by name."""
+    path = _find_skill_path(skill_name)
+    if path is None:
+        return None
+    try:
+        return path.read_text(encoding="utf-8")
+    except OSError:
+        return None
+
+
+def resolve_skills(config: dict, cwd: Path | None = None) -> list[str]:
+    """Return the final list of skill names for an agent config.
+
+    Starts with the explicit ``skills`` list from the config and appends
+    iOS-specific skills when running inside an iOS project.
+    """
+    skills = list(config.get("skills", []))
+    if _is_ios_project(cwd):
+        for s in _IOS_SKILLS:
+            if s not in skills:
+                skills.append(s)
+    return skills
+
 
 # Load API keys from ~/.hermes/.env if not already in environment
 def _load_env_from_hermes():
@@ -164,14 +251,65 @@ def append_memory(agent_name: str, role: str, content: str):
 
 
 def build_system_prompt(config: dict) -> str:
-    """Build the full system prompt for an agent."""
+    """Build the full system prompt for an agent.
+
+    Injects skill contents from the agent's ``skills`` list (plus iOS auto-detected
+    skills) ahead of the base system prompt so the agent behaves according to the
+    loaded guidelines.
+    """
     base = config.get("system_prompt", "")
-    # Load recent memory
     name = config["name"]
+
+    # Load skills
+    skill_names = resolve_skills(config)
+    loaded_skills: list[tuple[str, str]] = []
+    missing_skills: list[str] = []
+    for skill_name in skill_names:
+        text = load_skill_text(skill_name)
+        if text is not None:
+            loaded_skills.append((skill_name, text))
+        else:
+            missing_skills.append(skill_name)
+
+    parts: list[str] = []
+
+    # Prepend loaded skills
+    if loaded_skills:
+        parts.append("## Loaded Skills\n")
+        parts.append(
+            "The following skills have been automatically loaded and MUST be "
+            "followed for this conversation:\n"
+        )
+        for skill_name, text in loaded_skills:
+            parts.append(f"\n### Skill: {skill_name}\n")
+            parts.append(text)
+        parts.append("\n---\n")
+
+    if missing_skills:
+        parts.append(
+            f"\n[⚠] The following skills were requested but could not be found: "
+            f"{', '.join(missing_skills)}\n"
+        )
+
+    # iOS context hint
+    if _is_ios_project():
+        parts.append(
+            "\n[iOS Project Detected] This workspace appears to be an iOS project. "
+            "iOS-specific skills have been loaded above.\n"
+        )
+
+    parts.append(base)
+
+    # Load recent memory
     memory = read_memory(name, max_lines=80)
     if memory:
-        base += f"\n\n## Recent Context (your memory)\n\n{memory}\n\nUse this context to maintain continuity. Do not repeat information already established unless necessary."
-    return base
+        parts.append(
+            f"\n\n## Recent Context (your memory)\n\n{memory}\n\n"
+            "Use this context to maintain continuity. "
+            "Do not repeat information already established unless necessary."
+        )
+
+    return "\n".join(parts)
 
 
 def create_client() -> OpenAI:

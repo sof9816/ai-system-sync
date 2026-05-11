@@ -1,0 +1,36 @@
+name: agents
+type: yaml-configs
+description: GT Agent Configurations — YAML persona definitions for the multi-agent swarm
+skills:
+  - yaml-processing
+  - prompt-engineering
+  - agent-design
+  - system-architecture
+agents:
+  - architect
+  - cto
+  - coo
+  - cfo
+  - cmo
+  - researcher
+  - reviewer
+  - orchestrator
+version: "0.1.0"
+author: "GT System"
+gt_system:
+  project_id: agents
+  memory_vault: "GT Vault/projects/agents"
+  category: core-infrastructure
+  priority: high
+  tags:
+    - agents
+    - personas
+    - configs
+    - swarm
+  related_projects:
+    - swarm
+    - gt-core
+    - dashboard
+  notes: |
+    YAML agent persona definitions consumed by swarm.py.
+    Each file defines an agent role, skills, and behavioral instructions.

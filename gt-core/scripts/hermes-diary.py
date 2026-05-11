@@ -11,16 +11,19 @@ Usage:
     cat session.json | python hermes-diary.py --stdin
 """
 
+from __future__ import annotations
 import argparse
 import json
 import os
 import re
 import sqlite3
 import sys
+import subprocess
+import yaml
 from collections import Counter
 from datetime import date, datetime, timedelta
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
 # ── Configuration ───────────────────────────────────────────────────────────
 

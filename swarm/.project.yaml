@@ -1,0 +1,35 @@
+name: swarm
+type: python
+description: GT Swarm — Permanent Specialized Agents orchestrator for multi-agent workflows
+skills:
+  - python
+  - openai-api
+  - multi-agent-orchestration
+  - cli-tools
+agents:
+  - orchestrator
+  - cto
+  - architect
+  - researcher
+  - reviewer
+  - coo
+  - cfo
+  - cmo
+version: "0.1.0"
+author: "GT System"
+gt_system:
+  project_id: swarm
+  memory_vault: "GT Vault/projects/swarm"
+  category: core-infrastructure
+  priority: high
+  tags:
+    - agents
+    - orchestration
+    - ai
+  related_projects:
+    - dashboard
+    - gt-core
+    - agents
+  notes: |
+    Multi-agent orchestrator using Kimi (OpenAI-compatible API).
+    Loads agent configs from agents/ directory and dispatches tasks.

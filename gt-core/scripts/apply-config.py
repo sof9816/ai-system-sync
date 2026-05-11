@@ -20,9 +20,17 @@ import shutil
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
-import yaml
+try:
+    import yaml
+except ImportError:
+    VENV_PYTHON = Path("/Users/gt/Public/MyFiles/agent-home/dashboard/backend/venv/bin/python3")
+    if VENV_PYTHON.exists():
+        os.execv(str(VENV_PYTHON), [str(VENV_PYTHON), __file__] + sys.argv[1:])
+    else:
+        print("Error: pyyaml is required. Install with: pip install pyyaml")
+        sys.exit(1)
 
 AGENT_HOME = Path("/Users/gt/Public/MyFiles/agent-home")
 CONFIG_PATH = AGENT_HOME / "gt-core/config/gt-config.yaml"
@@ -33,6 +41,7 @@ TARGETS = {
     "ghostty": Path.home() / ".config/ghostty/config",
     "zshrc": Path.home() / ".zshrc",
     "dashboard_env": AGENT_HOME / "dashboard/backend/.env",
+    "agents_md": AGENT_HOME / "AGENTS.md",
 }
 
 OBSIDIAN_VAULT = Path.home() / "Library/Mobile Documents/iCloud~md~obsidian/Documents/GT Vault"
@@ -80,7 +89,9 @@ def load_text(path: Path) -> str:
         return ""
 
 
-def backup(path: Path) -> Path:
+def backup(path: Path) -> Optional[Path]:
+    if not path.exists():
+        return None
     ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
     bak = path.parent / f"{path.name}.bak.{ts}"
     shutil.copy2(path, bak)
@@ -168,6 +179,7 @@ def build_hermes_config(gt: dict) -> dict:
     ai = gt.get("ai", {})
     providers = gt.get("providers", {})
     agents = gt.get("agents", {})
+    skills_config = gt.get("skills", {})
 
     # Find primary provider details
     primary = ai.get("primary_provider", "kimi-coding")
@@ -184,18 +196,21 @@ def build_hermes_config(gt: dict) -> dict:
     }
 
     # Map provider base_url / api_key_env into hermes auxiliary/provider blocks
-    # Hermes uses openrouter block, bedrock block, etc. We set generic provider blocks.
     for name, info in providers.items():
         if info.get("active"):
-            # Hermes doesn't have a generic provider dict; we inject under a custom key
-            # or update known blocks. For now, we document in a gt_providers map.
             pass
 
-    # Skills dir from agents.hermes
+    # Skills dir + default skills
     hermes_agent = agents.get("hermes", {})
     skills_dir = hermes_agent.get("skills_dir")
+    default_skills = skills_config.get("default", [])
     if skills_dir:
-        updates["skills"] = {"external_dirs": [skills_dir]}
+        updates["skills"] = {
+            "external_dirs": [skills_dir, "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo"],
+            "auto_load": default_skills,
+        }
+    if default_skills:
+        updates["agent"]["default_skills"] = default_skills
 
     return updates
 
@@ -205,11 +220,16 @@ def build_pi_config(gt: dict) -> dict:
     ai = gt.get("ai", {})
     agents = gt.get("agents", {})
     pi_agent = agents.get("pi", {})
+    skills_config = gt.get("skills", {})
 
     return {
         "defaultProvider": ai.get("primary_provider", "kimi-coding"),
         "defaultModel": ai.get("model", "kimi-k2.6"),
-        "skills": [pi_agent.get("skills_dir", "~/.hermes/skills")],
+        "skills": [
+            pi_agent.get("skills_dir", "~/.hermes/skills"),
+            "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo",
+        ],
+        "defaultSkills": skills_config.get("default", []),
         "defaultThinkingLevel": ai.get("thinking", "medium"),
     }
 
@@ -250,15 +270,23 @@ def build_zshrc(gt: dict, existing: str) -> str:
     """Inject/update GT aliases block in ~/.zshrc."""
     agents = gt.get("agents", {})
     ai = gt.get("ai", {})
+    skills_config = gt.get("skills", {})
+    default_skills = skills_config.get("default", [])
 
     aliases = [
         f'alias ai="hermes"',
         f'alias ai-ios="hermes --skill miswag-ios-developer"',
         f'alias ai-review="hermes --skill code-reviewer"',
         f'alias ai-arch="hermes --skill architecture"',
-        f'alias code-ai="pi --provider {ai.get("primary_provider", "kimi-coding")} --model {ai.get("model", "kimi-k2.6")}"',
-        f'alias code-ios="pi --provider {ai.get("primary_provider", "kimi-coding")} --model {ai.get("model", "kimi-k2.6")} --skill swiftui-pro"',
+        f'alias pi-start="/Users/gt/Public/MyFiles/agent-home/gt-core/scripts/pi-start.py"',
+        f'alias code-ai="pi-start --provider {ai.get("primary_provider", "kimi-coding")} --model {ai.get("model", "kimi-k2.6")}"',
     ]
+
+    # Add skill-bundle aliases (pi-start auto-detects project type, so these are overrides)
+    for project_type, bundle in skills_config.get("project_bundles", {}).items():
+        bundle_str = ",".join(bundle)
+        aliases.append(f'alias ai-{project_type}="hermes --skill {bundle_str}"')
+        aliases.append(f'alias code-{project_type}="pi-start --provider {ai.get("primary_provider", "kimi-coding")} --model {ai.get("model", "kimi-k2.6")} --no-auto-skills --skill {bundle_str}"')
 
     # Swarm aliases if swarm dir exists
     swarm_dir = AGENT_HOME / "swarm"
@@ -285,6 +313,66 @@ def build_zshrc(gt: dict, existing: str) -> str:
 
     # Append new block at end
     return cleaned.rstrip("\n") + "\n\n" + block + "\n"
+
+
+def build_agents_md(gt: dict, existing: str) -> str:
+    """Generate/update AGENTS.md with default skill loading instructions."""
+    skills_config = gt.get("skills", {})
+    default_skills = skills_config.get("default", [])
+    project_bundles = skills_config.get("project_bundles", {})
+    auto_update = skills_config.get("auto_update", [])
+
+    lines = [
+        "# GT Agent Skills — Auto-Load Configuration",
+        "",
+        "> This file is auto-generated by `apply-config.py`. Do not edit manually.",
+        "",
+        "## Default Skills (Every Chat)",
+        "",
+        "At the start of each new chat, the following skills MUST be invoked automatically:",
+        "",
+    ]
+    for skill in default_skills:
+        lines.append(f"- `{skill}`")
+    lines.extend([
+        "",
+        "## Project-Specific Skill Bundles",
+        "",
+        "If the current project matches a known type, also load its bundle:",
+        "",
+    ])
+    for project_type, bundle in project_bundles.items():
+        lines.append(f"### {project_type}")
+        for skill in bundle:
+            lines.append(f"- `{skill}`")
+        lines.append("")
+
+    if auto_update:
+        lines.extend([
+            "## Auto-Update Skills",
+            "",
+            "These skills are automatically updated from the skills-repo when project context changes:",
+            "",
+        ])
+        for skill in auto_update:
+            lines.append(f"- `{skill}`")
+        lines.append("")
+
+    lines.extend([
+        "## Usage in Claude Code",
+        "",
+        "Use the `Skill` tool to invoke each skill before any response.",
+        "For pi.dev: pass `--skill <name>` or set `defaultSkills` in settings.json.",
+        "For Hermes: skills are auto-loaded via `skills.auto_load` in config.yaml.",
+        "",
+        "## Project Detection",
+        "",
+        "Run `python3 gt-core/scripts/project-detect.py .` to detect project type.",
+        "Run `python3 gt-core/scripts/update-project-context.py --apply` to update local context.",
+        "",
+    ])
+
+    return "\n".join(lines) + "\n"
 
 
 def build_dashboard_env(gt: dict, existing: str) -> str:
@@ -448,7 +536,18 @@ def main() -> int:
     else:
         log("zshrc: no changes needed")
 
-    # 6. Dashboard .env
+    # 6. AGENTS.md
+    agents_md_path = TARGETS["agents_md"]
+    old_agents_md = load_text(agents_md_path)
+    new_agents_md = build_agents_md(gt, old_agents_md)
+    agents_md_diff = diff_text(old_agents_md, new_agents_md, "agents_md")
+    all_changes.append({"target": "agents_md", "path": str(agents_md_path), "diff": agents_md_diff})
+    if agents_md_diff:
+        write_text(agents_md_path, new_agents_md, dry_run)
+    else:
+        log("agents_md: no changes needed")
+
+    # 7. Dashboard .env
     env_path = TARGETS["dashboard_env"]
     old_env = load_text(env_path)
     new_env = build_dashboard_env(gt, old_env)
@@ -459,7 +558,7 @@ def main() -> int:
     else:
         log("dashboard_env: no changes needed")
 
-    # 7. Obsidian summary
+    # 8. Obsidian summary
     write_obsidian_summary(all_changes, dry_run)
 
     # 8. Structured stdout summary

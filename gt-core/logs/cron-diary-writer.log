@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/gt/Public/MyFiles/agent-home/gt-core/scripts/hermes-diary.py", line 48, in <module>
+    def fetch_sessions(day: date, project: str | None = None) -> list[dict[str, Any]]:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+/Users/gt/Library/Mobile Documents/iCloud~md~obsidian/Documents/GT Vault/hermes/diary/2026-05-10.md

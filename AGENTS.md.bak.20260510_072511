@@ -1,0 +1,24 @@
+# AGENTS.md — agent-home
+
+**Type:** `c`  
+**Path:** `/Users/gt/Public/MyFiles/agent-home`  
+**Generated:** 2026-05-10T07:21:53.199699+00:00Z
+
+## Default Skills (Auto-Load)
+
+These skills MUST be invoked at the start of every chat in this project:
+
+- `caveman`
+- `brainstorming`
+- `obsidian`
+- `grill-me`
+- `context7`
+
+## Instructions
+
+1. At the start of EVERY chat, invoke the `Skill` tool for each skill listed above.
+2. If a skill is missing from the environment, run the sync script:
+   `python3 /Users/gt/Public/MyFiles/agent-home/gt-core/scripts/sync-skills.py`
+3. Update this file by running:
+   `python3 /Users/gt/Public/MyFiles/agent-home/gt-core/scripts/update-project-context.py --apply`
+

@@ -1,0 +1,33 @@
+name: gt-core
+type: python
+description: GT Core — system scripts, skill management, config validation, and integration tooling
+skills:
+  - python
+  - shell-scripting
+  - yaml-processing
+  - config-management
+  - automation
+agents:
+  - python-dev
+  - devops
+  - backend-dev
+version: "0.1.0"
+author: "GT System"
+gt_system:
+  project_id: gt-core
+  memory_vault: "GT Vault/projects/gt-core"
+  category: core-infrastructure
+  priority: critical
+  tags:
+    - scripts
+    - tooling
+    - skills
+    - config
+  related_projects:
+    - dashboard
+    - swarm
+    - daily-digest
+    - agents
+  notes: |
+    Central system tooling repository. Contains project-detect, skill bundling,
+    config validation, Hermes diary, upgrade scripts, and integration tests.

@@ -33,6 +33,7 @@ JOBS = [
     ("0 2 * * *", "hermes-upgrade", f"cd {BASE_DIR} && python3 {SCRIPTS_DIR}/hermes-upgrade.py --dry-run"),
     ("0 3 * * *", "diary-writer", f"cd {BASE_DIR} && python3 {SCRIPTS_DIR}/hermes-diary.py --today"),
     ("0 4 * * 0", "project-detect", f"cd {BASE_DIR} && python3 {SCRIPTS_DIR}/project-detect.py --register"),
+    ("0 8 * * *", "daily-digest", f"cd {BASE_DIR}/../projects/daily-digest && python3 daily-digest.py"),
 ]
 
 

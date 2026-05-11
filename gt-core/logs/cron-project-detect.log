@@ -1,0 +1,2 @@
+usage: project-detect.py [-h] [--register] directory
+project-detect.py: error: the following arguments are required: directory

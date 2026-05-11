@@ -334,6 +334,21 @@ def export_skills(
         f"This file contains {len(all_skills)} skills exported from the GT skills repository."
     )
     master_parts.append("")
+    master_parts.append("## Default Skill Loading")
+    master_parts.append("")
+    master_parts.append("At the start of EVERY chat, you MUST auto-invoke these skills using the `Skill` tool:")
+    master_parts.append("")
+    master_parts.append("- `caveman` — ultra-compressed communication mode")
+    master_parts.append("- `brainstorming` — creative exploration before implementation")
+    master_parts.append("- `obsidian` — note-taking and knowledge management")
+    master_parts.append("- `grill-me` — stress-test plans and designs")
+    master_parts.append("- `context7` — pull version-specific documentation")
+    master_parts.append("")
+    master_parts.append("If the project is iOS, ALSO load the iOS bundle (including `miswag-ios-developer`).")
+    master_parts.append("Project type is read from `.project.yaml` or auto-detected via `project-detect.py`.")
+    master_parts.append("")
+    master_parts.append("---")
+    master_parts.append("")
 
     for skill_path, fm, body in all_skills:
         skill_name = fm.get("name", skill_path.parent.name)
