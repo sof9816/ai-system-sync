@@ -11,19 +11,3 @@ pi.dev CLI chokes on large prompts. Use task files (one file, <3000 chars). Game
 Zone Daily Briefing: Hermes cron at 10 AM, 18 categories, 70+ feeds, Stalker theme. Script at gt-core/scripts/daily-digest.py, copied to ~/.hermes/scripts/. GT prefers clean one-line links: `• [Title](link)`, no summary fragments.
 §
 GT Core skills repo is single source of truth. Hermes (`~/.hermes/skills/`) and pi.dev (`~/.agents/skills/`) are symlinks to `/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/`. `skills.external_dirs` also points to repo. Sync script detects symlinks and skips copy. All skills must be created in repo and committed.
-§
-Nate Herk Framework (Hermes best practices):
-→ GitHub backup cron: nightly push of skills + memory to private repo. Non-negotiable.
-→ Agent-per-role: split when agent needs own creds, memory, or ongoing separate role. Main personal first, then spin off.
-→ Security: named API keys per agent, least privilege, firewall, nightly security audit skill.
-→ Wrong twice on same thing → correct on spot + update skill/memory.
-→ Same instruction twice → write a skill.
-→ Verbose/off-tone → edit soul.
-→ New scheduled task → build skill first, then cron it.
-→ Something breaks → check memory.md first (stale memory = #1 cause of weird behavior).
-→ Dashboard opening: save as skill for 3-command future access.
-→ Never paste API keys in chat. Use `hermes config set KEY value`.
-→ Telegram = remote control (quick tasks, voice, crons). CLI = cockpit (deep work, coding). Don't vibe-code from Telegram — context rot invisible there.
-→ Auto-compaction threshold ~136K tokens. When it fires, Hermes inserts fallback marker. Ask "explain this" if unclear.
-→ Soul.md shapes personality per agent. This agent = terse/direct/no-fluff.
-→ Skills need sharp YAML front matter. If agent doesn't invoke skill when expected, tell it: "Update YAML front matter so this triggers when I say X."
