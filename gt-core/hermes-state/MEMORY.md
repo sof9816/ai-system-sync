@@ -8,6 +8,6 @@ System Python 3 default is Homebrew 3.14.2, which breaks pydantic-core (PyO3 max
 §
 pi.dev CLI chokes on large prompts. Use task files (one file, <3000 chars). Game dev workflow: check git, grill-me before planning, document in Obsidian, spawn pi.dev for code, swarm max 3, check .cursor/rules/. Final Escape Godot: /Users/gt/Public/MyFiles/06-GameDev/final-escape-g. Vector-neon=default SVG skin (flat). Original PNG=profile-only. Cosmic/Cyberpunk=paid. New power-ups need vector-neon integration. a0=old/unused. Test screens: debug-only, simple, power-ups spawn lower half away from asteroid path.
 §
-Zone Daily Briefing: Hermes cron at 10 AM, 18 categories, 70+ feeds, Stalker theme. Script at gt-core/scripts/daily-digest.py, copied to ~/.hermes/scripts/. GT prefers clean one-line links: `• [Title](link)`, no summary fragments.
+Windows home PC: 192.168.68.113. WSL2 Ubuntu (172.23.233.209) via port 2222. User gt, pass 1234. Migration package at /Users/gt/Public/MyFiles/agent-home/windows-migration/.
 §
 GT Core skills repo is single source of truth. Hermes (`~/.hermes/skills/`) and pi.dev (`~/.agents/skills/`) are symlinks to `/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo/`. `skills.external_dirs` also points to repo. Sync script detects symlinks and skips copy. All skills must be created in repo and committed.
