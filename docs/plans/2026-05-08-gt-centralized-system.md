@@ -548,7 +548,7 @@ python3 gt-core/scripts/switch-provider.py openrouter
 
 **Step 2:** Save to Obsidian
 ```
-GT Vault/hermes/diary/2026-05-08.md
+Hermes Vault/Hermes/diary/2026-05-08.md
 ```
 
 ---

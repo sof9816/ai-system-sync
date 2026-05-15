@@ -1,6 +1,6 @@
 # GT Centralized System — pi.dev Integration (Quick Summary)
 
-> **Path:** `/Users/gt/Public/MyFiles/agent-home/GT Vault/hermes/system/pi-dev-integration.md`
+> **Path:** `/Users/gt/Public/MyFiles/agent-home/Hermes Vault/Hermes/system/pi-dev-integration.md`
 > **Full Guide:** `/Users/gt/Public/MyFiles/agent-home/docs/PI_DEV_GUIDE.md`
 
 ---
@@ -28,7 +28,7 @@ A quick-reference summary for pi.dev (the lead coding agent / CTO) on how to int
 | **Scripts** | `gt-core/scripts/*.py` |
 | **Projects** | `projects/` |
 | **Dashboard** | `dashboard/` (http://localhost:7373) |
-| **Vault** | `GT Vault/hermes/` |
+| **Vault** | `Hermes Vault/Hermes/` |
 
 ---
 

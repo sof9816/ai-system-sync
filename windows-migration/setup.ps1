@@ -194,11 +194,11 @@ if (-not (Test-Path $ObsidianVault)) {
     Write-Host "  Obsidian vault already exists"
 }
 
-# Copy GT Vault contents if present in agent-home
-$gtVaultSource = "$AgentHome\GT Vault"
+# Copy Hermes Vault contents if present in agent-home
+$gtVaultSource = "$AgentHome\Hermes Vault"
 if (Test-Path $gtVaultSource) {
     Copy-Item -Path "$gtVaultSource\*" -Destination $ObsidianVault -Recurse -Force
-    Write-Host "  Copied GT Vault contents"
+    Write-Host "  Copied Hermes Vault contents"
 }
 
 # ============================================

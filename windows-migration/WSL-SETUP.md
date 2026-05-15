@@ -113,7 +113,7 @@ Access from Windows browser at `http://localhost:3000` (WSL forwards ports autom
 
 Install Obsidian on **Windows** (not WSL). Point vault to:
 - `C:\Users\<you>\Documents\Obsidian Vault` (Windows path)
-- Or `\\wsl$\Ubuntu\home\<you>\agent-home\GT Vault` (WSL path)
+- Or `\\wsl$\Ubuntu\home\<you>\agent-home\Hermes Vault` (WSL path)
 
 ## 8. API Keys
 

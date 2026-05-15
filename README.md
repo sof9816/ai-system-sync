@@ -12,7 +12,7 @@ One place for everything. Hermes + Pi + Kimi + Obsidian + Swarm Agents.
 | **Pi** | Coding agent, file editing, project work | `code-ai "task"` |
 | **Swarm** | Permanent specialized agents (CFO, CTO, etc.) | `agent`, `swarm` |
 | **Kimi** | LLM backend (K2.6) | All of the above |
-| **Obsidian** | Persistent memory, knowledge base, notes | `~/GT Vault/hermes/` |
+| **Obsidian** | Persistent memory, knowledge base, notes | `~/Hermes Vault/Hermes/` |
 | **Dashboard** | Unified web control panel | `./run-dashboard.sh` |
 
 ## Quick Start
@@ -72,7 +72,7 @@ code-ai "refactor this function to use async/await"
 Every agent has persistent memory in Obsidian:
 
 ```
-GT Vault/hermes/
+Hermes Vault/Hermes/
 ├── System Memory — GT AI Dashboard v0.3.0.md
 ├── agents/
 │   ├── cto/

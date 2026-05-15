@@ -15,7 +15,7 @@ AGENT_HOME = Path("/Users/gt/Public/MyFiles/agent-home")
 SKILLS_REPO = AGENT_HOME / "gt-core/skills-repo"
 CONFIG_FILE = AGENT_HOME / "gt-core/config/gt-config.yaml"
 DB_PATH = AGENT_HOME / "dashboard/backend/data/app.db"
-VAULT_PATH = Path("/Users/gt/Library/Mobile Documents/iCloud~md~obsidian/Documents/GT Vault")
+VAULT_PATH = Path("/Users/gt/Library/Mobile Documents/iCloud~md~obsidian/Documents/Hermes")
 
 
 def run(cmd, **kwargs):

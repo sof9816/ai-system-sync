@@ -11,7 +11,7 @@ version: "0.1.0"
 author: "GT System"
 gt_system:
   project_id: pi
-  memory_vault: "GT Vault/projects/pi"
+  memory_vault: "Hermes Vault/pi"
   category: core-infrastructure
   priority: medium
   tags:

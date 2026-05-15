@@ -5,7 +5,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timedelta
 
 DB = os.path.expanduser("/Users/gt/Public/MyFiles/agent-home/dashboard/data/dashboard.db")
-OBSIDIAN = os.path.expanduser("/Users/gt/Public/MyFiles/agent-home/GT Vault/hermes/system/upgrade-suggestions.md")
+OBSIDIAN = os.path.expanduser("/Users/gt/Public/MyFiles/agent-home/Hermes Vault/Hermes/system/upgrade-suggestions.md")
 
 def fetch(query, params=()):
     if not os.path.exists(DB):

@@ -10,7 +10,7 @@ version: "0.1.0"
 author: "GT System"
 gt_system:
   project_id: hermes
-  memory_vault: "GT Vault/projects/hermes"
+  memory_vault: "Hermes Vault/hermes"
   category: core-infrastructure
   priority: critical
   tags:

@@ -19,7 +19,7 @@ version: "0.1.0"
 author: "GT System"
 gt_system:
   project_id: agents
-  memory_vault: "GT Vault/projects/agents"
+  memory_vault: "Hermes Vault/agents"
   category: core-infrastructure
   priority: high
   tags:

@@ -33,8 +33,8 @@ GET /api/agents          → 8 agents online
 3. **Unified project creation** — Single "New Project" button, single prompt textarea
 
 ### Obsidian Notes Updated
-- `GT Vault/hermes/agents/pi/memory.md` — Added CarPlaySounds project entry
-- `GT Vault/hermes/agents/pi/projects.md` — Full work log of dashboard overhaul
+- `Hermes Vault/Hermes/agents/pi/memory.md` — Added CarPlaySounds project entry
+- `Hermes Vault/Hermes/agents/pi/projects.md` — Full work log of dashboard overhaul
 
 ### Architecture Docs
 - `dashboard/docs/ARCHITECTURE.md` — Complete system architecture, API routes, data models, design decisions

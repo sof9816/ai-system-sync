@@ -34,7 +34,7 @@ except ImportError as _imp_err:
 AGENT_HOME = Path("/Users/gt/Public/MyFiles/agent-home")
 AGENTS_DIR = AGENT_HOME / "agents"
 SKILLS_REPO = AGENT_HOME / "gt-core" / "skills-repo"
-OBSIDIAN_BASE = Path.home() / "Library/Mobile Documents/iCloud~md~obsidian/Documents/GT Vault/hermes/agents"
+OBSIDIAN_BASE = Path.home() / "Library/Mobile Documents/iCloud~md~obsidian/Documents/Hermes/Hermes/02 Agents"
 
 # Skill search paths (highest priority first)
 SKILL_SEARCH_ROOTS: list[Path] = [

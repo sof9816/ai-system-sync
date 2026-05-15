@@ -44,7 +44,7 @@ TARGETS = {
     "agents_md": AGENT_HOME / "AGENTS.md",
 }
 
-OBSIDIAN_VAULT = Path.home() / "Library/Mobile Documents/iCloud~md~obsidian/Documents/GT Vault"
+OBSIDIAN_VAULT = Path.home() / "Library/Mobile Documents/iCloud~md~obsidian/Documents/Hermes"
 OBSIDIAN_LOG = OBSIDIAN_VAULT / "hermes/system/config-history.md"
 
 GT_MARKER_START = "# === GT ALIASES (managed by apply-config.py) ==="

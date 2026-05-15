@@ -34,7 +34,7 @@ except ImportError:
 AGENT_HOME = Path("/Users/gt/Public/MyFiles/agent-home")
 CONFIG_PATH = AGENT_HOME / "gt-core/config/gt-config.yaml"
 SKILLS_REPO = AGENT_HOME / "gt-core/skills-repo"
-OBSIDIAN_VAULT = Path.home() / "Library/Mobile Documents/iCloud~md~obsidian/Documents/GT Vault"
+OBSIDIAN_VAULT = Path.home() / "Library/Mobile Documents/iCloud~md~obsidian/Documents/Hermes"
 
 # Reuse project-detect logic
 FILE_TYPE_MAP = {

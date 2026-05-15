@@ -2,7 +2,7 @@
 """
 hermes-diary.py — Hermes Diary Writer
 Reads today's session data from the dashboard DB (or stdin) and writes
-a structured diary entry to the Obsidian GT Vault.
+a structured diary entry to the Obsidian Hermes Vault.
 
 Usage:
     python hermes-diary.py --today
@@ -34,7 +34,7 @@ DASHBOARD_DB = os.environ.get(
 
 VAULT_ROOT = os.environ.get(
     "GT_VAULT_ROOT",
-    "/Users/gt/Library/Mobile Documents/iCloud~md~obsidian/Documents/GT Vault",
+    "/Users/gt/Library/Mobile Documents/iCloud~md~obsidian/Documents/Hermes",
 )
 
 DIARY_DIR = Path(VAULT_ROOT) / "hermes" / "diary"

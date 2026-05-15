@@ -189,13 +189,13 @@ Always document plans and progress in the user's Obsidian vault:
 
 ```bash
 # After creating a plan, write it to Obsidian
-hermes spawn --skill obsidian --prompt "Create note 'GT Vault/hermes/final-escape-plan.md' with the following plan: [PASTE PLAN]"
+hermes spawn --skill obsidian --prompt "Create note 'Hermes Vault/Hermes/final-escape-plan.md' with the following plan: [PASTE PLAN]"
 
 # Update progress after each phase
-hermes spawn --skill obsidian --prompt "Update note 'GT Vault/hermes/final-escape-plan.md' — mark Phase 1 as complete, Phase 2 in progress"
+hermes spawn --skill obsidian --prompt "Update note 'Hermes Vault/Hermes/final-escape-plan.md' — mark Phase 1 as complete, Phase 2 in progress"
 ```
 
-**GT's preference**: Document in `GT Vault/hermes/` unless asked otherwise. Use the obsidian skill for all note operations.
+**GT's preference**: Document in `Hermes Vault/Hermes/` unless asked otherwise. Use the obsidian skill for all note operations.
 
 ### Agent contract
 
@@ -275,7 +275,7 @@ Before starting a swarm:
 - [ ] Rollback plan if a checkpoint fails
 - [ ] Integration strategy defined (how Hermes merges results)
 - [ ] **Environment reconnaissance done** — checked git history, project docs, zshrc, existing rules
-- [ ] **Obsidian documentation queued** — plan will be written to GT Vault/hermes/
+- [ ] **Obsidian documentation queued** — plan will be written to Hermes Vault/Hermes/
 - [ ] **pi.dev task files prepared** (if using pi) — one file per task, with build verification
 - [ ] **Hermes monitors only** — user preference: spawn agents to work, Hermes orchestrates and monitors, does NOT write game code directly
 

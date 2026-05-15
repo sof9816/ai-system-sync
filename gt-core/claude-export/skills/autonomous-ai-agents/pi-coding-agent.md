@@ -167,7 +167,7 @@ For Godot game projects (e.g., `final-escape-g`), follow this exact sequence:
 
 1. **Check git** — `git log --oneline -10`, `git status`
 2. **Grill the user** — use `grill-me` skill to ask 5 questions about requirements
-3. **Document in Obsidian** — write plan to `GT Vault/hermes/final-escape-*.md`
+3. **Document in Obsidian** — write plan to `Hermes Vault/Hermes/final-escape-*.md`
 4. **Spawn pi.dev agents** — one task per agent, max 3 concurrent
 5. **Monitor only** — Hermes does NOT write .gd or .tscn files
 6. **Commit after each phase** — descriptive messages with change summary

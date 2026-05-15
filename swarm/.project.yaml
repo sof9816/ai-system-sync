@@ -19,7 +19,7 @@ version: "0.1.0"
 author: "GT System"
 gt_system:
   project_id: swarm
-  memory_vault: "GT Vault/projects/swarm"
+  memory_vault: "Hermes Vault/04 Logs/Swarm"
   category: core-infrastructure
   priority: high
   tags:

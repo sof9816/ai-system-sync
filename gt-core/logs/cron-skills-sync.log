@@ -13428,3 +13428,1515 @@ Result: 5 error(s) found.
   },
   "overall": "failure"
 }
+[sync-skills] Webhook ref=refs/heads/main (branch=main)
+[sync-skills] Pulling latest in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo ...
+[sync-skills] Git pull succeeded.
+[sync-skills] Running validator: /Users/gt/Public/MyFiles/agent-home/gt-core/scripts/validate-skills.py ...
+[sync-skills] Scanning 179 skill(s) in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo
+
+  ✓ apple/apple-notes/SKILL.md
+  ✓ apple/apple-reminders/SKILL.md
+  ✓ apple/findmy/SKILL.md
+  ✓ apple/imessage/SKILL.md
+  ✓ apple/macos-computer-use/SKILL.md
+  ✓ architecture/architecture/SKILL.md
+  ✓ architecture/architecture-patterns/SKILL.md
+  ✓ autonomous-ai-agents/agent-split-decision/SKILL.md
+  ✓ autonomous-ai-agents/claude-code/SKILL.md
+  ✓ autonomous-ai-agents/codex/SKILL.md
+  ✓ autonomous-ai-agents/hermes-agent/SKILL.md
+  ✓ autonomous-ai-agents/opencode/SKILL.md
+  ✓ autonomous-ai-agents/pi-coding-agent/SKILL.md
+  ✓ autonomous-ai-agents/swarm-orchestration/SKILL.md
+  ✓ creative/architecture-diagram/SKILL.md
+  ✓ creative/ascii-art/SKILL.md
+  ✓ creative/ascii-video/SKILL.md
+  ✓ creative/baoyu-comic/SKILL.md
+  ✓ creative/baoyu-infographic/SKILL.md
+  ✓ creative/brainstorming/SKILL.md
+  ✓ creative/caveman/SKILL.md
+  ✓ creative/caveman/caveman-commit/SKILL.md
+  ✓ creative/caveman/caveman-help/SKILL.md
+  ✓ creative/caveman/caveman-review/SKILL.md
+  ✓ creative/caveman/compress/SKILL.md
+  ✓ creative/claude-design/SKILL.md
+  ✓ creative/comfyui/SKILL.md
+  ✓ creative/creative-ideation/SKILL.md
+  ✓ creative/design-md/SKILL.md
+  ✓ creative/excalidraw/SKILL.md
+  ✓ creative/humanizer/SKILL.md
+  ✓ creative/json-canvas/SKILL.md
+  ✓ creative/manim-video/SKILL.md
+  ✓ creative/p5js/SKILL.md
+  ✓ creative/pixel-art/SKILL.md
+  ✓ creative/popular-web-designs/SKILL.md
+  ✓ creative/pretext/SKILL.md
+  ✓ creative/sketch/SKILL.md
+  ✓ creative/songwriting-and-ai-music/SKILL.md
+  ✓ creative/touchdesigner-mcp/SKILL.md
+  ✓ creative/ui-ux-designer/SKILL.md
+  ✓ data-science/jupyter-live-kernel/SKILL.md
+  ✓ devops/hermes-backup/SKILL.md
+  ✓ devops/hermes-dashboard/SKILL.md
+  ✓ devops/kanban-orchestrator/SKILL.md
+  ✓ devops/kanban-worker/SKILL.md
+  ✓ devops/webhook-subscriptions/SKILL.md
+  ✓ dogfood/dogfood/SKILL.md
+  ✓ domain/sentry/sentry-code-review/SKILL.md
+  ✓ domain/sentry/sentry-feature-setup/SKILL.md
+  ✓ domain/sentry/sentry-fix-issues/SKILL.md
+  ✓ domain/sentry/sentry-pr-code-review/SKILL.md
+  ✓ domain/sentry/sentry-sdk-setup/SKILL.md
+  ✓ domain/sentry/sentry-workflow/SKILL.md
+  ✓ email/himalaya/SKILL.md
+  ✓ gaming/game-dev-orchestration/SKILL.md
+  ✓ gaming/game-development/SKILL.md
+  ✓ gaming/godot/SKILL.md
+  ✓ gaming/minecraft-modpack-server/SKILL.md
+  ✓ gaming/pokemon-player/SKILL.md
+  ✓ github/codebase-inspection/SKILL.md
+  ✓ github/github-auth/SKILL.md
+  ✓ github/github-code-review/SKILL.md
+  ✓ github/github-issues/SKILL.md
+  ✓ github/github-pr-workflow/SKILL.md
+  ✓ github/github-repo-management/SKILL.md
+  ✓ ios-development/app-store-optimization/SKILL.md
+  ✓ ios-development/core-data-expert/SKILL.md
+  ✓ ios-development/hig-foundations/SKILL.md
+  ✓ ios-development/hig-patterns/SKILL.md
+  ✓ ios-development/ios-developer/SKILL.md
+  ✓ ios-development/ios-marketing-capture/SKILL.md
+  ✓ ios-development/miswag-ios-developer/SKILL.md
+  ✓ ios-development/mobile-security-coder/SKILL.md
+  ✓ ios-development/mobile-ui/SKILL.md
+  ✓ ios-development/release-whats-changed/SKILL.md
+  ✓ ios-development/spm-build-analysis/SKILL.md
+  ✓ ios-development/swift-concurrency/SKILL.md
+  ✓ ios-development/swift-concurrency-pro/SKILL.md
+  ✓ ios-development/swift-testing-expert/SKILL.md
+  ✓ ios-development/swift-testing-pro/SKILL.md
+  ✓ ios-development/swiftdata-expert-skill/SKILL.md
+  ✓ ios-development/swiftdata-pro/SKILL.md
+  ✓ ios-development/swiftui-expert-skill/SKILL.md
+  ✓ ios-development/swiftui-pro/SKILL.md
+  ✓ ios-development/xcode-build-benchmark/SKILL.md
+  ✓ ios-development/xcode-build-fixer/SKILL.md
+  ✓ ios-development/xcode-build-orchestrator/SKILL.md
+  ✓ ios-development/xcode-compilation-analyzer/SKILL.md
+  ✓ ios-development/xcode-project-analyzer/SKILL.md
+  ✓ mcp/native-mcp/SKILL.md
+  ✓ media/gif-search/SKILL.md
+  ✓ media/heartmula/SKILL.md
+  ✓ media/songsee/SKILL.md
+  ✓ media/spotify/SKILL.md
+  ✓ media/youtube-content/SKILL.md
+  ✓ mlops/evaluation/SKILL.md
+  ✗ mlops/evaluation/lm-evaluation-harness/SKILL.md
+    Error: Name mismatch: frontmatter says 'evaluating-llms-harness', parent directory is 'lm-evaluation-harness'
+  ✓ mlops/evaluation/weights-and-biases/SKILL.md
+  ✓ mlops/huggingface-hub/SKILL.md
+  ✓ mlops/inference/SKILL.md
+  ✓ mlops/inference/llama-cpp/SKILL.md
+  ✓ mlops/inference/obliteratus/SKILL.md
+  ✓ mlops/inference/outlines/SKILL.md
+  ✗ mlops/inference/vllm/SKILL.md
+    Error: Name mismatch: frontmatter says 'serving-llms-vllm', parent directory is 'vllm'
+  ✓ mlops/models/SKILL.md
+  ✗ mlops/models/audiocraft/SKILL.md
+    Error: Name mismatch: frontmatter says 'audiocraft-audio-generation', parent directory is 'audiocraft'
+  ✗ mlops/models/segment-anything/SKILL.md
+    Error: Name mismatch: frontmatter says 'segment-anything-model', parent directory is 'segment-anything'
+  ✓ mlops/research/SKILL.md
+  ✓ mlops/research/dspy/SKILL.md
+  ✓ mlops/training/SKILL.md
+  ✓ mlops/training/axolotl/SKILL.md
+  ✗ mlops/training/trl-fine-tuning/SKILL.md
+    Error: Name mismatch: frontmatter says 'fine-tuning-with-trl', parent directory is 'trl-fine-tuning'
+  ✓ mlops/training/unsloth/SKILL.md
+  ✓ note-taking/obsidian/SKILL.md
+  ✓ note-taking/obsidian-bases/SKILL.md
+  ✓ note-taking/obsidian-cli/SKILL.md
+  ✓ note-taking/obsidian-markdown/SKILL.md
+  ✓ productivity/airtable/SKILL.md
+  ✓ productivity/google-workspace/SKILL.md
+  ✓ productivity/linear/SKILL.md
+  ✓ productivity/maps/SKILL.md
+  ✓ productivity/nano-pdf/SKILL.md
+  ✓ productivity/notion/SKILL.md
+  ✓ productivity/ocr-and-documents/SKILL.md
+  ✓ productivity/powerpoint/SKILL.md
+  ✓ productivity/teams-meeting-pipeline/SKILL.md
+  ✓ red-teaming/godmode/SKILL.md
+  ✓ research/arxiv/SKILL.md
+  ✓ research/blogwatcher/SKILL.md
+  ✓ research/last30days/SKILL.md
+  ✓ research/llm-wiki/SKILL.md
+  ✓ research/polymarket/SKILL.md
+  ✓ research/research-paper-writing/SKILL.md
+  ✓ security/hermes-security-audit/SKILL.md
+  ✓ smart-home/openhue/SKILL.md
+  ✓ social-media/xurl/SKILL.md
+  ✓ software-development/claude-code-guide/SKILL.md
+  ✓ software-development/claude-md-improver/SKILL.md
+  ✓ software-development/clean-code/SKILL.md
+  ✓ software-development/code-reviewer/SKILL.md
+  ✓ software-development/concise-planning/SKILL.md
+  ✓ software-development/context7/SKILL.md
+  ✓ software-development/daily-digest-builder/SKILL.md
+  ✓ software-development/dashboard-architect/SKILL.md
+  ✓ software-development/debugging-hermes-tui-commands/SKILL.md
+  ✓ software-development/defuddle/SKILL.md
+  ✓ software-development/error-handling-patterns/SKILL.md
+  ✓ software-development/frontend-design/SKILL.md
+  ✓ software-development/frontend-developer/SKILL.md
+  ✓ software-development/grill-me/SKILL.md
+  ✓ software-development/gt-centralized-system/SKILL.md
+  ✓ software-development/hermes-agent-skill-authoring/SKILL.md
+  ✓ software-development/node-inspect-debugger/SKILL.md
+  ✓ software-development/plan/SKILL.md
+  ✓ software-development/python-debugpy/SKILL.md
+  ✓ software-development/requesting-code-review/SKILL.md
+  ✓ software-development/senior-engineer/SKILL.md
+  ✓ software-development/session-report/SKILL.md
+  ✓ software-development/skill-creator/SKILL.md
+  ✓ software-development/spike/SKILL.md
+  ✓ software-development/subagent-driven-development/SKILL.md
+  ✓ software-development/systematic-debugging/SKILL.md
+  ✓ software-development/test-driven-development/SKILL.md
+  ✓ software-development/testing-patterns/SKILL.md
+  ✓ software-development/writing-hookify-rules/SKILL.md
+  ✓ software-development/writing-plans/SKILL.md
+  ✓ superpowers/context-manager/SKILL.md
+  ✓ superpowers/deep-research/SKILL.md
+  ✓ superpowers/dispatching-parallel-agents/SKILL.md
+  ✓ superpowers/executing-plans/SKILL.md
+  ✓ superpowers/finishing-a-development-branch/SKILL.md
+  ✓ superpowers/memory-systems/SKILL.md
+  ✓ superpowers/receiving-code-review/SKILL.md
+  ✓ superpowers/using-git-worktrees/SKILL.md
+  ✓ superpowers/using-superpowers/SKILL.md
+  ✓ superpowers/verification-before-completion/SKILL.md
+  ✓ superpowers/writing-skills/SKILL.md
+  ✓ yuanbao/yuanbao/SKILL.md
+
+Result: 5 error(s) found.
+{
+  "ref": "refs/heads/main",
+  "branch": "main",
+  "repo": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo",
+  "steps": {
+    "pull": {
+      "ok": true,
+      "message": "Already up to date."
+    },
+    "validate": {
+      "ok": false,
+      "message": "Scanning 179 skill(s) in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo\n\n  \u2713 apple/apple-notes/SKILL.md\n  \u2713 apple/apple-reminders/SKILL.md\n  \u2713 apple/findmy/SKILL.md\n  \u2713 apple/imessage/SKILL.md\n  \u2713 apple/macos-computer-use/SKILL.md\n  \u2713 architecture/architecture/SKILL.md\n  \u2713 architecture/architecture-patterns/SKILL.md\n  \u2713 autonomous-ai-agents/agent-split-decision/SKILL.md\n  \u2713 autonomous-ai-agents/claude-code/SKILL.md\n  \u2713 autonomous-ai-agents/codex/SKILL.md\n  \u2713 autonomous-ai-agents/hermes-agent/SKILL.md\n  \u2713 autonomous-ai-agents/opencode/SKILL.md\n  \u2713 autonomous-ai-agents/pi-coding-agent/SKILL.md\n  \u2713 autonomous-ai-agents/swarm-orchestration/SKILL.md\n  \u2713 creative/architecture-diagram/SKILL.md\n  \u2713 creative/ascii-art/SKILL.md\n  \u2713 creative/ascii-video/SKILL.md\n  \u2713 creative/baoyu-comic/SKILL.md\n  \u2713 creative/baoyu-infographic/SKILL.md\n  \u2713 creative/brainstorming/SKILL.md\n  \u2713 creative/caveman/SKILL.md\n  \u2713 creative/caveman/caveman-commit/SKILL.md\n  \u2713 creative/caveman/caveman-help/SKILL.md\n  \u2713 creative/caveman/caveman-review/SKILL.md\n  \u2713 creative/caveman/compress/SKILL.md\n  \u2713 creative/claude-design/SKILL.md\n  \u2713 creative/comfyui/SKILL.md\n  \u2713 creative/creative-ideation/SKILL.md\n  \u2713 creative/design-md/SKILL.md\n  \u2713 creative/excalidraw/SKILL.md\n  \u2713 creative/humanizer/SKILL.md\n  \u2713 creative/json-canvas/SKILL.md\n  \u2713 creative/manim-video/SKILL.md\n  \u2713 creative/p5js/SKILL.md\n  \u2713 creative/pixel-art/SKILL.md\n  \u2713 creative/popular-web-designs/SKILL.md\n  \u2713 creative/pretext/SKILL.md\n  \u2713 creative/sketch/SKILL.md\n  \u2713 creative/songwriting-and-ai-music/SKILL.md\n  \u2713 creative/touchdesigner-mcp/SKILL.md\n  \u2713 creative/ui-ux-designer/SKILL.md\n  \u2713 data-science/jupyter-live-kernel/SKILL.md\n  \u2713 devops/hermes-backup/SKILL.md\n  \u2713 devops/hermes-dashboard/SKILL.md\n  \u2713 devops/kanban-orchestrator/SKILL.md\n  \u2713 devops/kanban-worker/SKILL.md\n  \u2713 devops/webhook-subscriptions/SKILL.md\n  \u2713 dogfood/dogfood/SKILL.md\n  \u2713 domain/sentry/sentry-code-review/SKILL.md\n  \u2713 domain/sentry/sentry-feature-setup/SKILL.md\n  \u2713 domain/sentry/sentry-fix-issues/SKILL.md\n  \u2713 domain/sentry/sentry-pr-code-review/SKILL.md\n  \u2713 domain/sentry/sentry-sdk-setup/SKILL.md\n  \u2713 domain/sentry/sentry-workflow/SKILL.md\n  \u2713 email/himalaya/SKILL.md\n  \u2713 gaming/game-dev-orchestration/SKILL.md\n  \u2713 gaming/game-development/SKILL.md\n  \u2713 gaming/godot/SKILL.md\n  \u2713 gaming/minecraft-modpack-server/SKILL.md\n  \u2713 gaming/pokemon-player/SKILL.md\n  \u2713 github/codebase-inspection/SKILL.md\n  \u2713 github/github-auth/SKILL.md\n  \u2713 github/github-code-review/SKILL.md\n  \u2713 github/github-issues/SKILL.md\n  \u2713 github/github-pr-workflow/SKILL.md\n  \u2713 github/github-repo-management/SKILL.md\n  \u2713 ios-development/app-store-optimization/SKILL.md\n  \u2713 ios-development/core-data-expert/SKILL.md\n  \u2713 ios-development/hig-foundations/SKILL.md\n  \u2713 ios-development/hig-patterns/SKILL.md\n  \u2713 ios-development/ios-developer/SKILL.md\n  \u2713 ios-development/ios-marketing-capture/SKILL.md\n  \u2713 ios-development/miswag-ios-developer/SKILL.md\n  \u2713 ios-development/mobile-security-coder/SKILL.md\n  \u2713 ios-development/mobile-ui/SKILL.md\n  \u2713 ios-development/release-whats-changed/SKILL.md\n  \u2713 ios-development/spm-build-analysis/SKILL.md\n  \u2713 ios-development/swift-concurrency/SKILL.md\n  \u2713 ios-development/swift-concurrency-pro/SKILL.md\n  \u2713 ios-development/swift-testing-expert/SKILL.md\n  \u2713 ios-development/swift-testing-pro/SKILL.md\n  \u2713 ios-development/swiftdata-expert-skill/SKILL.md\n  \u2713 ios-development/swiftdata-pro/SKILL.md\n  \u2713 ios-development/swiftui-expert-skill/SKILL.md\n  \u2713 ios-development/swiftui-pro/SKILL.md\n  \u2713 ios-development/xcode-build-benchmark/SKILL.md\n  \u2713 ios-development/xcode-build-fixer/SKILL.md\n  \u2713 ios-development/xcode-build-orchestrator/SKILL.md\n  \u2713 ios-development/xcode-compilation-analyzer/SKILL.md\n  \u2713 ios-development/xcode-project-analyzer/SKILL.md\n  \u2713 mcp/native-mcp/SKILL.md\n  \u2713 media/gif-search/SKILL.md\n  \u2713 media/heartmula/SKILL.md\n  \u2713 media/songsee/SKILL.md\n  \u2713 media/spotify/SKILL.md\n  \u2713 media/youtube-content/SKILL.md\n  \u2713 mlops/evaluation/SKILL.md\n  \u2717 mlops/evaluation/lm-evaluation-harness/SKILL.md\n    Error: Name mismatch: frontmatter says 'evaluating-llms-harness', parent directory is 'lm-evaluation-harness'\n  \u2713 mlops/evaluation/weights-and-biases/SKILL.md\n  \u2713 mlops/huggingface-hub/SKILL.md\n  \u2713 mlops/inference/SKILL.md\n  \u2713 mlops/inference/llama-cpp/SKILL.md\n  \u2713 mlops/inference/obliteratus/SKILL.md\n  \u2713 mlops/inference/outlines/SKILL.md\n  \u2717 mlops/inference/vllm/SKILL.md\n    Error: Name mismatch: frontmatter says 'serving-llms-vllm', parent directory is 'vllm'\n  \u2713 mlops/models/SKILL.md\n  \u2717 mlops/models/audiocraft/SKILL.md\n    Error: Name mismatch: frontmatter says 'audiocraft-audio-generation', parent directory is 'audiocraft'\n  \u2717 mlops/models/segment-anything/SKILL.md\n    Error: Name mismatch: frontmatter says 'segment-anything-model', parent directory is 'segment-anything'\n  \u2713 mlops/research/SKILL.md\n  \u2713 mlops/research/dspy/SKILL.md\n  \u2713 mlops/training/SKILL.md\n  \u2713 mlops/training/axolotl/SKILL.md\n  \u2717 mlops/training/trl-fine-tuning/SKILL.md\n    Error: Name mismatch: frontmatter says 'fine-tuning-with-trl', parent directory is 'trl-fine-tuning'\n  \u2713 mlops/training/unsloth/SKILL.md\n  \u2713 note-taking/obsidian/SKILL.md\n  \u2713 note-taking/obsidian-bases/SKILL.md\n  \u2713 note-taking/obsidian-cli/SKILL.md\n  \u2713 note-taking/obsidian-markdown/SKILL.md\n  \u2713 productivity/airtable/SKILL.md\n  \u2713 productivity/google-workspace/SKILL.md\n  \u2713 productivity/linear/SKILL.md\n  \u2713 productivity/maps/SKILL.md\n  \u2713 productivity/nano-pdf/SKILL.md\n  \u2713 productivity/notion/SKILL.md\n  \u2713 productivity/ocr-and-documents/SKILL.md\n  \u2713 productivity/powerpoint/SKILL.md\n  \u2713 productivity/teams-meeting-pipeline/SKILL.md\n  \u2713 red-teaming/godmode/SKILL.md\n  \u2713 research/arxiv/SKILL.md\n  \u2713 research/blogwatcher/SKILL.md\n  \u2713 research/last30days/SKILL.md\n  \u2713 research/llm-wiki/SKILL.md\n  \u2713 research/polymarket/SKILL.md\n  \u2713 research/research-paper-writing/SKILL.md\n  \u2713 security/hermes-security-audit/SKILL.md\n  \u2713 smart-home/openhue/SKILL.md\n  \u2713 social-media/xurl/SKILL.md\n  \u2713 software-development/claude-code-guide/SKILL.md\n  \u2713 software-development/claude-md-improver/SKILL.md\n  \u2713 software-development/clean-code/SKILL.md\n  \u2713 software-development/code-reviewer/SKILL.md\n  \u2713 software-development/concise-planning/SKILL.md\n  \u2713 software-development/context7/SKILL.md\n  \u2713 software-development/daily-digest-builder/SKILL.md\n  \u2713 software-development/dashboard-architect/SKILL.md\n  \u2713 software-development/debugging-hermes-tui-commands/SKILL.md\n  \u2713 software-development/defuddle/SKILL.md\n  \u2713 software-development/error-handling-patterns/SKILL.md\n  \u2713 software-development/frontend-design/SKILL.md\n  \u2713 software-development/frontend-developer/SKILL.md\n  \u2713 software-development/grill-me/SKILL.md\n  \u2713 software-development/gt-centralized-system/SKILL.md\n  \u2713 software-development/hermes-agent-skill-authoring/SKILL.md\n  \u2713 software-development/node-inspect-debugger/SKILL.md\n  \u2713 software-development/plan/SKILL.md\n  \u2713 software-development/python-debugpy/SKILL.md\n  \u2713 software-development/requesting-code-review/SKILL.md\n  \u2713 software-development/senior-engineer/SKILL.md\n  \u2713 software-development/session-report/SKILL.md\n  \u2713 software-development/skill-creator/SKILL.md\n  \u2713 software-development/spike/SKILL.md\n  \u2713 software-development/subagent-driven-development/SKILL.md\n  \u2713 software-development/systematic-debugging/SKILL.md\n  \u2713 software-development/test-driven-development/SKILL.md\n  \u2713 software-development/testing-patterns/SKILL.md\n  \u2713 software-development/writing-hookify-rules/SKILL.md\n  \u2713 software-development/writing-plans/SKILL.md\n  \u2713 superpowers/context-manager/SKILL.md\n  \u2713 superpowers/deep-research/SKILL.md\n  \u2713 superpowers/dispatching-parallel-agents/SKILL.md\n  \u2713 superpowers/executing-plans/SKILL.md\n  \u2713 superpowers/finishing-a-development-branch/SKILL.md\n  \u2713 superpowers/memory-systems/SKILL.md\n  \u2713 superpowers/receiving-code-review/SKILL.md\n  \u2713 superpowers/using-git-worktrees/SKILL.md\n  \u2713 superpowers/using-superpowers/SKILL.md\n  \u2713 superpowers/verification-before-completion/SKILL.md\n  \u2713 superpowers/writing-skills/SKILL.md\n  \u2713 yuanbao/yuanbao/SKILL.md\n\nResult: 5 error(s) found."
+    },
+    "sync_hermes": {
+      "ok": true,
+      "message": "dst is symlink to src; skipping copy"
+    },
+    "sync_agents": {
+      "ok": true,
+      "message": "dst is symlink to src; skipping copy"
+    }
+  },
+  "overall": "failure"
+}
+[sync-skills] Webhook ref=refs/heads/main (branch=main)
+[sync-skills] Pulling latest in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo ...
+[sync-skills] Git pull succeeded.
+[sync-skills] Running validator: /Users/gt/Public/MyFiles/agent-home/gt-core/scripts/validate-skills.py ...
+[sync-skills] Scanning 179 skill(s) in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo
+
+  ✓ apple/apple-notes/SKILL.md
+  ✓ apple/apple-reminders/SKILL.md
+  ✓ apple/findmy/SKILL.md
+  ✓ apple/imessage/SKILL.md
+  ✓ apple/macos-computer-use/SKILL.md
+  ✓ architecture/architecture/SKILL.md
+  ✓ architecture/architecture-patterns/SKILL.md
+  ✓ autonomous-ai-agents/agent-split-decision/SKILL.md
+  ✓ autonomous-ai-agents/claude-code/SKILL.md
+  ✓ autonomous-ai-agents/codex/SKILL.md
+  ✓ autonomous-ai-agents/hermes-agent/SKILL.md
+  ✓ autonomous-ai-agents/opencode/SKILL.md
+  ✓ autonomous-ai-agents/pi-coding-agent/SKILL.md
+  ✓ autonomous-ai-agents/swarm-orchestration/SKILL.md
+  ✓ creative/architecture-diagram/SKILL.md
+  ✓ creative/ascii-art/SKILL.md
+  ✓ creative/ascii-video/SKILL.md
+  ✓ creative/baoyu-comic/SKILL.md
+  ✓ creative/baoyu-infographic/SKILL.md
+  ✓ creative/brainstorming/SKILL.md
+  ✓ creative/caveman/SKILL.md
+  ✓ creative/caveman/caveman-commit/SKILL.md
+  ✓ creative/caveman/caveman-help/SKILL.md
+  ✓ creative/caveman/caveman-review/SKILL.md
+  ✓ creative/caveman/compress/SKILL.md
+  ✓ creative/claude-design/SKILL.md
+  ✓ creative/comfyui/SKILL.md
+  ✓ creative/creative-ideation/SKILL.md
+  ✓ creative/design-md/SKILL.md
+  ✓ creative/excalidraw/SKILL.md
+  ✓ creative/humanizer/SKILL.md
+  ✓ creative/json-canvas/SKILL.md
+  ✓ creative/manim-video/SKILL.md
+  ✓ creative/p5js/SKILL.md
+  ✓ creative/pixel-art/SKILL.md
+  ✓ creative/popular-web-designs/SKILL.md
+  ✓ creative/pretext/SKILL.md
+  ✓ creative/sketch/SKILL.md
+  ✓ creative/songwriting-and-ai-music/SKILL.md
+  ✓ creative/touchdesigner-mcp/SKILL.md
+  ✓ creative/ui-ux-designer/SKILL.md
+  ✓ data-science/jupyter-live-kernel/SKILL.md
+  ✓ devops/hermes-backup/SKILL.md
+  ✓ devops/hermes-dashboard/SKILL.md
+  ✓ devops/kanban-orchestrator/SKILL.md
+  ✓ devops/kanban-worker/SKILL.md
+  ✓ devops/webhook-subscriptions/SKILL.md
+  ✓ dogfood/dogfood/SKILL.md
+  ✓ domain/sentry/sentry-code-review/SKILL.md
+  ✓ domain/sentry/sentry-feature-setup/SKILL.md
+  ✓ domain/sentry/sentry-fix-issues/SKILL.md
+  ✓ domain/sentry/sentry-pr-code-review/SKILL.md
+  ✓ domain/sentry/sentry-sdk-setup/SKILL.md
+  ✓ domain/sentry/sentry-workflow/SKILL.md
+  ✓ email/himalaya/SKILL.md
+  ✓ gaming/game-dev-orchestration/SKILL.md
+  ✓ gaming/game-development/SKILL.md
+  ✓ gaming/godot/SKILL.md
+  ✓ gaming/minecraft-modpack-server/SKILL.md
+  ✓ gaming/pokemon-player/SKILL.md
+  ✓ github/codebase-inspection/SKILL.md
+  ✓ github/github-auth/SKILL.md
+  ✓ github/github-code-review/SKILL.md
+  ✓ github/github-issues/SKILL.md
+  ✓ github/github-pr-workflow/SKILL.md
+  ✓ github/github-repo-management/SKILL.md
+  ✓ ios-development/app-store-optimization/SKILL.md
+  ✓ ios-development/core-data-expert/SKILL.md
+  ✓ ios-development/hig-foundations/SKILL.md
+  ✓ ios-development/hig-patterns/SKILL.md
+  ✓ ios-development/ios-developer/SKILL.md
+  ✓ ios-development/ios-marketing-capture/SKILL.md
+  ✓ ios-development/miswag-ios-developer/SKILL.md
+  ✓ ios-development/mobile-security-coder/SKILL.md
+  ✓ ios-development/mobile-ui/SKILL.md
+  ✓ ios-development/release-whats-changed/SKILL.md
+  ✓ ios-development/spm-build-analysis/SKILL.md
+  ✓ ios-development/swift-concurrency/SKILL.md
+  ✓ ios-development/swift-concurrency-pro/SKILL.md
+  ✓ ios-development/swift-testing-expert/SKILL.md
+  ✓ ios-development/swift-testing-pro/SKILL.md
+  ✓ ios-development/swiftdata-expert-skill/SKILL.md
+  ✓ ios-development/swiftdata-pro/SKILL.md
+  ✓ ios-development/swiftui-expert-skill/SKILL.md
+  ✓ ios-development/swiftui-pro/SKILL.md
+  ✓ ios-development/xcode-build-benchmark/SKILL.md
+  ✓ ios-development/xcode-build-fixer/SKILL.md
+  ✓ ios-development/xcode-build-orchestrator/SKILL.md
+  ✓ ios-development/xcode-compilation-analyzer/SKILL.md
+  ✓ ios-development/xcode-project-analyzer/SKILL.md
+  ✓ mcp/native-mcp/SKILL.md
+  ✓ media/gif-search/SKILL.md
+  ✓ media/heartmula/SKILL.md
+  ✓ media/songsee/SKILL.md
+  ✓ media/spotify/SKILL.md
+  ✓ media/youtube-content/SKILL.md
+  ✓ mlops/evaluation/SKILL.md
+  ✗ mlops/evaluation/lm-evaluation-harness/SKILL.md
+    Error: Name mismatch: frontmatter says 'evaluating-llms-harness', parent directory is 'lm-evaluation-harness'
+  ✓ mlops/evaluation/weights-and-biases/SKILL.md
+  ✓ mlops/huggingface-hub/SKILL.md
+  ✓ mlops/inference/SKILL.md
+  ✓ mlops/inference/llama-cpp/SKILL.md
+  ✓ mlops/inference/obliteratus/SKILL.md
+  ✓ mlops/inference/outlines/SKILL.md
+  ✗ mlops/inference/vllm/SKILL.md
+    Error: Name mismatch: frontmatter says 'serving-llms-vllm', parent directory is 'vllm'
+  ✓ mlops/models/SKILL.md
+  ✗ mlops/models/audiocraft/SKILL.md
+    Error: Name mismatch: frontmatter says 'audiocraft-audio-generation', parent directory is 'audiocraft'
+  ✗ mlops/models/segment-anything/SKILL.md
+    Error: Name mismatch: frontmatter says 'segment-anything-model', parent directory is 'segment-anything'
+  ✓ mlops/research/SKILL.md
+  ✓ mlops/research/dspy/SKILL.md
+  ✓ mlops/training/SKILL.md
+  ✓ mlops/training/axolotl/SKILL.md
+  ✗ mlops/training/trl-fine-tuning/SKILL.md
+    Error: Name mismatch: frontmatter says 'fine-tuning-with-trl', parent directory is 'trl-fine-tuning'
+  ✓ mlops/training/unsloth/SKILL.md
+  ✓ note-taking/obsidian/SKILL.md
+  ✓ note-taking/obsidian-bases/SKILL.md
+  ✓ note-taking/obsidian-cli/SKILL.md
+  ✓ note-taking/obsidian-markdown/SKILL.md
+  ✓ productivity/airtable/SKILL.md
+  ✓ productivity/google-workspace/SKILL.md
+  ✓ productivity/linear/SKILL.md
+  ✓ productivity/maps/SKILL.md
+  ✓ productivity/nano-pdf/SKILL.md
+  ✓ productivity/notion/SKILL.md
+  ✓ productivity/ocr-and-documents/SKILL.md
+  ✓ productivity/powerpoint/SKILL.md
+  ✓ productivity/teams-meeting-pipeline/SKILL.md
+  ✓ red-teaming/godmode/SKILL.md
+  ✓ research/arxiv/SKILL.md
+  ✓ research/blogwatcher/SKILL.md
+  ✓ research/last30days/SKILL.md
+  ✓ research/llm-wiki/SKILL.md
+  ✓ research/polymarket/SKILL.md
+  ✓ research/research-paper-writing/SKILL.md
+  ✓ security/hermes-security-audit/SKILL.md
+  ✓ smart-home/openhue/SKILL.md
+  ✓ social-media/xurl/SKILL.md
+  ✓ software-development/claude-code-guide/SKILL.md
+  ✓ software-development/claude-md-improver/SKILL.md
+  ✓ software-development/clean-code/SKILL.md
+  ✓ software-development/code-reviewer/SKILL.md
+  ✓ software-development/concise-planning/SKILL.md
+  ✓ software-development/context7/SKILL.md
+  ✓ software-development/daily-digest-builder/SKILL.md
+  ✓ software-development/dashboard-architect/SKILL.md
+  ✓ software-development/debugging-hermes-tui-commands/SKILL.md
+  ✓ software-development/defuddle/SKILL.md
+  ✓ software-development/error-handling-patterns/SKILL.md
+  ✓ software-development/frontend-design/SKILL.md
+  ✓ software-development/frontend-developer/SKILL.md
+  ✓ software-development/grill-me/SKILL.md
+  ✓ software-development/gt-centralized-system/SKILL.md
+  ✓ software-development/hermes-agent-skill-authoring/SKILL.md
+  ✓ software-development/node-inspect-debugger/SKILL.md
+  ✓ software-development/plan/SKILL.md
+  ✓ software-development/python-debugpy/SKILL.md
+  ✓ software-development/requesting-code-review/SKILL.md
+  ✓ software-development/senior-engineer/SKILL.md
+  ✓ software-development/session-report/SKILL.md
+  ✓ software-development/skill-creator/SKILL.md
+  ✓ software-development/spike/SKILL.md
+  ✓ software-development/subagent-driven-development/SKILL.md
+  ✓ software-development/systematic-debugging/SKILL.md
+  ✓ software-development/test-driven-development/SKILL.md
+  ✓ software-development/testing-patterns/SKILL.md
+  ✓ software-development/writing-hookify-rules/SKILL.md
+  ✓ software-development/writing-plans/SKILL.md
+  ✓ superpowers/context-manager/SKILL.md
+  ✓ superpowers/deep-research/SKILL.md
+  ✓ superpowers/dispatching-parallel-agents/SKILL.md
+  ✓ superpowers/executing-plans/SKILL.md
+  ✓ superpowers/finishing-a-development-branch/SKILL.md
+  ✓ superpowers/memory-systems/SKILL.md
+  ✓ superpowers/receiving-code-review/SKILL.md
+  ✓ superpowers/using-git-worktrees/SKILL.md
+  ✓ superpowers/using-superpowers/SKILL.md
+  ✓ superpowers/verification-before-completion/SKILL.md
+  ✓ superpowers/writing-skills/SKILL.md
+  ✓ yuanbao/yuanbao/SKILL.md
+
+Result: 5 error(s) found.
+{
+  "ref": "refs/heads/main",
+  "branch": "main",
+  "repo": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo",
+  "steps": {
+    "pull": {
+      "ok": true,
+      "message": "Already up to date."
+    },
+    "validate": {
+      "ok": false,
+      "message": "Scanning 179 skill(s) in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo\n\n  \u2713 apple/apple-notes/SKILL.md\n  \u2713 apple/apple-reminders/SKILL.md\n  \u2713 apple/findmy/SKILL.md\n  \u2713 apple/imessage/SKILL.md\n  \u2713 apple/macos-computer-use/SKILL.md\n  \u2713 architecture/architecture/SKILL.md\n  \u2713 architecture/architecture-patterns/SKILL.md\n  \u2713 autonomous-ai-agents/agent-split-decision/SKILL.md\n  \u2713 autonomous-ai-agents/claude-code/SKILL.md\n  \u2713 autonomous-ai-agents/codex/SKILL.md\n  \u2713 autonomous-ai-agents/hermes-agent/SKILL.md\n  \u2713 autonomous-ai-agents/opencode/SKILL.md\n  \u2713 autonomous-ai-agents/pi-coding-agent/SKILL.md\n  \u2713 autonomous-ai-agents/swarm-orchestration/SKILL.md\n  \u2713 creative/architecture-diagram/SKILL.md\n  \u2713 creative/ascii-art/SKILL.md\n  \u2713 creative/ascii-video/SKILL.md\n  \u2713 creative/baoyu-comic/SKILL.md\n  \u2713 creative/baoyu-infographic/SKILL.md\n  \u2713 creative/brainstorming/SKILL.md\n  \u2713 creative/caveman/SKILL.md\n  \u2713 creative/caveman/caveman-commit/SKILL.md\n  \u2713 creative/caveman/caveman-help/SKILL.md\n  \u2713 creative/caveman/caveman-review/SKILL.md\n  \u2713 creative/caveman/compress/SKILL.md\n  \u2713 creative/claude-design/SKILL.md\n  \u2713 creative/comfyui/SKILL.md\n  \u2713 creative/creative-ideation/SKILL.md\n  \u2713 creative/design-md/SKILL.md\n  \u2713 creative/excalidraw/SKILL.md\n  \u2713 creative/humanizer/SKILL.md\n  \u2713 creative/json-canvas/SKILL.md\n  \u2713 creative/manim-video/SKILL.md\n  \u2713 creative/p5js/SKILL.md\n  \u2713 creative/pixel-art/SKILL.md\n  \u2713 creative/popular-web-designs/SKILL.md\n  \u2713 creative/pretext/SKILL.md\n  \u2713 creative/sketch/SKILL.md\n  \u2713 creative/songwriting-and-ai-music/SKILL.md\n  \u2713 creative/touchdesigner-mcp/SKILL.md\n  \u2713 creative/ui-ux-designer/SKILL.md\n  \u2713 data-science/jupyter-live-kernel/SKILL.md\n  \u2713 devops/hermes-backup/SKILL.md\n  \u2713 devops/hermes-dashboard/SKILL.md\n  \u2713 devops/kanban-orchestrator/SKILL.md\n  \u2713 devops/kanban-worker/SKILL.md\n  \u2713 devops/webhook-subscriptions/SKILL.md\n  \u2713 dogfood/dogfood/SKILL.md\n  \u2713 domain/sentry/sentry-code-review/SKILL.md\n  \u2713 domain/sentry/sentry-feature-setup/SKILL.md\n  \u2713 domain/sentry/sentry-fix-issues/SKILL.md\n  \u2713 domain/sentry/sentry-pr-code-review/SKILL.md\n  \u2713 domain/sentry/sentry-sdk-setup/SKILL.md\n  \u2713 domain/sentry/sentry-workflow/SKILL.md\n  \u2713 email/himalaya/SKILL.md\n  \u2713 gaming/game-dev-orchestration/SKILL.md\n  \u2713 gaming/game-development/SKILL.md\n  \u2713 gaming/godot/SKILL.md\n  \u2713 gaming/minecraft-modpack-server/SKILL.md\n  \u2713 gaming/pokemon-player/SKILL.md\n  \u2713 github/codebase-inspection/SKILL.md\n  \u2713 github/github-auth/SKILL.md\n  \u2713 github/github-code-review/SKILL.md\n  \u2713 github/github-issues/SKILL.md\n  \u2713 github/github-pr-workflow/SKILL.md\n  \u2713 github/github-repo-management/SKILL.md\n  \u2713 ios-development/app-store-optimization/SKILL.md\n  \u2713 ios-development/core-data-expert/SKILL.md\n  \u2713 ios-development/hig-foundations/SKILL.md\n  \u2713 ios-development/hig-patterns/SKILL.md\n  \u2713 ios-development/ios-developer/SKILL.md\n  \u2713 ios-development/ios-marketing-capture/SKILL.md\n  \u2713 ios-development/miswag-ios-developer/SKILL.md\n  \u2713 ios-development/mobile-security-coder/SKILL.md\n  \u2713 ios-development/mobile-ui/SKILL.md\n  \u2713 ios-development/release-whats-changed/SKILL.md\n  \u2713 ios-development/spm-build-analysis/SKILL.md\n  \u2713 ios-development/swift-concurrency/SKILL.md\n  \u2713 ios-development/swift-concurrency-pro/SKILL.md\n  \u2713 ios-development/swift-testing-expert/SKILL.md\n  \u2713 ios-development/swift-testing-pro/SKILL.md\n  \u2713 ios-development/swiftdata-expert-skill/SKILL.md\n  \u2713 ios-development/swiftdata-pro/SKILL.md\n  \u2713 ios-development/swiftui-expert-skill/SKILL.md\n  \u2713 ios-development/swiftui-pro/SKILL.md\n  \u2713 ios-development/xcode-build-benchmark/SKILL.md\n  \u2713 ios-development/xcode-build-fixer/SKILL.md\n  \u2713 ios-development/xcode-build-orchestrator/SKILL.md\n  \u2713 ios-development/xcode-compilation-analyzer/SKILL.md\n  \u2713 ios-development/xcode-project-analyzer/SKILL.md\n  \u2713 mcp/native-mcp/SKILL.md\n  \u2713 media/gif-search/SKILL.md\n  \u2713 media/heartmula/SKILL.md\n  \u2713 media/songsee/SKILL.md\n  \u2713 media/spotify/SKILL.md\n  \u2713 media/youtube-content/SKILL.md\n  \u2713 mlops/evaluation/SKILL.md\n  \u2717 mlops/evaluation/lm-evaluation-harness/SKILL.md\n    Error: Name mismatch: frontmatter says 'evaluating-llms-harness', parent directory is 'lm-evaluation-harness'\n  \u2713 mlops/evaluation/weights-and-biases/SKILL.md\n  \u2713 mlops/huggingface-hub/SKILL.md\n  \u2713 mlops/inference/SKILL.md\n  \u2713 mlops/inference/llama-cpp/SKILL.md\n  \u2713 mlops/inference/obliteratus/SKILL.md\n  \u2713 mlops/inference/outlines/SKILL.md\n  \u2717 mlops/inference/vllm/SKILL.md\n    Error: Name mismatch: frontmatter says 'serving-llms-vllm', parent directory is 'vllm'\n  \u2713 mlops/models/SKILL.md\n  \u2717 mlops/models/audiocraft/SKILL.md\n    Error: Name mismatch: frontmatter says 'audiocraft-audio-generation', parent directory is 'audiocraft'\n  \u2717 mlops/models/segment-anything/SKILL.md\n    Error: Name mismatch: frontmatter says 'segment-anything-model', parent directory is 'segment-anything'\n  \u2713 mlops/research/SKILL.md\n  \u2713 mlops/research/dspy/SKILL.md\n  \u2713 mlops/training/SKILL.md\n  \u2713 mlops/training/axolotl/SKILL.md\n  \u2717 mlops/training/trl-fine-tuning/SKILL.md\n    Error: Name mismatch: frontmatter says 'fine-tuning-with-trl', parent directory is 'trl-fine-tuning'\n  \u2713 mlops/training/unsloth/SKILL.md\n  \u2713 note-taking/obsidian/SKILL.md\n  \u2713 note-taking/obsidian-bases/SKILL.md\n  \u2713 note-taking/obsidian-cli/SKILL.md\n  \u2713 note-taking/obsidian-markdown/SKILL.md\n  \u2713 productivity/airtable/SKILL.md\n  \u2713 productivity/google-workspace/SKILL.md\n  \u2713 productivity/linear/SKILL.md\n  \u2713 productivity/maps/SKILL.md\n  \u2713 productivity/nano-pdf/SKILL.md\n  \u2713 productivity/notion/SKILL.md\n  \u2713 productivity/ocr-and-documents/SKILL.md\n  \u2713 productivity/powerpoint/SKILL.md\n  \u2713 productivity/teams-meeting-pipeline/SKILL.md\n  \u2713 red-teaming/godmode/SKILL.md\n  \u2713 research/arxiv/SKILL.md\n  \u2713 research/blogwatcher/SKILL.md\n  \u2713 research/last30days/SKILL.md\n  \u2713 research/llm-wiki/SKILL.md\n  \u2713 research/polymarket/SKILL.md\n  \u2713 research/research-paper-writing/SKILL.md\n  \u2713 security/hermes-security-audit/SKILL.md\n  \u2713 smart-home/openhue/SKILL.md\n  \u2713 social-media/xurl/SKILL.md\n  \u2713 software-development/claude-code-guide/SKILL.md\n  \u2713 software-development/claude-md-improver/SKILL.md\n  \u2713 software-development/clean-code/SKILL.md\n  \u2713 software-development/code-reviewer/SKILL.md\n  \u2713 software-development/concise-planning/SKILL.md\n  \u2713 software-development/context7/SKILL.md\n  \u2713 software-development/daily-digest-builder/SKILL.md\n  \u2713 software-development/dashboard-architect/SKILL.md\n  \u2713 software-development/debugging-hermes-tui-commands/SKILL.md\n  \u2713 software-development/defuddle/SKILL.md\n  \u2713 software-development/error-handling-patterns/SKILL.md\n  \u2713 software-development/frontend-design/SKILL.md\n  \u2713 software-development/frontend-developer/SKILL.md\n  \u2713 software-development/grill-me/SKILL.md\n  \u2713 software-development/gt-centralized-system/SKILL.md\n  \u2713 software-development/hermes-agent-skill-authoring/SKILL.md\n  \u2713 software-development/node-inspect-debugger/SKILL.md\n  \u2713 software-development/plan/SKILL.md\n  \u2713 software-development/python-debugpy/SKILL.md\n  \u2713 software-development/requesting-code-review/SKILL.md\n  \u2713 software-development/senior-engineer/SKILL.md\n  \u2713 software-development/session-report/SKILL.md\n  \u2713 software-development/skill-creator/SKILL.md\n  \u2713 software-development/spike/SKILL.md\n  \u2713 software-development/subagent-driven-development/SKILL.md\n  \u2713 software-development/systematic-debugging/SKILL.md\n  \u2713 software-development/test-driven-development/SKILL.md\n  \u2713 software-development/testing-patterns/SKILL.md\n  \u2713 software-development/writing-hookify-rules/SKILL.md\n  \u2713 software-development/writing-plans/SKILL.md\n  \u2713 superpowers/context-manager/SKILL.md\n  \u2713 superpowers/deep-research/SKILL.md\n  \u2713 superpowers/dispatching-parallel-agents/SKILL.md\n  \u2713 superpowers/executing-plans/SKILL.md\n  \u2713 superpowers/finishing-a-development-branch/SKILL.md\n  \u2713 superpowers/memory-systems/SKILL.md\n  \u2713 superpowers/receiving-code-review/SKILL.md\n  \u2713 superpowers/using-git-worktrees/SKILL.md\n  \u2713 superpowers/using-superpowers/SKILL.md\n  \u2713 superpowers/verification-before-completion/SKILL.md\n  \u2713 superpowers/writing-skills/SKILL.md\n  \u2713 yuanbao/yuanbao/SKILL.md\n\nResult: 5 error(s) found."
+    },
+    "sync_hermes": {
+      "ok": true,
+      "message": "dst is symlink to src; skipping copy"
+    },
+    "sync_agents": {
+      "ok": true,
+      "message": "dst is symlink to src; skipping copy"
+    }
+  },
+  "overall": "failure"
+}
+[sync-skills] Webhook ref=refs/heads/main (branch=main)
+[sync-skills] Pulling latest in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo ...
+[sync-skills] Git pull succeeded.
+[sync-skills] Running validator: /Users/gt/Public/MyFiles/agent-home/gt-core/scripts/validate-skills.py ...
+[sync-skills] Scanning 179 skill(s) in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo
+
+  ✓ apple/apple-notes/SKILL.md
+  ✓ apple/apple-reminders/SKILL.md
+  ✓ apple/findmy/SKILL.md
+  ✓ apple/imessage/SKILL.md
+  ✓ apple/macos-computer-use/SKILL.md
+  ✓ architecture/architecture/SKILL.md
+  ✓ architecture/architecture-patterns/SKILL.md
+  ✓ autonomous-ai-agents/agent-split-decision/SKILL.md
+  ✓ autonomous-ai-agents/claude-code/SKILL.md
+  ✓ autonomous-ai-agents/codex/SKILL.md
+  ✓ autonomous-ai-agents/hermes-agent/SKILL.md
+  ✓ autonomous-ai-agents/opencode/SKILL.md
+  ✓ autonomous-ai-agents/pi-coding-agent/SKILL.md
+  ✓ autonomous-ai-agents/swarm-orchestration/SKILL.md
+  ✓ creative/architecture-diagram/SKILL.md
+  ✓ creative/ascii-art/SKILL.md
+  ✓ creative/ascii-video/SKILL.md
+  ✓ creative/baoyu-comic/SKILL.md
+  ✓ creative/baoyu-infographic/SKILL.md
+  ✓ creative/brainstorming/SKILL.md
+  ✓ creative/caveman/SKILL.md
+  ✓ creative/caveman/caveman-commit/SKILL.md
+  ✓ creative/caveman/caveman-help/SKILL.md
+  ✓ creative/caveman/caveman-review/SKILL.md
+  ✓ creative/caveman/compress/SKILL.md
+  ✓ creative/claude-design/SKILL.md
+  ✓ creative/comfyui/SKILL.md
+  ✓ creative/creative-ideation/SKILL.md
+  ✓ creative/design-md/SKILL.md
+  ✓ creative/excalidraw/SKILL.md
+  ✓ creative/humanizer/SKILL.md
+  ✓ creative/json-canvas/SKILL.md
+  ✓ creative/manim-video/SKILL.md
+  ✓ creative/p5js/SKILL.md
+  ✓ creative/pixel-art/SKILL.md
+  ✓ creative/popular-web-designs/SKILL.md
+  ✓ creative/pretext/SKILL.md
+  ✓ creative/sketch/SKILL.md
+  ✓ creative/songwriting-and-ai-music/SKILL.md
+  ✓ creative/touchdesigner-mcp/SKILL.md
+  ✓ creative/ui-ux-designer/SKILL.md
+  ✓ data-science/jupyter-live-kernel/SKILL.md
+  ✓ devops/hermes-backup/SKILL.md
+  ✓ devops/hermes-dashboard/SKILL.md
+  ✓ devops/kanban-orchestrator/SKILL.md
+  ✓ devops/kanban-worker/SKILL.md
+  ✓ devops/webhook-subscriptions/SKILL.md
+  ✓ dogfood/dogfood/SKILL.md
+  ✓ domain/sentry/sentry-code-review/SKILL.md
+  ✓ domain/sentry/sentry-feature-setup/SKILL.md
+  ✓ domain/sentry/sentry-fix-issues/SKILL.md
+  ✓ domain/sentry/sentry-pr-code-review/SKILL.md
+  ✓ domain/sentry/sentry-sdk-setup/SKILL.md
+  ✓ domain/sentry/sentry-workflow/SKILL.md
+  ✓ email/himalaya/SKILL.md
+  ✓ gaming/game-dev-orchestration/SKILL.md
+  ✓ gaming/game-development/SKILL.md
+  ✓ gaming/godot/SKILL.md
+  ✓ gaming/minecraft-modpack-server/SKILL.md
+  ✓ gaming/pokemon-player/SKILL.md
+  ✓ github/codebase-inspection/SKILL.md
+  ✓ github/github-auth/SKILL.md
+  ✓ github/github-code-review/SKILL.md
+  ✓ github/github-issues/SKILL.md
+  ✓ github/github-pr-workflow/SKILL.md
+  ✓ github/github-repo-management/SKILL.md
+  ✓ ios-development/app-store-optimization/SKILL.md
+  ✓ ios-development/core-data-expert/SKILL.md
+  ✓ ios-development/hig-foundations/SKILL.md
+  ✓ ios-development/hig-patterns/SKILL.md
+  ✓ ios-development/ios-developer/SKILL.md
+  ✓ ios-development/ios-marketing-capture/SKILL.md
+  ✓ ios-development/miswag-ios-developer/SKILL.md
+  ✓ ios-development/mobile-security-coder/SKILL.md
+  ✓ ios-development/mobile-ui/SKILL.md
+  ✓ ios-development/release-whats-changed/SKILL.md
+  ✓ ios-development/spm-build-analysis/SKILL.md
+  ✓ ios-development/swift-concurrency/SKILL.md
+  ✓ ios-development/swift-concurrency-pro/SKILL.md
+  ✓ ios-development/swift-testing-expert/SKILL.md
+  ✓ ios-development/swift-testing-pro/SKILL.md
+  ✓ ios-development/swiftdata-expert-skill/SKILL.md
+  ✓ ios-development/swiftdata-pro/SKILL.md
+  ✓ ios-development/swiftui-expert-skill/SKILL.md
+  ✓ ios-development/swiftui-pro/SKILL.md
+  ✓ ios-development/xcode-build-benchmark/SKILL.md
+  ✓ ios-development/xcode-build-fixer/SKILL.md
+  ✓ ios-development/xcode-build-orchestrator/SKILL.md
+  ✓ ios-development/xcode-compilation-analyzer/SKILL.md
+  ✓ ios-development/xcode-project-analyzer/SKILL.md
+  ✓ mcp/native-mcp/SKILL.md
+  ✓ media/gif-search/SKILL.md
+  ✓ media/heartmula/SKILL.md
+  ✓ media/songsee/SKILL.md
+  ✓ media/spotify/SKILL.md
+  ✓ media/youtube-content/SKILL.md
+  ✓ mlops/evaluation/SKILL.md
+  ✗ mlops/evaluation/lm-evaluation-harness/SKILL.md
+    Error: Name mismatch: frontmatter says 'evaluating-llms-harness', parent directory is 'lm-evaluation-harness'
+  ✓ mlops/evaluation/weights-and-biases/SKILL.md
+  ✓ mlops/huggingface-hub/SKILL.md
+  ✓ mlops/inference/SKILL.md
+  ✓ mlops/inference/llama-cpp/SKILL.md
+  ✓ mlops/inference/obliteratus/SKILL.md
+  ✓ mlops/inference/outlines/SKILL.md
+  ✗ mlops/inference/vllm/SKILL.md
+    Error: Name mismatch: frontmatter says 'serving-llms-vllm', parent directory is 'vllm'
+  ✓ mlops/models/SKILL.md
+  ✗ mlops/models/audiocraft/SKILL.md
+    Error: Name mismatch: frontmatter says 'audiocraft-audio-generation', parent directory is 'audiocraft'
+  ✗ mlops/models/segment-anything/SKILL.md
+    Error: Name mismatch: frontmatter says 'segment-anything-model', parent directory is 'segment-anything'
+  ✓ mlops/research/SKILL.md
+  ✓ mlops/research/dspy/SKILL.md
+  ✓ mlops/training/SKILL.md
+  ✓ mlops/training/axolotl/SKILL.md
+  ✗ mlops/training/trl-fine-tuning/SKILL.md
+    Error: Name mismatch: frontmatter says 'fine-tuning-with-trl', parent directory is 'trl-fine-tuning'
+  ✓ mlops/training/unsloth/SKILL.md
+  ✓ note-taking/obsidian/SKILL.md
+  ✓ note-taking/obsidian-bases/SKILL.md
+  ✓ note-taking/obsidian-cli/SKILL.md
+  ✓ note-taking/obsidian-markdown/SKILL.md
+  ✓ productivity/airtable/SKILL.md
+  ✓ productivity/google-workspace/SKILL.md
+  ✓ productivity/linear/SKILL.md
+  ✓ productivity/maps/SKILL.md
+  ✓ productivity/nano-pdf/SKILL.md
+  ✓ productivity/notion/SKILL.md
+  ✓ productivity/ocr-and-documents/SKILL.md
+  ✓ productivity/powerpoint/SKILL.md
+  ✓ productivity/teams-meeting-pipeline/SKILL.md
+  ✓ red-teaming/godmode/SKILL.md
+  ✓ research/arxiv/SKILL.md
+  ✓ research/blogwatcher/SKILL.md
+  ✓ research/last30days/SKILL.md
+  ✓ research/llm-wiki/SKILL.md
+  ✓ research/polymarket/SKILL.md
+  ✓ research/research-paper-writing/SKILL.md
+  ✓ security/hermes-security-audit/SKILL.md
+  ✓ smart-home/openhue/SKILL.md
+  ✓ social-media/xurl/SKILL.md
+  ✓ software-development/claude-code-guide/SKILL.md
+  ✓ software-development/claude-md-improver/SKILL.md
+  ✓ software-development/clean-code/SKILL.md
+  ✓ software-development/code-reviewer/SKILL.md
+  ✓ software-development/concise-planning/SKILL.md
+  ✓ software-development/context7/SKILL.md
+  ✓ software-development/daily-digest-builder/SKILL.md
+  ✓ software-development/dashboard-architect/SKILL.md
+  ✓ software-development/debugging-hermes-tui-commands/SKILL.md
+  ✓ software-development/defuddle/SKILL.md
+  ✓ software-development/error-handling-patterns/SKILL.md
+  ✓ software-development/frontend-design/SKILL.md
+  ✓ software-development/frontend-developer/SKILL.md
+  ✓ software-development/grill-me/SKILL.md
+  ✓ software-development/gt-centralized-system/SKILL.md
+  ✓ software-development/hermes-agent-skill-authoring/SKILL.md
+  ✓ software-development/node-inspect-debugger/SKILL.md
+  ✓ software-development/plan/SKILL.md
+  ✓ software-development/python-debugpy/SKILL.md
+  ✓ software-development/requesting-code-review/SKILL.md
+  ✓ software-development/senior-engineer/SKILL.md
+  ✓ software-development/session-report/SKILL.md
+  ✓ software-development/skill-creator/SKILL.md
+  ✓ software-development/spike/SKILL.md
+  ✓ software-development/subagent-driven-development/SKILL.md
+  ✓ software-development/systematic-debugging/SKILL.md
+  ✓ software-development/test-driven-development/SKILL.md
+  ✓ software-development/testing-patterns/SKILL.md
+  ✓ software-development/writing-hookify-rules/SKILL.md
+  ✓ software-development/writing-plans/SKILL.md
+  ✓ superpowers/context-manager/SKILL.md
+  ✓ superpowers/deep-research/SKILL.md
+  ✓ superpowers/dispatching-parallel-agents/SKILL.md
+  ✓ superpowers/executing-plans/SKILL.md
+  ✓ superpowers/finishing-a-development-branch/SKILL.md
+  ✓ superpowers/memory-systems/SKILL.md
+  ✓ superpowers/receiving-code-review/SKILL.md
+  ✓ superpowers/using-git-worktrees/SKILL.md
+  ✓ superpowers/using-superpowers/SKILL.md
+  ✓ superpowers/verification-before-completion/SKILL.md
+  ✓ superpowers/writing-skills/SKILL.md
+  ✓ yuanbao/yuanbao/SKILL.md
+
+Result: 5 error(s) found.
+{
+  "ref": "refs/heads/main",
+  "branch": "main",
+  "repo": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo",
+  "steps": {
+    "pull": {
+      "ok": true,
+      "message": "Already up to date."
+    },
+    "validate": {
+      "ok": false,
+      "message": "Scanning 179 skill(s) in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo\n\n  \u2713 apple/apple-notes/SKILL.md\n  \u2713 apple/apple-reminders/SKILL.md\n  \u2713 apple/findmy/SKILL.md\n  \u2713 apple/imessage/SKILL.md\n  \u2713 apple/macos-computer-use/SKILL.md\n  \u2713 architecture/architecture/SKILL.md\n  \u2713 architecture/architecture-patterns/SKILL.md\n  \u2713 autonomous-ai-agents/agent-split-decision/SKILL.md\n  \u2713 autonomous-ai-agents/claude-code/SKILL.md\n  \u2713 autonomous-ai-agents/codex/SKILL.md\n  \u2713 autonomous-ai-agents/hermes-agent/SKILL.md\n  \u2713 autonomous-ai-agents/opencode/SKILL.md\n  \u2713 autonomous-ai-agents/pi-coding-agent/SKILL.md\n  \u2713 autonomous-ai-agents/swarm-orchestration/SKILL.md\n  \u2713 creative/architecture-diagram/SKILL.md\n  \u2713 creative/ascii-art/SKILL.md\n  \u2713 creative/ascii-video/SKILL.md\n  \u2713 creative/baoyu-comic/SKILL.md\n  \u2713 creative/baoyu-infographic/SKILL.md\n  \u2713 creative/brainstorming/SKILL.md\n  \u2713 creative/caveman/SKILL.md\n  \u2713 creative/caveman/caveman-commit/SKILL.md\n  \u2713 creative/caveman/caveman-help/SKILL.md\n  \u2713 creative/caveman/caveman-review/SKILL.md\n  \u2713 creative/caveman/compress/SKILL.md\n  \u2713 creative/claude-design/SKILL.md\n  \u2713 creative/comfyui/SKILL.md\n  \u2713 creative/creative-ideation/SKILL.md\n  \u2713 creative/design-md/SKILL.md\n  \u2713 creative/excalidraw/SKILL.md\n  \u2713 creative/humanizer/SKILL.md\n  \u2713 creative/json-canvas/SKILL.md\n  \u2713 creative/manim-video/SKILL.md\n  \u2713 creative/p5js/SKILL.md\n  \u2713 creative/pixel-art/SKILL.md\n  \u2713 creative/popular-web-designs/SKILL.md\n  \u2713 creative/pretext/SKILL.md\n  \u2713 creative/sketch/SKILL.md\n  \u2713 creative/songwriting-and-ai-music/SKILL.md\n  \u2713 creative/touchdesigner-mcp/SKILL.md\n  \u2713 creative/ui-ux-designer/SKILL.md\n  \u2713 data-science/jupyter-live-kernel/SKILL.md\n  \u2713 devops/hermes-backup/SKILL.md\n  \u2713 devops/hermes-dashboard/SKILL.md\n  \u2713 devops/kanban-orchestrator/SKILL.md\n  \u2713 devops/kanban-worker/SKILL.md\n  \u2713 devops/webhook-subscriptions/SKILL.md\n  \u2713 dogfood/dogfood/SKILL.md\n  \u2713 domain/sentry/sentry-code-review/SKILL.md\n  \u2713 domain/sentry/sentry-feature-setup/SKILL.md\n  \u2713 domain/sentry/sentry-fix-issues/SKILL.md\n  \u2713 domain/sentry/sentry-pr-code-review/SKILL.md\n  \u2713 domain/sentry/sentry-sdk-setup/SKILL.md\n  \u2713 domain/sentry/sentry-workflow/SKILL.md\n  \u2713 email/himalaya/SKILL.md\n  \u2713 gaming/game-dev-orchestration/SKILL.md\n  \u2713 gaming/game-development/SKILL.md\n  \u2713 gaming/godot/SKILL.md\n  \u2713 gaming/minecraft-modpack-server/SKILL.md\n  \u2713 gaming/pokemon-player/SKILL.md\n  \u2713 github/codebase-inspection/SKILL.md\n  \u2713 github/github-auth/SKILL.md\n  \u2713 github/github-code-review/SKILL.md\n  \u2713 github/github-issues/SKILL.md\n  \u2713 github/github-pr-workflow/SKILL.md\n  \u2713 github/github-repo-management/SKILL.md\n  \u2713 ios-development/app-store-optimization/SKILL.md\n  \u2713 ios-development/core-data-expert/SKILL.md\n  \u2713 ios-development/hig-foundations/SKILL.md\n  \u2713 ios-development/hig-patterns/SKILL.md\n  \u2713 ios-development/ios-developer/SKILL.md\n  \u2713 ios-development/ios-marketing-capture/SKILL.md\n  \u2713 ios-development/miswag-ios-developer/SKILL.md\n  \u2713 ios-development/mobile-security-coder/SKILL.md\n  \u2713 ios-development/mobile-ui/SKILL.md\n  \u2713 ios-development/release-whats-changed/SKILL.md\n  \u2713 ios-development/spm-build-analysis/SKILL.md\n  \u2713 ios-development/swift-concurrency/SKILL.md\n  \u2713 ios-development/swift-concurrency-pro/SKILL.md\n  \u2713 ios-development/swift-testing-expert/SKILL.md\n  \u2713 ios-development/swift-testing-pro/SKILL.md\n  \u2713 ios-development/swiftdata-expert-skill/SKILL.md\n  \u2713 ios-development/swiftdata-pro/SKILL.md\n  \u2713 ios-development/swiftui-expert-skill/SKILL.md\n  \u2713 ios-development/swiftui-pro/SKILL.md\n  \u2713 ios-development/xcode-build-benchmark/SKILL.md\n  \u2713 ios-development/xcode-build-fixer/SKILL.md\n  \u2713 ios-development/xcode-build-orchestrator/SKILL.md\n  \u2713 ios-development/xcode-compilation-analyzer/SKILL.md\n  \u2713 ios-development/xcode-project-analyzer/SKILL.md\n  \u2713 mcp/native-mcp/SKILL.md\n  \u2713 media/gif-search/SKILL.md\n  \u2713 media/heartmula/SKILL.md\n  \u2713 media/songsee/SKILL.md\n  \u2713 media/spotify/SKILL.md\n  \u2713 media/youtube-content/SKILL.md\n  \u2713 mlops/evaluation/SKILL.md\n  \u2717 mlops/evaluation/lm-evaluation-harness/SKILL.md\n    Error: Name mismatch: frontmatter says 'evaluating-llms-harness', parent directory is 'lm-evaluation-harness'\n  \u2713 mlops/evaluation/weights-and-biases/SKILL.md\n  \u2713 mlops/huggingface-hub/SKILL.md\n  \u2713 mlops/inference/SKILL.md\n  \u2713 mlops/inference/llama-cpp/SKILL.md\n  \u2713 mlops/inference/obliteratus/SKILL.md\n  \u2713 mlops/inference/outlines/SKILL.md\n  \u2717 mlops/inference/vllm/SKILL.md\n    Error: Name mismatch: frontmatter says 'serving-llms-vllm', parent directory is 'vllm'\n  \u2713 mlops/models/SKILL.md\n  \u2717 mlops/models/audiocraft/SKILL.md\n    Error: Name mismatch: frontmatter says 'audiocraft-audio-generation', parent directory is 'audiocraft'\n  \u2717 mlops/models/segment-anything/SKILL.md\n    Error: Name mismatch: frontmatter says 'segment-anything-model', parent directory is 'segment-anything'\n  \u2713 mlops/research/SKILL.md\n  \u2713 mlops/research/dspy/SKILL.md\n  \u2713 mlops/training/SKILL.md\n  \u2713 mlops/training/axolotl/SKILL.md\n  \u2717 mlops/training/trl-fine-tuning/SKILL.md\n    Error: Name mismatch: frontmatter says 'fine-tuning-with-trl', parent directory is 'trl-fine-tuning'\n  \u2713 mlops/training/unsloth/SKILL.md\n  \u2713 note-taking/obsidian/SKILL.md\n  \u2713 note-taking/obsidian-bases/SKILL.md\n  \u2713 note-taking/obsidian-cli/SKILL.md\n  \u2713 note-taking/obsidian-markdown/SKILL.md\n  \u2713 productivity/airtable/SKILL.md\n  \u2713 productivity/google-workspace/SKILL.md\n  \u2713 productivity/linear/SKILL.md\n  \u2713 productivity/maps/SKILL.md\n  \u2713 productivity/nano-pdf/SKILL.md\n  \u2713 productivity/notion/SKILL.md\n  \u2713 productivity/ocr-and-documents/SKILL.md\n  \u2713 productivity/powerpoint/SKILL.md\n  \u2713 productivity/teams-meeting-pipeline/SKILL.md\n  \u2713 red-teaming/godmode/SKILL.md\n  \u2713 research/arxiv/SKILL.md\n  \u2713 research/blogwatcher/SKILL.md\n  \u2713 research/last30days/SKILL.md\n  \u2713 research/llm-wiki/SKILL.md\n  \u2713 research/polymarket/SKILL.md\n  \u2713 research/research-paper-writing/SKILL.md\n  \u2713 security/hermes-security-audit/SKILL.md\n  \u2713 smart-home/openhue/SKILL.md\n  \u2713 social-media/xurl/SKILL.md\n  \u2713 software-development/claude-code-guide/SKILL.md\n  \u2713 software-development/claude-md-improver/SKILL.md\n  \u2713 software-development/clean-code/SKILL.md\n  \u2713 software-development/code-reviewer/SKILL.md\n  \u2713 software-development/concise-planning/SKILL.md\n  \u2713 software-development/context7/SKILL.md\n  \u2713 software-development/daily-digest-builder/SKILL.md\n  \u2713 software-development/dashboard-architect/SKILL.md\n  \u2713 software-development/debugging-hermes-tui-commands/SKILL.md\n  \u2713 software-development/defuddle/SKILL.md\n  \u2713 software-development/error-handling-patterns/SKILL.md\n  \u2713 software-development/frontend-design/SKILL.md\n  \u2713 software-development/frontend-developer/SKILL.md\n  \u2713 software-development/grill-me/SKILL.md\n  \u2713 software-development/gt-centralized-system/SKILL.md\n  \u2713 software-development/hermes-agent-skill-authoring/SKILL.md\n  \u2713 software-development/node-inspect-debugger/SKILL.md\n  \u2713 software-development/plan/SKILL.md\n  \u2713 software-development/python-debugpy/SKILL.md\n  \u2713 software-development/requesting-code-review/SKILL.md\n  \u2713 software-development/senior-engineer/SKILL.md\n  \u2713 software-development/session-report/SKILL.md\n  \u2713 software-development/skill-creator/SKILL.md\n  \u2713 software-development/spike/SKILL.md\n  \u2713 software-development/subagent-driven-development/SKILL.md\n  \u2713 software-development/systematic-debugging/SKILL.md\n  \u2713 software-development/test-driven-development/SKILL.md\n  \u2713 software-development/testing-patterns/SKILL.md\n  \u2713 software-development/writing-hookify-rules/SKILL.md\n  \u2713 software-development/writing-plans/SKILL.md\n  \u2713 superpowers/context-manager/SKILL.md\n  \u2713 superpowers/deep-research/SKILL.md\n  \u2713 superpowers/dispatching-parallel-agents/SKILL.md\n  \u2713 superpowers/executing-plans/SKILL.md\n  \u2713 superpowers/finishing-a-development-branch/SKILL.md\n  \u2713 superpowers/memory-systems/SKILL.md\n  \u2713 superpowers/receiving-code-review/SKILL.md\n  \u2713 superpowers/using-git-worktrees/SKILL.md\n  \u2713 superpowers/using-superpowers/SKILL.md\n  \u2713 superpowers/verification-before-completion/SKILL.md\n  \u2713 superpowers/writing-skills/SKILL.md\n  \u2713 yuanbao/yuanbao/SKILL.md\n\nResult: 5 error(s) found."
+    },
+    "sync_hermes": {
+      "ok": true,
+      "message": "dst is symlink to src; skipping copy"
+    },
+    "sync_agents": {
+      "ok": true,
+      "message": "dst is symlink to src; skipping copy"
+    }
+  },
+  "overall": "failure"
+}
+[sync-skills] Webhook ref=refs/heads/main (branch=main)
+[sync-skills] Pulling latest in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo ...
+[sync-skills] Git pull succeeded.
+[sync-skills] Running validator: /Users/gt/Public/MyFiles/agent-home/gt-core/scripts/validate-skills.py ...
+[sync-skills] Scanning 179 skill(s) in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo
+
+  ✓ apple/apple-notes/SKILL.md
+  ✓ apple/apple-reminders/SKILL.md
+  ✓ apple/findmy/SKILL.md
+  ✓ apple/imessage/SKILL.md
+  ✓ apple/macos-computer-use/SKILL.md
+  ✓ architecture/architecture/SKILL.md
+  ✓ architecture/architecture-patterns/SKILL.md
+  ✓ autonomous-ai-agents/agent-split-decision/SKILL.md
+  ✓ autonomous-ai-agents/claude-code/SKILL.md
+  ✓ autonomous-ai-agents/codex/SKILL.md
+  ✓ autonomous-ai-agents/hermes-agent/SKILL.md
+  ✓ autonomous-ai-agents/opencode/SKILL.md
+  ✓ autonomous-ai-agents/pi-coding-agent/SKILL.md
+  ✓ autonomous-ai-agents/swarm-orchestration/SKILL.md
+  ✓ creative/architecture-diagram/SKILL.md
+  ✓ creative/ascii-art/SKILL.md
+  ✓ creative/ascii-video/SKILL.md
+  ✓ creative/baoyu-comic/SKILL.md
+  ✓ creative/baoyu-infographic/SKILL.md
+  ✓ creative/brainstorming/SKILL.md
+  ✓ creative/caveman/SKILL.md
+  ✓ creative/caveman/caveman-commit/SKILL.md
+  ✓ creative/caveman/caveman-help/SKILL.md
+  ✓ creative/caveman/caveman-review/SKILL.md
+  ✓ creative/caveman/compress/SKILL.md
+  ✓ creative/claude-design/SKILL.md
+  ✓ creative/comfyui/SKILL.md
+  ✓ creative/creative-ideation/SKILL.md
+  ✓ creative/design-md/SKILL.md
+  ✓ creative/excalidraw/SKILL.md
+  ✓ creative/humanizer/SKILL.md
+  ✓ creative/json-canvas/SKILL.md
+  ✓ creative/manim-video/SKILL.md
+  ✓ creative/p5js/SKILL.md
+  ✓ creative/pixel-art/SKILL.md
+  ✓ creative/popular-web-designs/SKILL.md
+  ✓ creative/pretext/SKILL.md
+  ✓ creative/sketch/SKILL.md
+  ✓ creative/songwriting-and-ai-music/SKILL.md
+  ✓ creative/touchdesigner-mcp/SKILL.md
+  ✓ creative/ui-ux-designer/SKILL.md
+  ✓ data-science/jupyter-live-kernel/SKILL.md
+  ✓ devops/hermes-backup/SKILL.md
+  ✓ devops/hermes-dashboard/SKILL.md
+  ✓ devops/kanban-orchestrator/SKILL.md
+  ✓ devops/kanban-worker/SKILL.md
+  ✓ devops/webhook-subscriptions/SKILL.md
+  ✓ dogfood/dogfood/SKILL.md
+  ✓ domain/sentry/sentry-code-review/SKILL.md
+  ✓ domain/sentry/sentry-feature-setup/SKILL.md
+  ✓ domain/sentry/sentry-fix-issues/SKILL.md
+  ✓ domain/sentry/sentry-pr-code-review/SKILL.md
+  ✓ domain/sentry/sentry-sdk-setup/SKILL.md
+  ✓ domain/sentry/sentry-workflow/SKILL.md
+  ✓ email/himalaya/SKILL.md
+  ✓ gaming/game-dev-orchestration/SKILL.md
+  ✓ gaming/game-development/SKILL.md
+  ✓ gaming/godot/SKILL.md
+  ✓ gaming/minecraft-modpack-server/SKILL.md
+  ✓ gaming/pokemon-player/SKILL.md
+  ✓ github/codebase-inspection/SKILL.md
+  ✓ github/github-auth/SKILL.md
+  ✓ github/github-code-review/SKILL.md
+  ✓ github/github-issues/SKILL.md
+  ✓ github/github-pr-workflow/SKILL.md
+  ✓ github/github-repo-management/SKILL.md
+  ✓ ios-development/app-store-optimization/SKILL.md
+  ✓ ios-development/core-data-expert/SKILL.md
+  ✓ ios-development/hig-foundations/SKILL.md
+  ✓ ios-development/hig-patterns/SKILL.md
+  ✓ ios-development/ios-developer/SKILL.md
+  ✓ ios-development/ios-marketing-capture/SKILL.md
+  ✓ ios-development/miswag-ios-developer/SKILL.md
+  ✓ ios-development/mobile-security-coder/SKILL.md
+  ✓ ios-development/mobile-ui/SKILL.md
+  ✓ ios-development/release-whats-changed/SKILL.md
+  ✓ ios-development/spm-build-analysis/SKILL.md
+  ✓ ios-development/swift-concurrency/SKILL.md
+  ✓ ios-development/swift-concurrency-pro/SKILL.md
+  ✓ ios-development/swift-testing-expert/SKILL.md
+  ✓ ios-development/swift-testing-pro/SKILL.md
+  ✓ ios-development/swiftdata-expert-skill/SKILL.md
+  ✓ ios-development/swiftdata-pro/SKILL.md
+  ✓ ios-development/swiftui-expert-skill/SKILL.md
+  ✓ ios-development/swiftui-pro/SKILL.md
+  ✓ ios-development/xcode-build-benchmark/SKILL.md
+  ✓ ios-development/xcode-build-fixer/SKILL.md
+  ✓ ios-development/xcode-build-orchestrator/SKILL.md
+  ✓ ios-development/xcode-compilation-analyzer/SKILL.md
+  ✓ ios-development/xcode-project-analyzer/SKILL.md
+  ✓ mcp/native-mcp/SKILL.md
+  ✓ media/gif-search/SKILL.md
+  ✓ media/heartmula/SKILL.md
+  ✓ media/songsee/SKILL.md
+  ✓ media/spotify/SKILL.md
+  ✓ media/youtube-content/SKILL.md
+  ✓ mlops/evaluation/SKILL.md
+  ✗ mlops/evaluation/lm-evaluation-harness/SKILL.md
+    Error: Name mismatch: frontmatter says 'evaluating-llms-harness', parent directory is 'lm-evaluation-harness'
+  ✓ mlops/evaluation/weights-and-biases/SKILL.md
+  ✓ mlops/huggingface-hub/SKILL.md
+  ✓ mlops/inference/SKILL.md
+  ✓ mlops/inference/llama-cpp/SKILL.md
+  ✓ mlops/inference/obliteratus/SKILL.md
+  ✓ mlops/inference/outlines/SKILL.md
+  ✗ mlops/inference/vllm/SKILL.md
+    Error: Name mismatch: frontmatter says 'serving-llms-vllm', parent directory is 'vllm'
+  ✓ mlops/models/SKILL.md
+  ✗ mlops/models/audiocraft/SKILL.md
+    Error: Name mismatch: frontmatter says 'audiocraft-audio-generation', parent directory is 'audiocraft'
+  ✗ mlops/models/segment-anything/SKILL.md
+    Error: Name mismatch: frontmatter says 'segment-anything-model', parent directory is 'segment-anything'
+  ✓ mlops/research/SKILL.md
+  ✓ mlops/research/dspy/SKILL.md
+  ✓ mlops/training/SKILL.md
+  ✓ mlops/training/axolotl/SKILL.md
+  ✗ mlops/training/trl-fine-tuning/SKILL.md
+    Error: Name mismatch: frontmatter says 'fine-tuning-with-trl', parent directory is 'trl-fine-tuning'
+  ✓ mlops/training/unsloth/SKILL.md
+  ✓ note-taking/obsidian/SKILL.md
+  ✓ note-taking/obsidian-bases/SKILL.md
+  ✓ note-taking/obsidian-cli/SKILL.md
+  ✓ note-taking/obsidian-markdown/SKILL.md
+  ✓ productivity/airtable/SKILL.md
+  ✓ productivity/google-workspace/SKILL.md
+  ✓ productivity/linear/SKILL.md
+  ✓ productivity/maps/SKILL.md
+  ✓ productivity/nano-pdf/SKILL.md
+  ✓ productivity/notion/SKILL.md
+  ✓ productivity/ocr-and-documents/SKILL.md
+  ✓ productivity/powerpoint/SKILL.md
+  ✓ productivity/teams-meeting-pipeline/SKILL.md
+  ✓ red-teaming/godmode/SKILL.md
+  ✓ research/arxiv/SKILL.md
+  ✓ research/blogwatcher/SKILL.md
+  ✓ research/last30days/SKILL.md
+  ✓ research/llm-wiki/SKILL.md
+  ✓ research/polymarket/SKILL.md
+  ✓ research/research-paper-writing/SKILL.md
+  ✓ security/hermes-security-audit/SKILL.md
+  ✓ smart-home/openhue/SKILL.md
+  ✓ social-media/xurl/SKILL.md
+  ✓ software-development/claude-code-guide/SKILL.md
+  ✓ software-development/claude-md-improver/SKILL.md
+  ✓ software-development/clean-code/SKILL.md
+  ✓ software-development/code-reviewer/SKILL.md
+  ✓ software-development/concise-planning/SKILL.md
+  ✓ software-development/context7/SKILL.md
+  ✓ software-development/daily-digest-builder/SKILL.md
+  ✓ software-development/dashboard-architect/SKILL.md
+  ✓ software-development/debugging-hermes-tui-commands/SKILL.md
+  ✓ software-development/defuddle/SKILL.md
+  ✓ software-development/error-handling-patterns/SKILL.md
+  ✓ software-development/frontend-design/SKILL.md
+  ✓ software-development/frontend-developer/SKILL.md
+  ✓ software-development/grill-me/SKILL.md
+  ✓ software-development/gt-centralized-system/SKILL.md
+  ✓ software-development/hermes-agent-skill-authoring/SKILL.md
+  ✓ software-development/node-inspect-debugger/SKILL.md
+  ✓ software-development/plan/SKILL.md
+  ✓ software-development/python-debugpy/SKILL.md
+  ✓ software-development/requesting-code-review/SKILL.md
+  ✓ software-development/senior-engineer/SKILL.md
+  ✓ software-development/session-report/SKILL.md
+  ✓ software-development/skill-creator/SKILL.md
+  ✓ software-development/spike/SKILL.md
+  ✓ software-development/subagent-driven-development/SKILL.md
+  ✓ software-development/systematic-debugging/SKILL.md
+  ✓ software-development/test-driven-development/SKILL.md
+  ✓ software-development/testing-patterns/SKILL.md
+  ✓ software-development/writing-hookify-rules/SKILL.md
+  ✓ software-development/writing-plans/SKILL.md
+  ✓ superpowers/context-manager/SKILL.md
+  ✓ superpowers/deep-research/SKILL.md
+  ✓ superpowers/dispatching-parallel-agents/SKILL.md
+  ✓ superpowers/executing-plans/SKILL.md
+  ✓ superpowers/finishing-a-development-branch/SKILL.md
+  ✓ superpowers/memory-systems/SKILL.md
+  ✓ superpowers/receiving-code-review/SKILL.md
+  ✓ superpowers/using-git-worktrees/SKILL.md
+  ✓ superpowers/using-superpowers/SKILL.md
+  ✓ superpowers/verification-before-completion/SKILL.md
+  ✓ superpowers/writing-skills/SKILL.md
+  ✓ yuanbao/yuanbao/SKILL.md
+
+Result: 5 error(s) found.
+{
+  "ref": "refs/heads/main",
+  "branch": "main",
+  "repo": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo",
+  "steps": {
+    "pull": {
+      "ok": true,
+      "message": "Already up to date."
+    },
+    "validate": {
+      "ok": false,
+      "message": "Scanning 179 skill(s) in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo\n\n  \u2713 apple/apple-notes/SKILL.md\n  \u2713 apple/apple-reminders/SKILL.md\n  \u2713 apple/findmy/SKILL.md\n  \u2713 apple/imessage/SKILL.md\n  \u2713 apple/macos-computer-use/SKILL.md\n  \u2713 architecture/architecture/SKILL.md\n  \u2713 architecture/architecture-patterns/SKILL.md\n  \u2713 autonomous-ai-agents/agent-split-decision/SKILL.md\n  \u2713 autonomous-ai-agents/claude-code/SKILL.md\n  \u2713 autonomous-ai-agents/codex/SKILL.md\n  \u2713 autonomous-ai-agents/hermes-agent/SKILL.md\n  \u2713 autonomous-ai-agents/opencode/SKILL.md\n  \u2713 autonomous-ai-agents/pi-coding-agent/SKILL.md\n  \u2713 autonomous-ai-agents/swarm-orchestration/SKILL.md\n  \u2713 creative/architecture-diagram/SKILL.md\n  \u2713 creative/ascii-art/SKILL.md\n  \u2713 creative/ascii-video/SKILL.md\n  \u2713 creative/baoyu-comic/SKILL.md\n  \u2713 creative/baoyu-infographic/SKILL.md\n  \u2713 creative/brainstorming/SKILL.md\n  \u2713 creative/caveman/SKILL.md\n  \u2713 creative/caveman/caveman-commit/SKILL.md\n  \u2713 creative/caveman/caveman-help/SKILL.md\n  \u2713 creative/caveman/caveman-review/SKILL.md\n  \u2713 creative/caveman/compress/SKILL.md\n  \u2713 creative/claude-design/SKILL.md\n  \u2713 creative/comfyui/SKILL.md\n  \u2713 creative/creative-ideation/SKILL.md\n  \u2713 creative/design-md/SKILL.md\n  \u2713 creative/excalidraw/SKILL.md\n  \u2713 creative/humanizer/SKILL.md\n  \u2713 creative/json-canvas/SKILL.md\n  \u2713 creative/manim-video/SKILL.md\n  \u2713 creative/p5js/SKILL.md\n  \u2713 creative/pixel-art/SKILL.md\n  \u2713 creative/popular-web-designs/SKILL.md\n  \u2713 creative/pretext/SKILL.md\n  \u2713 creative/sketch/SKILL.md\n  \u2713 creative/songwriting-and-ai-music/SKILL.md\n  \u2713 creative/touchdesigner-mcp/SKILL.md\n  \u2713 creative/ui-ux-designer/SKILL.md\n  \u2713 data-science/jupyter-live-kernel/SKILL.md\n  \u2713 devops/hermes-backup/SKILL.md\n  \u2713 devops/hermes-dashboard/SKILL.md\n  \u2713 devops/kanban-orchestrator/SKILL.md\n  \u2713 devops/kanban-worker/SKILL.md\n  \u2713 devops/webhook-subscriptions/SKILL.md\n  \u2713 dogfood/dogfood/SKILL.md\n  \u2713 domain/sentry/sentry-code-review/SKILL.md\n  \u2713 domain/sentry/sentry-feature-setup/SKILL.md\n  \u2713 domain/sentry/sentry-fix-issues/SKILL.md\n  \u2713 domain/sentry/sentry-pr-code-review/SKILL.md\n  \u2713 domain/sentry/sentry-sdk-setup/SKILL.md\n  \u2713 domain/sentry/sentry-workflow/SKILL.md\n  \u2713 email/himalaya/SKILL.md\n  \u2713 gaming/game-dev-orchestration/SKILL.md\n  \u2713 gaming/game-development/SKILL.md\n  \u2713 gaming/godot/SKILL.md\n  \u2713 gaming/minecraft-modpack-server/SKILL.md\n  \u2713 gaming/pokemon-player/SKILL.md\n  \u2713 github/codebase-inspection/SKILL.md\n  \u2713 github/github-auth/SKILL.md\n  \u2713 github/github-code-review/SKILL.md\n  \u2713 github/github-issues/SKILL.md\n  \u2713 github/github-pr-workflow/SKILL.md\n  \u2713 github/github-repo-management/SKILL.md\n  \u2713 ios-development/app-store-optimization/SKILL.md\n  \u2713 ios-development/core-data-expert/SKILL.md\n  \u2713 ios-development/hig-foundations/SKILL.md\n  \u2713 ios-development/hig-patterns/SKILL.md\n  \u2713 ios-development/ios-developer/SKILL.md\n  \u2713 ios-development/ios-marketing-capture/SKILL.md\n  \u2713 ios-development/miswag-ios-developer/SKILL.md\n  \u2713 ios-development/mobile-security-coder/SKILL.md\n  \u2713 ios-development/mobile-ui/SKILL.md\n  \u2713 ios-development/release-whats-changed/SKILL.md\n  \u2713 ios-development/spm-build-analysis/SKILL.md\n  \u2713 ios-development/swift-concurrency/SKILL.md\n  \u2713 ios-development/swift-concurrency-pro/SKILL.md\n  \u2713 ios-development/swift-testing-expert/SKILL.md\n  \u2713 ios-development/swift-testing-pro/SKILL.md\n  \u2713 ios-development/swiftdata-expert-skill/SKILL.md\n  \u2713 ios-development/swiftdata-pro/SKILL.md\n  \u2713 ios-development/swiftui-expert-skill/SKILL.md\n  \u2713 ios-development/swiftui-pro/SKILL.md\n  \u2713 ios-development/xcode-build-benchmark/SKILL.md\n  \u2713 ios-development/xcode-build-fixer/SKILL.md\n  \u2713 ios-development/xcode-build-orchestrator/SKILL.md\n  \u2713 ios-development/xcode-compilation-analyzer/SKILL.md\n  \u2713 ios-development/xcode-project-analyzer/SKILL.md\n  \u2713 mcp/native-mcp/SKILL.md\n  \u2713 media/gif-search/SKILL.md\n  \u2713 media/heartmula/SKILL.md\n  \u2713 media/songsee/SKILL.md\n  \u2713 media/spotify/SKILL.md\n  \u2713 media/youtube-content/SKILL.md\n  \u2713 mlops/evaluation/SKILL.md\n  \u2717 mlops/evaluation/lm-evaluation-harness/SKILL.md\n    Error: Name mismatch: frontmatter says 'evaluating-llms-harness', parent directory is 'lm-evaluation-harness'\n  \u2713 mlops/evaluation/weights-and-biases/SKILL.md\n  \u2713 mlops/huggingface-hub/SKILL.md\n  \u2713 mlops/inference/SKILL.md\n  \u2713 mlops/inference/llama-cpp/SKILL.md\n  \u2713 mlops/inference/obliteratus/SKILL.md\n  \u2713 mlops/inference/outlines/SKILL.md\n  \u2717 mlops/inference/vllm/SKILL.md\n    Error: Name mismatch: frontmatter says 'serving-llms-vllm', parent directory is 'vllm'\n  \u2713 mlops/models/SKILL.md\n  \u2717 mlops/models/audiocraft/SKILL.md\n    Error: Name mismatch: frontmatter says 'audiocraft-audio-generation', parent directory is 'audiocraft'\n  \u2717 mlops/models/segment-anything/SKILL.md\n    Error: Name mismatch: frontmatter says 'segment-anything-model', parent directory is 'segment-anything'\n  \u2713 mlops/research/SKILL.md\n  \u2713 mlops/research/dspy/SKILL.md\n  \u2713 mlops/training/SKILL.md\n  \u2713 mlops/training/axolotl/SKILL.md\n  \u2717 mlops/training/trl-fine-tuning/SKILL.md\n    Error: Name mismatch: frontmatter says 'fine-tuning-with-trl', parent directory is 'trl-fine-tuning'\n  \u2713 mlops/training/unsloth/SKILL.md\n  \u2713 note-taking/obsidian/SKILL.md\n  \u2713 note-taking/obsidian-bases/SKILL.md\n  \u2713 note-taking/obsidian-cli/SKILL.md\n  \u2713 note-taking/obsidian-markdown/SKILL.md\n  \u2713 productivity/airtable/SKILL.md\n  \u2713 productivity/google-workspace/SKILL.md\n  \u2713 productivity/linear/SKILL.md\n  \u2713 productivity/maps/SKILL.md\n  \u2713 productivity/nano-pdf/SKILL.md\n  \u2713 productivity/notion/SKILL.md\n  \u2713 productivity/ocr-and-documents/SKILL.md\n  \u2713 productivity/powerpoint/SKILL.md\n  \u2713 productivity/teams-meeting-pipeline/SKILL.md\n  \u2713 red-teaming/godmode/SKILL.md\n  \u2713 research/arxiv/SKILL.md\n  \u2713 research/blogwatcher/SKILL.md\n  \u2713 research/last30days/SKILL.md\n  \u2713 research/llm-wiki/SKILL.md\n  \u2713 research/polymarket/SKILL.md\n  \u2713 research/research-paper-writing/SKILL.md\n  \u2713 security/hermes-security-audit/SKILL.md\n  \u2713 smart-home/openhue/SKILL.md\n  \u2713 social-media/xurl/SKILL.md\n  \u2713 software-development/claude-code-guide/SKILL.md\n  \u2713 software-development/claude-md-improver/SKILL.md\n  \u2713 software-development/clean-code/SKILL.md\n  \u2713 software-development/code-reviewer/SKILL.md\n  \u2713 software-development/concise-planning/SKILL.md\n  \u2713 software-development/context7/SKILL.md\n  \u2713 software-development/daily-digest-builder/SKILL.md\n  \u2713 software-development/dashboard-architect/SKILL.md\n  \u2713 software-development/debugging-hermes-tui-commands/SKILL.md\n  \u2713 software-development/defuddle/SKILL.md\n  \u2713 software-development/error-handling-patterns/SKILL.md\n  \u2713 software-development/frontend-design/SKILL.md\n  \u2713 software-development/frontend-developer/SKILL.md\n  \u2713 software-development/grill-me/SKILL.md\n  \u2713 software-development/gt-centralized-system/SKILL.md\n  \u2713 software-development/hermes-agent-skill-authoring/SKILL.md\n  \u2713 software-development/node-inspect-debugger/SKILL.md\n  \u2713 software-development/plan/SKILL.md\n  \u2713 software-development/python-debugpy/SKILL.md\n  \u2713 software-development/requesting-code-review/SKILL.md\n  \u2713 software-development/senior-engineer/SKILL.md\n  \u2713 software-development/session-report/SKILL.md\n  \u2713 software-development/skill-creator/SKILL.md\n  \u2713 software-development/spike/SKILL.md\n  \u2713 software-development/subagent-driven-development/SKILL.md\n  \u2713 software-development/systematic-debugging/SKILL.md\n  \u2713 software-development/test-driven-development/SKILL.md\n  \u2713 software-development/testing-patterns/SKILL.md\n  \u2713 software-development/writing-hookify-rules/SKILL.md\n  \u2713 software-development/writing-plans/SKILL.md\n  \u2713 superpowers/context-manager/SKILL.md\n  \u2713 superpowers/deep-research/SKILL.md\n  \u2713 superpowers/dispatching-parallel-agents/SKILL.md\n  \u2713 superpowers/executing-plans/SKILL.md\n  \u2713 superpowers/finishing-a-development-branch/SKILL.md\n  \u2713 superpowers/memory-systems/SKILL.md\n  \u2713 superpowers/receiving-code-review/SKILL.md\n  \u2713 superpowers/using-git-worktrees/SKILL.md\n  \u2713 superpowers/using-superpowers/SKILL.md\n  \u2713 superpowers/verification-before-completion/SKILL.md\n  \u2713 superpowers/writing-skills/SKILL.md\n  \u2713 yuanbao/yuanbao/SKILL.md\n\nResult: 5 error(s) found."
+    },
+    "sync_hermes": {
+      "ok": true,
+      "message": "dst is symlink to src; skipping copy"
+    },
+    "sync_agents": {
+      "ok": true,
+      "message": "dst is symlink to src; skipping copy"
+    }
+  },
+  "overall": "failure"
+}
+[sync-skills] Webhook ref=refs/heads/main (branch=main)
+[sync-skills] Pulling latest in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo ...
+[sync-skills] Git pull succeeded.
+[sync-skills] Running validator: /Users/gt/Public/MyFiles/agent-home/gt-core/scripts/validate-skills.py ...
+[sync-skills] Scanning 179 skill(s) in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo
+
+  ✓ apple/apple-notes/SKILL.md
+  ✓ apple/apple-reminders/SKILL.md
+  ✓ apple/findmy/SKILL.md
+  ✓ apple/imessage/SKILL.md
+  ✓ apple/macos-computer-use/SKILL.md
+  ✓ architecture/architecture/SKILL.md
+  ✓ architecture/architecture-patterns/SKILL.md
+  ✓ autonomous-ai-agents/agent-split-decision/SKILL.md
+  ✓ autonomous-ai-agents/claude-code/SKILL.md
+  ✓ autonomous-ai-agents/codex/SKILL.md
+  ✓ autonomous-ai-agents/hermes-agent/SKILL.md
+  ✓ autonomous-ai-agents/opencode/SKILL.md
+  ✓ autonomous-ai-agents/pi-coding-agent/SKILL.md
+  ✓ autonomous-ai-agents/swarm-orchestration/SKILL.md
+  ✓ creative/architecture-diagram/SKILL.md
+  ✓ creative/ascii-art/SKILL.md
+  ✓ creative/ascii-video/SKILL.md
+  ✓ creative/baoyu-comic/SKILL.md
+  ✓ creative/baoyu-infographic/SKILL.md
+  ✓ creative/brainstorming/SKILL.md
+  ✓ creative/caveman/SKILL.md
+  ✓ creative/caveman/caveman-commit/SKILL.md
+  ✓ creative/caveman/caveman-help/SKILL.md
+  ✓ creative/caveman/caveman-review/SKILL.md
+  ✓ creative/caveman/compress/SKILL.md
+  ✓ creative/claude-design/SKILL.md
+  ✓ creative/comfyui/SKILL.md
+  ✓ creative/creative-ideation/SKILL.md
+  ✓ creative/design-md/SKILL.md
+  ✓ creative/excalidraw/SKILL.md
+  ✓ creative/humanizer/SKILL.md
+  ✓ creative/json-canvas/SKILL.md
+  ✓ creative/manim-video/SKILL.md
+  ✓ creative/p5js/SKILL.md
+  ✓ creative/pixel-art/SKILL.md
+  ✓ creative/popular-web-designs/SKILL.md
+  ✓ creative/pretext/SKILL.md
+  ✓ creative/sketch/SKILL.md
+  ✓ creative/songwriting-and-ai-music/SKILL.md
+  ✓ creative/touchdesigner-mcp/SKILL.md
+  ✓ creative/ui-ux-designer/SKILL.md
+  ✓ data-science/jupyter-live-kernel/SKILL.md
+  ✓ devops/hermes-backup/SKILL.md
+  ✓ devops/hermes-dashboard/SKILL.md
+  ✓ devops/kanban-orchestrator/SKILL.md
+  ✓ devops/kanban-worker/SKILL.md
+  ✓ devops/webhook-subscriptions/SKILL.md
+  ✓ dogfood/dogfood/SKILL.md
+  ✓ domain/sentry/sentry-code-review/SKILL.md
+  ✓ domain/sentry/sentry-feature-setup/SKILL.md
+  ✓ domain/sentry/sentry-fix-issues/SKILL.md
+  ✓ domain/sentry/sentry-pr-code-review/SKILL.md
+  ✓ domain/sentry/sentry-sdk-setup/SKILL.md
+  ✓ domain/sentry/sentry-workflow/SKILL.md
+  ✓ email/himalaya/SKILL.md
+  ✓ gaming/game-dev-orchestration/SKILL.md
+  ✓ gaming/game-development/SKILL.md
+  ✓ gaming/godot/SKILL.md
+  ✓ gaming/minecraft-modpack-server/SKILL.md
+  ✓ gaming/pokemon-player/SKILL.md
+  ✓ github/codebase-inspection/SKILL.md
+  ✓ github/github-auth/SKILL.md
+  ✓ github/github-code-review/SKILL.md
+  ✓ github/github-issues/SKILL.md
+  ✓ github/github-pr-workflow/SKILL.md
+  ✓ github/github-repo-management/SKILL.md
+  ✓ ios-development/app-store-optimization/SKILL.md
+  ✓ ios-development/core-data-expert/SKILL.md
+  ✓ ios-development/hig-foundations/SKILL.md
+  ✓ ios-development/hig-patterns/SKILL.md
+  ✓ ios-development/ios-developer/SKILL.md
+  ✓ ios-development/ios-marketing-capture/SKILL.md
+  ✓ ios-development/miswag-ios-developer/SKILL.md
+  ✓ ios-development/mobile-security-coder/SKILL.md
+  ✓ ios-development/mobile-ui/SKILL.md
+  ✓ ios-development/release-whats-changed/SKILL.md
+  ✓ ios-development/spm-build-analysis/SKILL.md
+  ✓ ios-development/swift-concurrency/SKILL.md
+  ✓ ios-development/swift-concurrency-pro/SKILL.md
+  ✓ ios-development/swift-testing-expert/SKILL.md
+  ✓ ios-development/swift-testing-pro/SKILL.md
+  ✓ ios-development/swiftdata-expert-skill/SKILL.md
+  ✓ ios-development/swiftdata-pro/SKILL.md
+  ✓ ios-development/swiftui-expert-skill/SKILL.md
+  ✓ ios-development/swiftui-pro/SKILL.md
+  ✓ ios-development/xcode-build-benchmark/SKILL.md
+  ✓ ios-development/xcode-build-fixer/SKILL.md
+  ✓ ios-development/xcode-build-orchestrator/SKILL.md
+  ✓ ios-development/xcode-compilation-analyzer/SKILL.md
+  ✓ ios-development/xcode-project-analyzer/SKILL.md
+  ✓ mcp/native-mcp/SKILL.md
+  ✓ media/gif-search/SKILL.md
+  ✓ media/heartmula/SKILL.md
+  ✓ media/songsee/SKILL.md
+  ✓ media/spotify/SKILL.md
+  ✓ media/youtube-content/SKILL.md
+  ✓ mlops/evaluation/SKILL.md
+  ✗ mlops/evaluation/lm-evaluation-harness/SKILL.md
+    Error: Name mismatch: frontmatter says 'evaluating-llms-harness', parent directory is 'lm-evaluation-harness'
+  ✓ mlops/evaluation/weights-and-biases/SKILL.md
+  ✓ mlops/huggingface-hub/SKILL.md
+  ✓ mlops/inference/SKILL.md
+  ✓ mlops/inference/llama-cpp/SKILL.md
+  ✓ mlops/inference/obliteratus/SKILL.md
+  ✓ mlops/inference/outlines/SKILL.md
+  ✗ mlops/inference/vllm/SKILL.md
+    Error: Name mismatch: frontmatter says 'serving-llms-vllm', parent directory is 'vllm'
+  ✓ mlops/models/SKILL.md
+  ✗ mlops/models/audiocraft/SKILL.md
+    Error: Name mismatch: frontmatter says 'audiocraft-audio-generation', parent directory is 'audiocraft'
+  ✗ mlops/models/segment-anything/SKILL.md
+    Error: Name mismatch: frontmatter says 'segment-anything-model', parent directory is 'segment-anything'
+  ✓ mlops/research/SKILL.md
+  ✓ mlops/research/dspy/SKILL.md
+  ✓ mlops/training/SKILL.md
+  ✓ mlops/training/axolotl/SKILL.md
+  ✗ mlops/training/trl-fine-tuning/SKILL.md
+    Error: Name mismatch: frontmatter says 'fine-tuning-with-trl', parent directory is 'trl-fine-tuning'
+  ✓ mlops/training/unsloth/SKILL.md
+  ✓ note-taking/obsidian/SKILL.md
+  ✓ note-taking/obsidian-bases/SKILL.md
+  ✓ note-taking/obsidian-cli/SKILL.md
+  ✓ note-taking/obsidian-markdown/SKILL.md
+  ✓ productivity/airtable/SKILL.md
+  ✓ productivity/google-workspace/SKILL.md
+  ✓ productivity/linear/SKILL.md
+  ✓ productivity/maps/SKILL.md
+  ✓ productivity/nano-pdf/SKILL.md
+  ✓ productivity/notion/SKILL.md
+  ✓ productivity/ocr-and-documents/SKILL.md
+  ✓ productivity/powerpoint/SKILL.md
+  ✓ productivity/teams-meeting-pipeline/SKILL.md
+  ✓ red-teaming/godmode/SKILL.md
+  ✓ research/arxiv/SKILL.md
+  ✓ research/blogwatcher/SKILL.md
+  ✓ research/last30days/SKILL.md
+  ✓ research/llm-wiki/SKILL.md
+  ✓ research/polymarket/SKILL.md
+  ✓ research/research-paper-writing/SKILL.md
+  ✓ security/hermes-security-audit/SKILL.md
+  ✓ smart-home/openhue/SKILL.md
+  ✓ social-media/xurl/SKILL.md
+  ✓ software-development/claude-code-guide/SKILL.md
+  ✓ software-development/claude-md-improver/SKILL.md
+  ✓ software-development/clean-code/SKILL.md
+  ✓ software-development/code-reviewer/SKILL.md
+  ✓ software-development/concise-planning/SKILL.md
+  ✓ software-development/context7/SKILL.md
+  ✓ software-development/daily-digest-builder/SKILL.md
+  ✓ software-development/dashboard-architect/SKILL.md
+  ✓ software-development/debugging-hermes-tui-commands/SKILL.md
+  ✓ software-development/defuddle/SKILL.md
+  ✓ software-development/error-handling-patterns/SKILL.md
+  ✓ software-development/frontend-design/SKILL.md
+  ✓ software-development/frontend-developer/SKILL.md
+  ✓ software-development/grill-me/SKILL.md
+  ✓ software-development/gt-centralized-system/SKILL.md
+  ✓ software-development/hermes-agent-skill-authoring/SKILL.md
+  ✓ software-development/node-inspect-debugger/SKILL.md
+  ✓ software-development/plan/SKILL.md
+  ✓ software-development/python-debugpy/SKILL.md
+  ✓ software-development/requesting-code-review/SKILL.md
+  ✓ software-development/senior-engineer/SKILL.md
+  ✓ software-development/session-report/SKILL.md
+  ✓ software-development/skill-creator/SKILL.md
+  ✓ software-development/spike/SKILL.md
+  ✓ software-development/subagent-driven-development/SKILL.md
+  ✓ software-development/systematic-debugging/SKILL.md
+  ✓ software-development/test-driven-development/SKILL.md
+  ✓ software-development/testing-patterns/SKILL.md
+  ✓ software-development/writing-hookify-rules/SKILL.md
+  ✓ software-development/writing-plans/SKILL.md
+  ✓ superpowers/context-manager/SKILL.md
+  ✓ superpowers/deep-research/SKILL.md
+  ✓ superpowers/dispatching-parallel-agents/SKILL.md
+  ✓ superpowers/executing-plans/SKILL.md
+  ✓ superpowers/finishing-a-development-branch/SKILL.md
+  ✓ superpowers/memory-systems/SKILL.md
+  ✓ superpowers/receiving-code-review/SKILL.md
+  ✓ superpowers/using-git-worktrees/SKILL.md
+  ✓ superpowers/using-superpowers/SKILL.md
+  ✓ superpowers/verification-before-completion/SKILL.md
+  ✓ superpowers/writing-skills/SKILL.md
+  ✓ yuanbao/yuanbao/SKILL.md
+
+Result: 5 error(s) found.
+{
+  "ref": "refs/heads/main",
+  "branch": "main",
+  "repo": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo",
+  "steps": {
+    "pull": {
+      "ok": true,
+      "message": "Already up to date."
+    },
+    "validate": {
+      "ok": false,
+      "message": "Scanning 179 skill(s) in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo\n\n  \u2713 apple/apple-notes/SKILL.md\n  \u2713 apple/apple-reminders/SKILL.md\n  \u2713 apple/findmy/SKILL.md\n  \u2713 apple/imessage/SKILL.md\n  \u2713 apple/macos-computer-use/SKILL.md\n  \u2713 architecture/architecture/SKILL.md\n  \u2713 architecture/architecture-patterns/SKILL.md\n  \u2713 autonomous-ai-agents/agent-split-decision/SKILL.md\n  \u2713 autonomous-ai-agents/claude-code/SKILL.md\n  \u2713 autonomous-ai-agents/codex/SKILL.md\n  \u2713 autonomous-ai-agents/hermes-agent/SKILL.md\n  \u2713 autonomous-ai-agents/opencode/SKILL.md\n  \u2713 autonomous-ai-agents/pi-coding-agent/SKILL.md\n  \u2713 autonomous-ai-agents/swarm-orchestration/SKILL.md\n  \u2713 creative/architecture-diagram/SKILL.md\n  \u2713 creative/ascii-art/SKILL.md\n  \u2713 creative/ascii-video/SKILL.md\n  \u2713 creative/baoyu-comic/SKILL.md\n  \u2713 creative/baoyu-infographic/SKILL.md\n  \u2713 creative/brainstorming/SKILL.md\n  \u2713 creative/caveman/SKILL.md\n  \u2713 creative/caveman/caveman-commit/SKILL.md\n  \u2713 creative/caveman/caveman-help/SKILL.md\n  \u2713 creative/caveman/caveman-review/SKILL.md\n  \u2713 creative/caveman/compress/SKILL.md\n  \u2713 creative/claude-design/SKILL.md\n  \u2713 creative/comfyui/SKILL.md\n  \u2713 creative/creative-ideation/SKILL.md\n  \u2713 creative/design-md/SKILL.md\n  \u2713 creative/excalidraw/SKILL.md\n  \u2713 creative/humanizer/SKILL.md\n  \u2713 creative/json-canvas/SKILL.md\n  \u2713 creative/manim-video/SKILL.md\n  \u2713 creative/p5js/SKILL.md\n  \u2713 creative/pixel-art/SKILL.md\n  \u2713 creative/popular-web-designs/SKILL.md\n  \u2713 creative/pretext/SKILL.md\n  \u2713 creative/sketch/SKILL.md\n  \u2713 creative/songwriting-and-ai-music/SKILL.md\n  \u2713 creative/touchdesigner-mcp/SKILL.md\n  \u2713 creative/ui-ux-designer/SKILL.md\n  \u2713 data-science/jupyter-live-kernel/SKILL.md\n  \u2713 devops/hermes-backup/SKILL.md\n  \u2713 devops/hermes-dashboard/SKILL.md\n  \u2713 devops/kanban-orchestrator/SKILL.md\n  \u2713 devops/kanban-worker/SKILL.md\n  \u2713 devops/webhook-subscriptions/SKILL.md\n  \u2713 dogfood/dogfood/SKILL.md\n  \u2713 domain/sentry/sentry-code-review/SKILL.md\n  \u2713 domain/sentry/sentry-feature-setup/SKILL.md\n  \u2713 domain/sentry/sentry-fix-issues/SKILL.md\n  \u2713 domain/sentry/sentry-pr-code-review/SKILL.md\n  \u2713 domain/sentry/sentry-sdk-setup/SKILL.md\n  \u2713 domain/sentry/sentry-workflow/SKILL.md\n  \u2713 email/himalaya/SKILL.md\n  \u2713 gaming/game-dev-orchestration/SKILL.md\n  \u2713 gaming/game-development/SKILL.md\n  \u2713 gaming/godot/SKILL.md\n  \u2713 gaming/minecraft-modpack-server/SKILL.md\n  \u2713 gaming/pokemon-player/SKILL.md\n  \u2713 github/codebase-inspection/SKILL.md\n  \u2713 github/github-auth/SKILL.md\n  \u2713 github/github-code-review/SKILL.md\n  \u2713 github/github-issues/SKILL.md\n  \u2713 github/github-pr-workflow/SKILL.md\n  \u2713 github/github-repo-management/SKILL.md\n  \u2713 ios-development/app-store-optimization/SKILL.md\n  \u2713 ios-development/core-data-expert/SKILL.md\n  \u2713 ios-development/hig-foundations/SKILL.md\n  \u2713 ios-development/hig-patterns/SKILL.md\n  \u2713 ios-development/ios-developer/SKILL.md\n  \u2713 ios-development/ios-marketing-capture/SKILL.md\n  \u2713 ios-development/miswag-ios-developer/SKILL.md\n  \u2713 ios-development/mobile-security-coder/SKILL.md\n  \u2713 ios-development/mobile-ui/SKILL.md\n  \u2713 ios-development/release-whats-changed/SKILL.md\n  \u2713 ios-development/spm-build-analysis/SKILL.md\n  \u2713 ios-development/swift-concurrency/SKILL.md\n  \u2713 ios-development/swift-concurrency-pro/SKILL.md\n  \u2713 ios-development/swift-testing-expert/SKILL.md\n  \u2713 ios-development/swift-testing-pro/SKILL.md\n  \u2713 ios-development/swiftdata-expert-skill/SKILL.md\n  \u2713 ios-development/swiftdata-pro/SKILL.md\n  \u2713 ios-development/swiftui-expert-skill/SKILL.md\n  \u2713 ios-development/swiftui-pro/SKILL.md\n  \u2713 ios-development/xcode-build-benchmark/SKILL.md\n  \u2713 ios-development/xcode-build-fixer/SKILL.md\n  \u2713 ios-development/xcode-build-orchestrator/SKILL.md\n  \u2713 ios-development/xcode-compilation-analyzer/SKILL.md\n  \u2713 ios-development/xcode-project-analyzer/SKILL.md\n  \u2713 mcp/native-mcp/SKILL.md\n  \u2713 media/gif-search/SKILL.md\n  \u2713 media/heartmula/SKILL.md\n  \u2713 media/songsee/SKILL.md\n  \u2713 media/spotify/SKILL.md\n  \u2713 media/youtube-content/SKILL.md\n  \u2713 mlops/evaluation/SKILL.md\n  \u2717 mlops/evaluation/lm-evaluation-harness/SKILL.md\n    Error: Name mismatch: frontmatter says 'evaluating-llms-harness', parent directory is 'lm-evaluation-harness'\n  \u2713 mlops/evaluation/weights-and-biases/SKILL.md\n  \u2713 mlops/huggingface-hub/SKILL.md\n  \u2713 mlops/inference/SKILL.md\n  \u2713 mlops/inference/llama-cpp/SKILL.md\n  \u2713 mlops/inference/obliteratus/SKILL.md\n  \u2713 mlops/inference/outlines/SKILL.md\n  \u2717 mlops/inference/vllm/SKILL.md\n    Error: Name mismatch: frontmatter says 'serving-llms-vllm', parent directory is 'vllm'\n  \u2713 mlops/models/SKILL.md\n  \u2717 mlops/models/audiocraft/SKILL.md\n    Error: Name mismatch: frontmatter says 'audiocraft-audio-generation', parent directory is 'audiocraft'\n  \u2717 mlops/models/segment-anything/SKILL.md\n    Error: Name mismatch: frontmatter says 'segment-anything-model', parent directory is 'segment-anything'\n  \u2713 mlops/research/SKILL.md\n  \u2713 mlops/research/dspy/SKILL.md\n  \u2713 mlops/training/SKILL.md\n  \u2713 mlops/training/axolotl/SKILL.md\n  \u2717 mlops/training/trl-fine-tuning/SKILL.md\n    Error: Name mismatch: frontmatter says 'fine-tuning-with-trl', parent directory is 'trl-fine-tuning'\n  \u2713 mlops/training/unsloth/SKILL.md\n  \u2713 note-taking/obsidian/SKILL.md\n  \u2713 note-taking/obsidian-bases/SKILL.md\n  \u2713 note-taking/obsidian-cli/SKILL.md\n  \u2713 note-taking/obsidian-markdown/SKILL.md\n  \u2713 productivity/airtable/SKILL.md\n  \u2713 productivity/google-workspace/SKILL.md\n  \u2713 productivity/linear/SKILL.md\n  \u2713 productivity/maps/SKILL.md\n  \u2713 productivity/nano-pdf/SKILL.md\n  \u2713 productivity/notion/SKILL.md\n  \u2713 productivity/ocr-and-documents/SKILL.md\n  \u2713 productivity/powerpoint/SKILL.md\n  \u2713 productivity/teams-meeting-pipeline/SKILL.md\n  \u2713 red-teaming/godmode/SKILL.md\n  \u2713 research/arxiv/SKILL.md\n  \u2713 research/blogwatcher/SKILL.md\n  \u2713 research/last30days/SKILL.md\n  \u2713 research/llm-wiki/SKILL.md\n  \u2713 research/polymarket/SKILL.md\n  \u2713 research/research-paper-writing/SKILL.md\n  \u2713 security/hermes-security-audit/SKILL.md\n  \u2713 smart-home/openhue/SKILL.md\n  \u2713 social-media/xurl/SKILL.md\n  \u2713 software-development/claude-code-guide/SKILL.md\n  \u2713 software-development/claude-md-improver/SKILL.md\n  \u2713 software-development/clean-code/SKILL.md\n  \u2713 software-development/code-reviewer/SKILL.md\n  \u2713 software-development/concise-planning/SKILL.md\n  \u2713 software-development/context7/SKILL.md\n  \u2713 software-development/daily-digest-builder/SKILL.md\n  \u2713 software-development/dashboard-architect/SKILL.md\n  \u2713 software-development/debugging-hermes-tui-commands/SKILL.md\n  \u2713 software-development/defuddle/SKILL.md\n  \u2713 software-development/error-handling-patterns/SKILL.md\n  \u2713 software-development/frontend-design/SKILL.md\n  \u2713 software-development/frontend-developer/SKILL.md\n  \u2713 software-development/grill-me/SKILL.md\n  \u2713 software-development/gt-centralized-system/SKILL.md\n  \u2713 software-development/hermes-agent-skill-authoring/SKILL.md\n  \u2713 software-development/node-inspect-debugger/SKILL.md\n  \u2713 software-development/plan/SKILL.md\n  \u2713 software-development/python-debugpy/SKILL.md\n  \u2713 software-development/requesting-code-review/SKILL.md\n  \u2713 software-development/senior-engineer/SKILL.md\n  \u2713 software-development/session-report/SKILL.md\n  \u2713 software-development/skill-creator/SKILL.md\n  \u2713 software-development/spike/SKILL.md\n  \u2713 software-development/subagent-driven-development/SKILL.md\n  \u2713 software-development/systematic-debugging/SKILL.md\n  \u2713 software-development/test-driven-development/SKILL.md\n  \u2713 software-development/testing-patterns/SKILL.md\n  \u2713 software-development/writing-hookify-rules/SKILL.md\n  \u2713 software-development/writing-plans/SKILL.md\n  \u2713 superpowers/context-manager/SKILL.md\n  \u2713 superpowers/deep-research/SKILL.md\n  \u2713 superpowers/dispatching-parallel-agents/SKILL.md\n  \u2713 superpowers/executing-plans/SKILL.md\n  \u2713 superpowers/finishing-a-development-branch/SKILL.md\n  \u2713 superpowers/memory-systems/SKILL.md\n  \u2713 superpowers/receiving-code-review/SKILL.md\n  \u2713 superpowers/using-git-worktrees/SKILL.md\n  \u2713 superpowers/using-superpowers/SKILL.md\n  \u2713 superpowers/verification-before-completion/SKILL.md\n  \u2713 superpowers/writing-skills/SKILL.md\n  \u2713 yuanbao/yuanbao/SKILL.md\n\nResult: 5 error(s) found."
+    },
+    "sync_hermes": {
+      "ok": true,
+      "message": "dst is symlink to src; skipping copy"
+    },
+    "sync_agents": {
+      "ok": true,
+      "message": "dst is symlink to src; skipping copy"
+    }
+  },
+  "overall": "failure"
+}
+[sync-skills] Webhook ref=refs/heads/main (branch=main)
+[sync-skills] Pulling latest in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo ...
+[sync-skills] Git pull failed: fatal: unable to access 'https://github.com/sof9816/ai-skills.git/': Could not resolve host: github.com
+[sync-skills] Running validator: /Users/gt/Public/MyFiles/agent-home/gt-core/scripts/validate-skills.py ...
+[sync-skills] Scanning 179 skill(s) in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo
+
+  ✓ apple/apple-notes/SKILL.md
+  ✓ apple/apple-reminders/SKILL.md
+  ✓ apple/findmy/SKILL.md
+  ✓ apple/imessage/SKILL.md
+  ✓ apple/macos-computer-use/SKILL.md
+  ✓ architecture/architecture/SKILL.md
+  ✓ architecture/architecture-patterns/SKILL.md
+  ✓ autonomous-ai-agents/agent-split-decision/SKILL.md
+  ✓ autonomous-ai-agents/claude-code/SKILL.md
+  ✓ autonomous-ai-agents/codex/SKILL.md
+  ✓ autonomous-ai-agents/hermes-agent/SKILL.md
+  ✓ autonomous-ai-agents/opencode/SKILL.md
+  ✓ autonomous-ai-agents/pi-coding-agent/SKILL.md
+  ✓ autonomous-ai-agents/swarm-orchestration/SKILL.md
+  ✓ creative/architecture-diagram/SKILL.md
+  ✓ creative/ascii-art/SKILL.md
+  ✓ creative/ascii-video/SKILL.md
+  ✓ creative/baoyu-comic/SKILL.md
+  ✓ creative/baoyu-infographic/SKILL.md
+  ✓ creative/brainstorming/SKILL.md
+  ✓ creative/caveman/SKILL.md
+  ✓ creative/caveman/caveman-commit/SKILL.md
+  ✓ creative/caveman/caveman-help/SKILL.md
+  ✓ creative/caveman/caveman-review/SKILL.md
+  ✓ creative/caveman/compress/SKILL.md
+  ✓ creative/claude-design/SKILL.md
+  ✓ creative/comfyui/SKILL.md
+  ✓ creative/creative-ideation/SKILL.md
+  ✓ creative/design-md/SKILL.md
+  ✓ creative/excalidraw/SKILL.md
+  ✓ creative/humanizer/SKILL.md
+  ✓ creative/json-canvas/SKILL.md
+  ✓ creative/manim-video/SKILL.md
+  ✓ creative/p5js/SKILL.md
+  ✓ creative/pixel-art/SKILL.md
+  ✓ creative/popular-web-designs/SKILL.md
+  ✓ creative/pretext/SKILL.md
+  ✓ creative/sketch/SKILL.md
+  ✓ creative/songwriting-and-ai-music/SKILL.md
+  ✓ creative/touchdesigner-mcp/SKILL.md
+  ✓ creative/ui-ux-designer/SKILL.md
+  ✓ data-science/jupyter-live-kernel/SKILL.md
+  ✓ devops/hermes-backup/SKILL.md
+  ✓ devops/hermes-dashboard/SKILL.md
+  ✓ devops/kanban-orchestrator/SKILL.md
+  ✓ devops/kanban-worker/SKILL.md
+  ✓ devops/webhook-subscriptions/SKILL.md
+  ✓ dogfood/dogfood/SKILL.md
+  ✓ domain/sentry/sentry-code-review/SKILL.md
+  ✓ domain/sentry/sentry-feature-setup/SKILL.md
+  ✓ domain/sentry/sentry-fix-issues/SKILL.md
+  ✓ domain/sentry/sentry-pr-code-review/SKILL.md
+  ✓ domain/sentry/sentry-sdk-setup/SKILL.md
+  ✓ domain/sentry/sentry-workflow/SKILL.md
+  ✓ email/himalaya/SKILL.md
+  ✓ gaming/game-dev-orchestration/SKILL.md
+  ✓ gaming/game-development/SKILL.md
+  ✓ gaming/godot/SKILL.md
+  ✓ gaming/minecraft-modpack-server/SKILL.md
+  ✓ gaming/pokemon-player/SKILL.md
+  ✓ github/codebase-inspection/SKILL.md
+  ✓ github/github-auth/SKILL.md
+  ✓ github/github-code-review/SKILL.md
+  ✓ github/github-issues/SKILL.md
+  ✓ github/github-pr-workflow/SKILL.md
+  ✓ github/github-repo-management/SKILL.md
+  ✓ ios-development/app-store-optimization/SKILL.md
+  ✓ ios-development/core-data-expert/SKILL.md
+  ✓ ios-development/hig-foundations/SKILL.md
+  ✓ ios-development/hig-patterns/SKILL.md
+  ✓ ios-development/ios-developer/SKILL.md
+  ✓ ios-development/ios-marketing-capture/SKILL.md
+  ✓ ios-development/miswag-ios-developer/SKILL.md
+  ✓ ios-development/mobile-security-coder/SKILL.md
+  ✓ ios-development/mobile-ui/SKILL.md
+  ✓ ios-development/release-whats-changed/SKILL.md
+  ✓ ios-development/spm-build-analysis/SKILL.md
+  ✓ ios-development/swift-concurrency/SKILL.md
+  ✓ ios-development/swift-concurrency-pro/SKILL.md
+  ✓ ios-development/swift-testing-expert/SKILL.md
+  ✓ ios-development/swift-testing-pro/SKILL.md
+  ✓ ios-development/swiftdata-expert-skill/SKILL.md
+  ✓ ios-development/swiftdata-pro/SKILL.md
+  ✓ ios-development/swiftui-expert-skill/SKILL.md
+  ✓ ios-development/swiftui-pro/SKILL.md
+  ✓ ios-development/xcode-build-benchmark/SKILL.md
+  ✓ ios-development/xcode-build-fixer/SKILL.md
+  ✓ ios-development/xcode-build-orchestrator/SKILL.md
+  ✓ ios-development/xcode-compilation-analyzer/SKILL.md
+  ✓ ios-development/xcode-project-analyzer/SKILL.md
+  ✓ mcp/native-mcp/SKILL.md
+  ✓ media/gif-search/SKILL.md
+  ✓ media/heartmula/SKILL.md
+  ✓ media/songsee/SKILL.md
+  ✓ media/spotify/SKILL.md
+  ✓ media/youtube-content/SKILL.md
+  ✓ mlops/evaluation/SKILL.md
+  ✗ mlops/evaluation/lm-evaluation-harness/SKILL.md
+    Error: Name mismatch: frontmatter says 'evaluating-llms-harness', parent directory is 'lm-evaluation-harness'
+  ✓ mlops/evaluation/weights-and-biases/SKILL.md
+  ✓ mlops/huggingface-hub/SKILL.md
+  ✓ mlops/inference/SKILL.md
+  ✓ mlops/inference/llama-cpp/SKILL.md
+  ✓ mlops/inference/obliteratus/SKILL.md
+  ✓ mlops/inference/outlines/SKILL.md
+  ✗ mlops/inference/vllm/SKILL.md
+    Error: Name mismatch: frontmatter says 'serving-llms-vllm', parent directory is 'vllm'
+  ✓ mlops/models/SKILL.md
+  ✗ mlops/models/audiocraft/SKILL.md
+    Error: Name mismatch: frontmatter says 'audiocraft-audio-generation', parent directory is 'audiocraft'
+  ✗ mlops/models/segment-anything/SKILL.md
+    Error: Name mismatch: frontmatter says 'segment-anything-model', parent directory is 'segment-anything'
+  ✓ mlops/research/SKILL.md
+  ✓ mlops/research/dspy/SKILL.md
+  ✓ mlops/training/SKILL.md
+  ✓ mlops/training/axolotl/SKILL.md
+  ✗ mlops/training/trl-fine-tuning/SKILL.md
+    Error: Name mismatch: frontmatter says 'fine-tuning-with-trl', parent directory is 'trl-fine-tuning'
+  ✓ mlops/training/unsloth/SKILL.md
+  ✓ note-taking/obsidian/SKILL.md
+  ✓ note-taking/obsidian-bases/SKILL.md
+  ✓ note-taking/obsidian-cli/SKILL.md
+  ✓ note-taking/obsidian-markdown/SKILL.md
+  ✓ productivity/airtable/SKILL.md
+  ✓ productivity/google-workspace/SKILL.md
+  ✓ productivity/linear/SKILL.md
+  ✓ productivity/maps/SKILL.md
+  ✓ productivity/nano-pdf/SKILL.md
+  ✓ productivity/notion/SKILL.md
+  ✓ productivity/ocr-and-documents/SKILL.md
+  ✓ productivity/powerpoint/SKILL.md
+  ✓ productivity/teams-meeting-pipeline/SKILL.md
+  ✓ red-teaming/godmode/SKILL.md
+  ✓ research/arxiv/SKILL.md
+  ✓ research/blogwatcher/SKILL.md
+  ✓ research/last30days/SKILL.md
+  ✓ research/llm-wiki/SKILL.md
+  ✓ research/polymarket/SKILL.md
+  ✓ research/research-paper-writing/SKILL.md
+  ✓ security/hermes-security-audit/SKILL.md
+  ✓ smart-home/openhue/SKILL.md
+  ✓ social-media/xurl/SKILL.md
+  ✓ software-development/claude-code-guide/SKILL.md
+  ✓ software-development/claude-md-improver/SKILL.md
+  ✓ software-development/clean-code/SKILL.md
+  ✓ software-development/code-reviewer/SKILL.md
+  ✓ software-development/concise-planning/SKILL.md
+  ✓ software-development/context7/SKILL.md
+  ✓ software-development/daily-digest-builder/SKILL.md
+  ✓ software-development/dashboard-architect/SKILL.md
+  ✓ software-development/debugging-hermes-tui-commands/SKILL.md
+  ✓ software-development/defuddle/SKILL.md
+  ✓ software-development/error-handling-patterns/SKILL.md
+  ✓ software-development/frontend-design/SKILL.md
+  ✓ software-development/frontend-developer/SKILL.md
+  ✓ software-development/grill-me/SKILL.md
+  ✓ software-development/gt-centralized-system/SKILL.md
+  ✓ software-development/hermes-agent-skill-authoring/SKILL.md
+  ✓ software-development/node-inspect-debugger/SKILL.md
+  ✓ software-development/plan/SKILL.md
+  ✓ software-development/python-debugpy/SKILL.md
+  ✓ software-development/requesting-code-review/SKILL.md
+  ✓ software-development/senior-engineer/SKILL.md
+  ✓ software-development/session-report/SKILL.md
+  ✓ software-development/skill-creator/SKILL.md
+  ✓ software-development/spike/SKILL.md
+  ✓ software-development/subagent-driven-development/SKILL.md
+  ✓ software-development/systematic-debugging/SKILL.md
+  ✓ software-development/test-driven-development/SKILL.md
+  ✓ software-development/testing-patterns/SKILL.md
+  ✓ software-development/writing-hookify-rules/SKILL.md
+  ✓ software-development/writing-plans/SKILL.md
+  ✓ superpowers/context-manager/SKILL.md
+  ✓ superpowers/deep-research/SKILL.md
+  ✓ superpowers/dispatching-parallel-agents/SKILL.md
+  ✓ superpowers/executing-plans/SKILL.md
+  ✓ superpowers/finishing-a-development-branch/SKILL.md
+  ✓ superpowers/memory-systems/SKILL.md
+  ✓ superpowers/receiving-code-review/SKILL.md
+  ✓ superpowers/using-git-worktrees/SKILL.md
+  ✓ superpowers/using-superpowers/SKILL.md
+  ✓ superpowers/verification-before-completion/SKILL.md
+  ✓ superpowers/writing-skills/SKILL.md
+  ✓ yuanbao/yuanbao/SKILL.md
+
+Result: 5 error(s) found.
+{
+  "ref": "refs/heads/main",
+  "branch": "main",
+  "repo": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo",
+  "steps": {
+    "pull": {
+      "ok": false,
+      "message": "fatal: unable to access 'https://github.com/sof9816/ai-skills.git/': Could not resolve host: github.com"
+    },
+    "validate": {
+      "ok": false,
+      "message": "Scanning 179 skill(s) in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo\n\n  \u2713 apple/apple-notes/SKILL.md\n  \u2713 apple/apple-reminders/SKILL.md\n  \u2713 apple/findmy/SKILL.md\n  \u2713 apple/imessage/SKILL.md\n  \u2713 apple/macos-computer-use/SKILL.md\n  \u2713 architecture/architecture/SKILL.md\n  \u2713 architecture/architecture-patterns/SKILL.md\n  \u2713 autonomous-ai-agents/agent-split-decision/SKILL.md\n  \u2713 autonomous-ai-agents/claude-code/SKILL.md\n  \u2713 autonomous-ai-agents/codex/SKILL.md\n  \u2713 autonomous-ai-agents/hermes-agent/SKILL.md\n  \u2713 autonomous-ai-agents/opencode/SKILL.md\n  \u2713 autonomous-ai-agents/pi-coding-agent/SKILL.md\n  \u2713 autonomous-ai-agents/swarm-orchestration/SKILL.md\n  \u2713 creative/architecture-diagram/SKILL.md\n  \u2713 creative/ascii-art/SKILL.md\n  \u2713 creative/ascii-video/SKILL.md\n  \u2713 creative/baoyu-comic/SKILL.md\n  \u2713 creative/baoyu-infographic/SKILL.md\n  \u2713 creative/brainstorming/SKILL.md\n  \u2713 creative/caveman/SKILL.md\n  \u2713 creative/caveman/caveman-commit/SKILL.md\n  \u2713 creative/caveman/caveman-help/SKILL.md\n  \u2713 creative/caveman/caveman-review/SKILL.md\n  \u2713 creative/caveman/compress/SKILL.md\n  \u2713 creative/claude-design/SKILL.md\n  \u2713 creative/comfyui/SKILL.md\n  \u2713 creative/creative-ideation/SKILL.md\n  \u2713 creative/design-md/SKILL.md\n  \u2713 creative/excalidraw/SKILL.md\n  \u2713 creative/humanizer/SKILL.md\n  \u2713 creative/json-canvas/SKILL.md\n  \u2713 creative/manim-video/SKILL.md\n  \u2713 creative/p5js/SKILL.md\n  \u2713 creative/pixel-art/SKILL.md\n  \u2713 creative/popular-web-designs/SKILL.md\n  \u2713 creative/pretext/SKILL.md\n  \u2713 creative/sketch/SKILL.md\n  \u2713 creative/songwriting-and-ai-music/SKILL.md\n  \u2713 creative/touchdesigner-mcp/SKILL.md\n  \u2713 creative/ui-ux-designer/SKILL.md\n  \u2713 data-science/jupyter-live-kernel/SKILL.md\n  \u2713 devops/hermes-backup/SKILL.md\n  \u2713 devops/hermes-dashboard/SKILL.md\n  \u2713 devops/kanban-orchestrator/SKILL.md\n  \u2713 devops/kanban-worker/SKILL.md\n  \u2713 devops/webhook-subscriptions/SKILL.md\n  \u2713 dogfood/dogfood/SKILL.md\n  \u2713 domain/sentry/sentry-code-review/SKILL.md\n  \u2713 domain/sentry/sentry-feature-setup/SKILL.md\n  \u2713 domain/sentry/sentry-fix-issues/SKILL.md\n  \u2713 domain/sentry/sentry-pr-code-review/SKILL.md\n  \u2713 domain/sentry/sentry-sdk-setup/SKILL.md\n  \u2713 domain/sentry/sentry-workflow/SKILL.md\n  \u2713 email/himalaya/SKILL.md\n  \u2713 gaming/game-dev-orchestration/SKILL.md\n  \u2713 gaming/game-development/SKILL.md\n  \u2713 gaming/godot/SKILL.md\n  \u2713 gaming/minecraft-modpack-server/SKILL.md\n  \u2713 gaming/pokemon-player/SKILL.md\n  \u2713 github/codebase-inspection/SKILL.md\n  \u2713 github/github-auth/SKILL.md\n  \u2713 github/github-code-review/SKILL.md\n  \u2713 github/github-issues/SKILL.md\n  \u2713 github/github-pr-workflow/SKILL.md\n  \u2713 github/github-repo-management/SKILL.md\n  \u2713 ios-development/app-store-optimization/SKILL.md\n  \u2713 ios-development/core-data-expert/SKILL.md\n  \u2713 ios-development/hig-foundations/SKILL.md\n  \u2713 ios-development/hig-patterns/SKILL.md\n  \u2713 ios-development/ios-developer/SKILL.md\n  \u2713 ios-development/ios-marketing-capture/SKILL.md\n  \u2713 ios-development/miswag-ios-developer/SKILL.md\n  \u2713 ios-development/mobile-security-coder/SKILL.md\n  \u2713 ios-development/mobile-ui/SKILL.md\n  \u2713 ios-development/release-whats-changed/SKILL.md\n  \u2713 ios-development/spm-build-analysis/SKILL.md\n  \u2713 ios-development/swift-concurrency/SKILL.md\n  \u2713 ios-development/swift-concurrency-pro/SKILL.md\n  \u2713 ios-development/swift-testing-expert/SKILL.md\n  \u2713 ios-development/swift-testing-pro/SKILL.md\n  \u2713 ios-development/swiftdata-expert-skill/SKILL.md\n  \u2713 ios-development/swiftdata-pro/SKILL.md\n  \u2713 ios-development/swiftui-expert-skill/SKILL.md\n  \u2713 ios-development/swiftui-pro/SKILL.md\n  \u2713 ios-development/xcode-build-benchmark/SKILL.md\n  \u2713 ios-development/xcode-build-fixer/SKILL.md\n  \u2713 ios-development/xcode-build-orchestrator/SKILL.md\n  \u2713 ios-development/xcode-compilation-analyzer/SKILL.md\n  \u2713 ios-development/xcode-project-analyzer/SKILL.md\n  \u2713 mcp/native-mcp/SKILL.md\n  \u2713 media/gif-search/SKILL.md\n  \u2713 media/heartmula/SKILL.md\n  \u2713 media/songsee/SKILL.md\n  \u2713 media/spotify/SKILL.md\n  \u2713 media/youtube-content/SKILL.md\n  \u2713 mlops/evaluation/SKILL.md\n  \u2717 mlops/evaluation/lm-evaluation-harness/SKILL.md\n    Error: Name mismatch: frontmatter says 'evaluating-llms-harness', parent directory is 'lm-evaluation-harness'\n  \u2713 mlops/evaluation/weights-and-biases/SKILL.md\n  \u2713 mlops/huggingface-hub/SKILL.md\n  \u2713 mlops/inference/SKILL.md\n  \u2713 mlops/inference/llama-cpp/SKILL.md\n  \u2713 mlops/inference/obliteratus/SKILL.md\n  \u2713 mlops/inference/outlines/SKILL.md\n  \u2717 mlops/inference/vllm/SKILL.md\n    Error: Name mismatch: frontmatter says 'serving-llms-vllm', parent directory is 'vllm'\n  \u2713 mlops/models/SKILL.md\n  \u2717 mlops/models/audiocraft/SKILL.md\n    Error: Name mismatch: frontmatter says 'audiocraft-audio-generation', parent directory is 'audiocraft'\n  \u2717 mlops/models/segment-anything/SKILL.md\n    Error: Name mismatch: frontmatter says 'segment-anything-model', parent directory is 'segment-anything'\n  \u2713 mlops/research/SKILL.md\n  \u2713 mlops/research/dspy/SKILL.md\n  \u2713 mlops/training/SKILL.md\n  \u2713 mlops/training/axolotl/SKILL.md\n  \u2717 mlops/training/trl-fine-tuning/SKILL.md\n    Error: Name mismatch: frontmatter says 'fine-tuning-with-trl', parent directory is 'trl-fine-tuning'\n  \u2713 mlops/training/unsloth/SKILL.md\n  \u2713 note-taking/obsidian/SKILL.md\n  \u2713 note-taking/obsidian-bases/SKILL.md\n  \u2713 note-taking/obsidian-cli/SKILL.md\n  \u2713 note-taking/obsidian-markdown/SKILL.md\n  \u2713 productivity/airtable/SKILL.md\n  \u2713 productivity/google-workspace/SKILL.md\n  \u2713 productivity/linear/SKILL.md\n  \u2713 productivity/maps/SKILL.md\n  \u2713 productivity/nano-pdf/SKILL.md\n  \u2713 productivity/notion/SKILL.md\n  \u2713 productivity/ocr-and-documents/SKILL.md\n  \u2713 productivity/powerpoint/SKILL.md\n  \u2713 productivity/teams-meeting-pipeline/SKILL.md\n  \u2713 red-teaming/godmode/SKILL.md\n  \u2713 research/arxiv/SKILL.md\n  \u2713 research/blogwatcher/SKILL.md\n  \u2713 research/last30days/SKILL.md\n  \u2713 research/llm-wiki/SKILL.md\n  \u2713 research/polymarket/SKILL.md\n  \u2713 research/research-paper-writing/SKILL.md\n  \u2713 security/hermes-security-audit/SKILL.md\n  \u2713 smart-home/openhue/SKILL.md\n  \u2713 social-media/xurl/SKILL.md\n  \u2713 software-development/claude-code-guide/SKILL.md\n  \u2713 software-development/claude-md-improver/SKILL.md\n  \u2713 software-development/clean-code/SKILL.md\n  \u2713 software-development/code-reviewer/SKILL.md\n  \u2713 software-development/concise-planning/SKILL.md\n  \u2713 software-development/context7/SKILL.md\n  \u2713 software-development/daily-digest-builder/SKILL.md\n  \u2713 software-development/dashboard-architect/SKILL.md\n  \u2713 software-development/debugging-hermes-tui-commands/SKILL.md\n  \u2713 software-development/defuddle/SKILL.md\n  \u2713 software-development/error-handling-patterns/SKILL.md\n  \u2713 software-development/frontend-design/SKILL.md\n  \u2713 software-development/frontend-developer/SKILL.md\n  \u2713 software-development/grill-me/SKILL.md\n  \u2713 software-development/gt-centralized-system/SKILL.md\n  \u2713 software-development/hermes-agent-skill-authoring/SKILL.md\n  \u2713 software-development/node-inspect-debugger/SKILL.md\n  \u2713 software-development/plan/SKILL.md\n  \u2713 software-development/python-debugpy/SKILL.md\n  \u2713 software-development/requesting-code-review/SKILL.md\n  \u2713 software-development/senior-engineer/SKILL.md\n  \u2713 software-development/session-report/SKILL.md\n  \u2713 software-development/skill-creator/SKILL.md\n  \u2713 software-development/spike/SKILL.md\n  \u2713 software-development/subagent-driven-development/SKILL.md\n  \u2713 software-development/systematic-debugging/SKILL.md\n  \u2713 software-development/test-driven-development/SKILL.md\n  \u2713 software-development/testing-patterns/SKILL.md\n  \u2713 software-development/writing-hookify-rules/SKILL.md\n  \u2713 software-development/writing-plans/SKILL.md\n  \u2713 superpowers/context-manager/SKILL.md\n  \u2713 superpowers/deep-research/SKILL.md\n  \u2713 superpowers/dispatching-parallel-agents/SKILL.md\n  \u2713 superpowers/executing-plans/SKILL.md\n  \u2713 superpowers/finishing-a-development-branch/SKILL.md\n  \u2713 superpowers/memory-systems/SKILL.md\n  \u2713 superpowers/receiving-code-review/SKILL.md\n  \u2713 superpowers/using-git-worktrees/SKILL.md\n  \u2713 superpowers/using-superpowers/SKILL.md\n  \u2713 superpowers/verification-before-completion/SKILL.md\n  \u2713 superpowers/writing-skills/SKILL.md\n  \u2713 yuanbao/yuanbao/SKILL.md\n\nResult: 5 error(s) found."
+    },
+    "sync_hermes": {
+      "ok": true,
+      "message": "dst is symlink to src; skipping copy"
+    },
+    "sync_agents": {
+      "ok": true,
+      "message": "dst is symlink to src; skipping copy"
+    }
+  },
+  "overall": "failure"
+}
+[sync-skills] Webhook ref=refs/heads/main (branch=main)
+[sync-skills] Pulling latest in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo ...
+[sync-skills] Git pull succeeded.
+[sync-skills] Running validator: /Users/gt/Public/MyFiles/agent-home/gt-core/scripts/validate-skills.py ...
+[sync-skills] Scanning 179 skill(s) in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo
+
+  ✓ apple/apple-notes/SKILL.md
+  ✓ apple/apple-reminders/SKILL.md
+  ✓ apple/findmy/SKILL.md
+  ✓ apple/imessage/SKILL.md
+  ✓ apple/macos-computer-use/SKILL.md
+  ✓ architecture/architecture/SKILL.md
+  ✓ architecture/architecture-patterns/SKILL.md
+  ✓ autonomous-ai-agents/agent-split-decision/SKILL.md
+  ✓ autonomous-ai-agents/claude-code/SKILL.md
+  ✓ autonomous-ai-agents/codex/SKILL.md
+  ✓ autonomous-ai-agents/hermes-agent/SKILL.md
+  ✓ autonomous-ai-agents/opencode/SKILL.md
+  ✓ autonomous-ai-agents/pi-coding-agent/SKILL.md
+  ✓ autonomous-ai-agents/swarm-orchestration/SKILL.md
+  ✓ creative/architecture-diagram/SKILL.md
+  ✓ creative/ascii-art/SKILL.md
+  ✓ creative/ascii-video/SKILL.md
+  ✓ creative/baoyu-comic/SKILL.md
+  ✓ creative/baoyu-infographic/SKILL.md
+  ✓ creative/brainstorming/SKILL.md
+  ✓ creative/caveman/SKILL.md
+  ✓ creative/caveman/caveman-commit/SKILL.md
+  ✓ creative/caveman/caveman-help/SKILL.md
+  ✓ creative/caveman/caveman-review/SKILL.md
+  ✓ creative/caveman/compress/SKILL.md
+  ✓ creative/claude-design/SKILL.md
+  ✓ creative/comfyui/SKILL.md
+  ✓ creative/creative-ideation/SKILL.md
+  ✓ creative/design-md/SKILL.md
+  ✓ creative/excalidraw/SKILL.md
+  ✓ creative/humanizer/SKILL.md
+  ✓ creative/json-canvas/SKILL.md
+  ✓ creative/manim-video/SKILL.md
+  ✓ creative/p5js/SKILL.md
+  ✓ creative/pixel-art/SKILL.md
+  ✓ creative/popular-web-designs/SKILL.md
+  ✓ creative/pretext/SKILL.md
+  ✓ creative/sketch/SKILL.md
+  ✓ creative/songwriting-and-ai-music/SKILL.md
+  ✓ creative/touchdesigner-mcp/SKILL.md
+  ✓ creative/ui-ux-designer/SKILL.md
+  ✓ data-science/jupyter-live-kernel/SKILL.md
+  ✓ devops/hermes-backup/SKILL.md
+  ✓ devops/hermes-dashboard/SKILL.md
+  ✓ devops/kanban-orchestrator/SKILL.md
+  ✓ devops/kanban-worker/SKILL.md
+  ✓ devops/webhook-subscriptions/SKILL.md
+  ✓ dogfood/dogfood/SKILL.md
+  ✓ domain/sentry/sentry-code-review/SKILL.md
+  ✓ domain/sentry/sentry-feature-setup/SKILL.md
+  ✓ domain/sentry/sentry-fix-issues/SKILL.md
+  ✓ domain/sentry/sentry-pr-code-review/SKILL.md
+  ✓ domain/sentry/sentry-sdk-setup/SKILL.md
+  ✓ domain/sentry/sentry-workflow/SKILL.md
+  ✓ email/himalaya/SKILL.md
+  ✓ gaming/game-dev-orchestration/SKILL.md
+  ✓ gaming/game-development/SKILL.md
+  ✓ gaming/godot/SKILL.md
+  ✓ gaming/minecraft-modpack-server/SKILL.md
+  ✓ gaming/pokemon-player/SKILL.md
+  ✓ github/codebase-inspection/SKILL.md
+  ✓ github/github-auth/SKILL.md
+  ✓ github/github-code-review/SKILL.md
+  ✓ github/github-issues/SKILL.md
+  ✓ github/github-pr-workflow/SKILL.md
+  ✓ github/github-repo-management/SKILL.md
+  ✓ ios-development/app-store-optimization/SKILL.md
+  ✓ ios-development/core-data-expert/SKILL.md
+  ✓ ios-development/hig-foundations/SKILL.md
+  ✓ ios-development/hig-patterns/SKILL.md
+  ✓ ios-development/ios-developer/SKILL.md
+  ✓ ios-development/ios-marketing-capture/SKILL.md
+  ✓ ios-development/miswag-ios-developer/SKILL.md
+  ✓ ios-development/mobile-security-coder/SKILL.md
+  ✓ ios-development/mobile-ui/SKILL.md
+  ✓ ios-development/release-whats-changed/SKILL.md
+  ✓ ios-development/spm-build-analysis/SKILL.md
+  ✓ ios-development/swift-concurrency/SKILL.md
+  ✓ ios-development/swift-concurrency-pro/SKILL.md
+  ✓ ios-development/swift-testing-expert/SKILL.md
+  ✓ ios-development/swift-testing-pro/SKILL.md
+  ✓ ios-development/swiftdata-expert-skill/SKILL.md
+  ✓ ios-development/swiftdata-pro/SKILL.md
+  ✓ ios-development/swiftui-expert-skill/SKILL.md
+  ✓ ios-development/swiftui-pro/SKILL.md
+  ✓ ios-development/xcode-build-benchmark/SKILL.md
+  ✓ ios-development/xcode-build-fixer/SKILL.md
+  ✓ ios-development/xcode-build-orchestrator/SKILL.md
+  ✓ ios-development/xcode-compilation-analyzer/SKILL.md
+  ✓ ios-development/xcode-project-analyzer/SKILL.md
+  ✓ mcp/native-mcp/SKILL.md
+  ✓ media/gif-search/SKILL.md
+  ✓ media/heartmula/SKILL.md
+  ✓ media/songsee/SKILL.md
+  ✓ media/spotify/SKILL.md
+  ✓ media/youtube-content/SKILL.md
+  ✓ mlops/evaluation/SKILL.md
+  ✗ mlops/evaluation/lm-evaluation-harness/SKILL.md
+    Error: Name mismatch: frontmatter says 'evaluating-llms-harness', parent directory is 'lm-evaluation-harness'
+  ✓ mlops/evaluation/weights-and-biases/SKILL.md
+  ✓ mlops/huggingface-hub/SKILL.md
+  ✓ mlops/inference/SKILL.md
+  ✓ mlops/inference/llama-cpp/SKILL.md
+  ✓ mlops/inference/obliteratus/SKILL.md
+  ✓ mlops/inference/outlines/SKILL.md
+  ✗ mlops/inference/vllm/SKILL.md
+    Error: Name mismatch: frontmatter says 'serving-llms-vllm', parent directory is 'vllm'
+  ✓ mlops/models/SKILL.md
+  ✗ mlops/models/audiocraft/SKILL.md
+    Error: Name mismatch: frontmatter says 'audiocraft-audio-generation', parent directory is 'audiocraft'
+  ✗ mlops/models/segment-anything/SKILL.md
+    Error: Name mismatch: frontmatter says 'segment-anything-model', parent directory is 'segment-anything'
+  ✓ mlops/research/SKILL.md
+  ✓ mlops/research/dspy/SKILL.md
+  ✓ mlops/training/SKILL.md
+  ✓ mlops/training/axolotl/SKILL.md
+  ✗ mlops/training/trl-fine-tuning/SKILL.md
+    Error: Name mismatch: frontmatter says 'fine-tuning-with-trl', parent directory is 'trl-fine-tuning'
+  ✓ mlops/training/unsloth/SKILL.md
+  ✓ note-taking/obsidian/SKILL.md
+  ✓ note-taking/obsidian-bases/SKILL.md
+  ✓ note-taking/obsidian-cli/SKILL.md
+  ✓ note-taking/obsidian-markdown/SKILL.md
+  ✓ productivity/airtable/SKILL.md
+  ✓ productivity/google-workspace/SKILL.md
+  ✓ productivity/linear/SKILL.md
+  ✓ productivity/maps/SKILL.md
+  ✓ productivity/nano-pdf/SKILL.md
+  ✓ productivity/notion/SKILL.md
+  ✓ productivity/ocr-and-documents/SKILL.md
+  ✓ productivity/powerpoint/SKILL.md
+  ✓ productivity/teams-meeting-pipeline/SKILL.md
+  ✓ red-teaming/godmode/SKILL.md
+  ✓ research/arxiv/SKILL.md
+  ✓ research/blogwatcher/SKILL.md
+  ✓ research/last30days/SKILL.md
+  ✓ research/llm-wiki/SKILL.md
+  ✓ research/polymarket/SKILL.md
+  ✓ research/research-paper-writing/SKILL.md
+  ✓ security/hermes-security-audit/SKILL.md
+  ✓ smart-home/openhue/SKILL.md
+  ✓ social-media/xurl/SKILL.md
+  ✓ software-development/claude-code-guide/SKILL.md
+  ✓ software-development/claude-md-improver/SKILL.md
+  ✓ software-development/clean-code/SKILL.md
+  ✓ software-development/code-reviewer/SKILL.md
+  ✓ software-development/concise-planning/SKILL.md
+  ✓ software-development/context7/SKILL.md
+  ✓ software-development/daily-digest-builder/SKILL.md
+  ✓ software-development/dashboard-architect/SKILL.md
+  ✓ software-development/debugging-hermes-tui-commands/SKILL.md
+  ✓ software-development/defuddle/SKILL.md
+  ✓ software-development/error-handling-patterns/SKILL.md
+  ✓ software-development/frontend-design/SKILL.md
+  ✓ software-development/frontend-developer/SKILL.md
+  ✓ software-development/grill-me/SKILL.md
+  ✓ software-development/gt-centralized-system/SKILL.md
+  ✓ software-development/hermes-agent-skill-authoring/SKILL.md
+  ✓ software-development/node-inspect-debugger/SKILL.md
+  ✓ software-development/plan/SKILL.md
+  ✓ software-development/python-debugpy/SKILL.md
+  ✓ software-development/requesting-code-review/SKILL.md
+  ✓ software-development/senior-engineer/SKILL.md
+  ✓ software-development/session-report/SKILL.md
+  ✓ software-development/skill-creator/SKILL.md
+  ✓ software-development/spike/SKILL.md
+  ✓ software-development/subagent-driven-development/SKILL.md
+  ✓ software-development/systematic-debugging/SKILL.md
+  ✓ software-development/test-driven-development/SKILL.md
+  ✓ software-development/testing-patterns/SKILL.md
+  ✓ software-development/writing-hookify-rules/SKILL.md
+  ✓ software-development/writing-plans/SKILL.md
+  ✓ superpowers/context-manager/SKILL.md
+  ✓ superpowers/deep-research/SKILL.md
+  ✓ superpowers/dispatching-parallel-agents/SKILL.md
+  ✓ superpowers/executing-plans/SKILL.md
+  ✓ superpowers/finishing-a-development-branch/SKILL.md
+  ✓ superpowers/memory-systems/SKILL.md
+  ✓ superpowers/receiving-code-review/SKILL.md
+  ✓ superpowers/using-git-worktrees/SKILL.md
+  ✓ superpowers/using-superpowers/SKILL.md
+  ✓ superpowers/verification-before-completion/SKILL.md
+  ✓ superpowers/writing-skills/SKILL.md
+  ✓ yuanbao/yuanbao/SKILL.md
+
+Result: 5 error(s) found.
+{
+  "ref": "refs/heads/main",
+  "branch": "main",
+  "repo": "/Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo",
+  "steps": {
+    "pull": {
+      "ok": true,
+      "message": "Already up to date."
+    },
+    "validate": {
+      "ok": false,
+      "message": "Scanning 179 skill(s) in /Users/gt/Public/MyFiles/agent-home/gt-core/skills-repo\n\n  \u2713 apple/apple-notes/SKILL.md\n  \u2713 apple/apple-reminders/SKILL.md\n  \u2713 apple/findmy/SKILL.md\n  \u2713 apple/imessage/SKILL.md\n  \u2713 apple/macos-computer-use/SKILL.md\n  \u2713 architecture/architecture/SKILL.md\n  \u2713 architecture/architecture-patterns/SKILL.md\n  \u2713 autonomous-ai-agents/agent-split-decision/SKILL.md\n  \u2713 autonomous-ai-agents/claude-code/SKILL.md\n  \u2713 autonomous-ai-agents/codex/SKILL.md\n  \u2713 autonomous-ai-agents/hermes-agent/SKILL.md\n  \u2713 autonomous-ai-agents/opencode/SKILL.md\n  \u2713 autonomous-ai-agents/pi-coding-agent/SKILL.md\n  \u2713 autonomous-ai-agents/swarm-orchestration/SKILL.md\n  \u2713 creative/architecture-diagram/SKILL.md\n  \u2713 creative/ascii-art/SKILL.md\n  \u2713 creative/ascii-video/SKILL.md\n  \u2713 creative/baoyu-comic/SKILL.md\n  \u2713 creative/baoyu-infographic/SKILL.md\n  \u2713 creative/brainstorming/SKILL.md\n  \u2713 creative/caveman/SKILL.md\n  \u2713 creative/caveman/caveman-commit/SKILL.md\n  \u2713 creative/caveman/caveman-help/SKILL.md\n  \u2713 creative/caveman/caveman-review/SKILL.md\n  \u2713 creative/caveman/compress/SKILL.md\n  \u2713 creative/claude-design/SKILL.md\n  \u2713 creative/comfyui/SKILL.md\n  \u2713 creative/creative-ideation/SKILL.md\n  \u2713 creative/design-md/SKILL.md\n  \u2713 creative/excalidraw/SKILL.md\n  \u2713 creative/humanizer/SKILL.md\n  \u2713 creative/json-canvas/SKILL.md\n  \u2713 creative/manim-video/SKILL.md\n  \u2713 creative/p5js/SKILL.md\n  \u2713 creative/pixel-art/SKILL.md\n  \u2713 creative/popular-web-designs/SKILL.md\n  \u2713 creative/pretext/SKILL.md\n  \u2713 creative/sketch/SKILL.md\n  \u2713 creative/songwriting-and-ai-music/SKILL.md\n  \u2713 creative/touchdesigner-mcp/SKILL.md\n  \u2713 creative/ui-ux-designer/SKILL.md\n  \u2713 data-science/jupyter-live-kernel/SKILL.md\n  \u2713 devops/hermes-backup/SKILL.md\n  \u2713 devops/hermes-dashboard/SKILL.md\n  \u2713 devops/kanban-orchestrator/SKILL.md\n  \u2713 devops/kanban-worker/SKILL.md\n  \u2713 devops/webhook-subscriptions/SKILL.md\n  \u2713 dogfood/dogfood/SKILL.md\n  \u2713 domain/sentry/sentry-code-review/SKILL.md\n  \u2713 domain/sentry/sentry-feature-setup/SKILL.md\n  \u2713 domain/sentry/sentry-fix-issues/SKILL.md\n  \u2713 domain/sentry/sentry-pr-code-review/SKILL.md\n  \u2713 domain/sentry/sentry-sdk-setup/SKILL.md\n  \u2713 domain/sentry/sentry-workflow/SKILL.md\n  \u2713 email/himalaya/SKILL.md\n  \u2713 gaming/game-dev-orchestration/SKILL.md\n  \u2713 gaming/game-development/SKILL.md\n  \u2713 gaming/godot/SKILL.md\n  \u2713 gaming/minecraft-modpack-server/SKILL.md\n  \u2713 gaming/pokemon-player/SKILL.md\n  \u2713 github/codebase-inspection/SKILL.md\n  \u2713 github/github-auth/SKILL.md\n  \u2713 github/github-code-review/SKILL.md\n  \u2713 github/github-issues/SKILL.md\n  \u2713 github/github-pr-workflow/SKILL.md\n  \u2713 github/github-repo-management/SKILL.md\n  \u2713 ios-development/app-store-optimization/SKILL.md\n  \u2713 ios-development/core-data-expert/SKILL.md\n  \u2713 ios-development/hig-foundations/SKILL.md\n  \u2713 ios-development/hig-patterns/SKILL.md\n  \u2713 ios-development/ios-developer/SKILL.md\n  \u2713 ios-development/ios-marketing-capture/SKILL.md\n  \u2713 ios-development/miswag-ios-developer/SKILL.md\n  \u2713 ios-development/mobile-security-coder/SKILL.md\n  \u2713 ios-development/mobile-ui/SKILL.md\n  \u2713 ios-development/release-whats-changed/SKILL.md\n  \u2713 ios-development/spm-build-analysis/SKILL.md\n  \u2713 ios-development/swift-concurrency/SKILL.md\n  \u2713 ios-development/swift-concurrency-pro/SKILL.md\n  \u2713 ios-development/swift-testing-expert/SKILL.md\n  \u2713 ios-development/swift-testing-pro/SKILL.md\n  \u2713 ios-development/swiftdata-expert-skill/SKILL.md\n  \u2713 ios-development/swiftdata-pro/SKILL.md\n  \u2713 ios-development/swiftui-expert-skill/SKILL.md\n  \u2713 ios-development/swiftui-pro/SKILL.md\n  \u2713 ios-development/xcode-build-benchmark/SKILL.md\n  \u2713 ios-development/xcode-build-fixer/SKILL.md\n  \u2713 ios-development/xcode-build-orchestrator/SKILL.md\n  \u2713 ios-development/xcode-compilation-analyzer/SKILL.md\n  \u2713 ios-development/xcode-project-analyzer/SKILL.md\n  \u2713 mcp/native-mcp/SKILL.md\n  \u2713 media/gif-search/SKILL.md\n  \u2713 media/heartmula/SKILL.md\n  \u2713 media/songsee/SKILL.md\n  \u2713 media/spotify/SKILL.md\n  \u2713 media/youtube-content/SKILL.md\n  \u2713 mlops/evaluation/SKILL.md\n  \u2717 mlops/evaluation/lm-evaluation-harness/SKILL.md\n    Error: Name mismatch: frontmatter says 'evaluating-llms-harness', parent directory is 'lm-evaluation-harness'\n  \u2713 mlops/evaluation/weights-and-biases/SKILL.md\n  \u2713 mlops/huggingface-hub/SKILL.md\n  \u2713 mlops/inference/SKILL.md\n  \u2713 mlops/inference/llama-cpp/SKILL.md\n  \u2713 mlops/inference/obliteratus/SKILL.md\n  \u2713 mlops/inference/outlines/SKILL.md\n  \u2717 mlops/inference/vllm/SKILL.md\n    Error: Name mismatch: frontmatter says 'serving-llms-vllm', parent directory is 'vllm'\n  \u2713 mlops/models/SKILL.md\n  \u2717 mlops/models/audiocraft/SKILL.md\n    Error: Name mismatch: frontmatter says 'audiocraft-audio-generation', parent directory is 'audiocraft'\n  \u2717 mlops/models/segment-anything/SKILL.md\n    Error: Name mismatch: frontmatter says 'segment-anything-model', parent directory is 'segment-anything'\n  \u2713 mlops/research/SKILL.md\n  \u2713 mlops/research/dspy/SKILL.md\n  \u2713 mlops/training/SKILL.md\n  \u2713 mlops/training/axolotl/SKILL.md\n  \u2717 mlops/training/trl-fine-tuning/SKILL.md\n    Error: Name mismatch: frontmatter says 'fine-tuning-with-trl', parent directory is 'trl-fine-tuning'\n  \u2713 mlops/training/unsloth/SKILL.md\n  \u2713 note-taking/obsidian/SKILL.md\n  \u2713 note-taking/obsidian-bases/SKILL.md\n  \u2713 note-taking/obsidian-cli/SKILL.md\n  \u2713 note-taking/obsidian-markdown/SKILL.md\n  \u2713 productivity/airtable/SKILL.md\n  \u2713 productivity/google-workspace/SKILL.md\n  \u2713 productivity/linear/SKILL.md\n  \u2713 productivity/maps/SKILL.md\n  \u2713 productivity/nano-pdf/SKILL.md\n  \u2713 productivity/notion/SKILL.md\n  \u2713 productivity/ocr-and-documents/SKILL.md\n  \u2713 productivity/powerpoint/SKILL.md\n  \u2713 productivity/teams-meeting-pipeline/SKILL.md\n  \u2713 red-teaming/godmode/SKILL.md\n  \u2713 research/arxiv/SKILL.md\n  \u2713 research/blogwatcher/SKILL.md\n  \u2713 research/last30days/SKILL.md\n  \u2713 research/llm-wiki/SKILL.md\n  \u2713 research/polymarket/SKILL.md\n  \u2713 research/research-paper-writing/SKILL.md\n  \u2713 security/hermes-security-audit/SKILL.md\n  \u2713 smart-home/openhue/SKILL.md\n  \u2713 social-media/xurl/SKILL.md\n  \u2713 software-development/claude-code-guide/SKILL.md\n  \u2713 software-development/claude-md-improver/SKILL.md\n  \u2713 software-development/clean-code/SKILL.md\n  \u2713 software-development/code-reviewer/SKILL.md\n  \u2713 software-development/concise-planning/SKILL.md\n  \u2713 software-development/context7/SKILL.md\n  \u2713 software-development/daily-digest-builder/SKILL.md\n  \u2713 software-development/dashboard-architect/SKILL.md\n  \u2713 software-development/debugging-hermes-tui-commands/SKILL.md\n  \u2713 software-development/defuddle/SKILL.md\n  \u2713 software-development/error-handling-patterns/SKILL.md\n  \u2713 software-development/frontend-design/SKILL.md\n  \u2713 software-development/frontend-developer/SKILL.md\n  \u2713 software-development/grill-me/SKILL.md\n  \u2713 software-development/gt-centralized-system/SKILL.md\n  \u2713 software-development/hermes-agent-skill-authoring/SKILL.md\n  \u2713 software-development/node-inspect-debugger/SKILL.md\n  \u2713 software-development/plan/SKILL.md\n  \u2713 software-development/python-debugpy/SKILL.md\n  \u2713 software-development/requesting-code-review/SKILL.md\n  \u2713 software-development/senior-engineer/SKILL.md\n  \u2713 software-development/session-report/SKILL.md\n  \u2713 software-development/skill-creator/SKILL.md\n  \u2713 software-development/spike/SKILL.md\n  \u2713 software-development/subagent-driven-development/SKILL.md\n  \u2713 software-development/systematic-debugging/SKILL.md\n  \u2713 software-development/test-driven-development/SKILL.md\n  \u2713 software-development/testing-patterns/SKILL.md\n  \u2713 software-development/writing-hookify-rules/SKILL.md\n  \u2713 software-development/writing-plans/SKILL.md\n  \u2713 superpowers/context-manager/SKILL.md\n  \u2713 superpowers/deep-research/SKILL.md\n  \u2713 superpowers/dispatching-parallel-agents/SKILL.md\n  \u2713 superpowers/executing-plans/SKILL.md\n  \u2713 superpowers/finishing-a-development-branch/SKILL.md\n  \u2713 superpowers/memory-systems/SKILL.md\n  \u2713 superpowers/receiving-code-review/SKILL.md\n  \u2713 superpowers/using-git-worktrees/SKILL.md\n  \u2713 superpowers/using-superpowers/SKILL.md\n  \u2713 superpowers/verification-before-completion/SKILL.md\n  \u2713 superpowers/writing-skills/SKILL.md\n  \u2713 yuanbao/yuanbao/SKILL.md\n\nResult: 5 error(s) found."
+    },
+    "sync_hermes": {
+      "ok": true,
+      "message": "dst is symlink to src; skipping copy"
+    },
+    "sync_agents": {
+      "ok": true,
+      "message": "dst is symlink to src; skipping copy"
+    }
+  },
+  "overall": "failure"
+}

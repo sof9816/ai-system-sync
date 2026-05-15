@@ -78,7 +78,7 @@ After grilling, create a merged plan:
 1. **Mark done vs remaining** — check what's already implemented
 2. **Prioritize** — user usually wants immediate-impact items first
 3. **Decompose into pi.dev-sized chunks** — one file per task, <3000 char prompts
-4. **Document in Obsidian** — write to `GT Vault/hermes/PROJECT_NAME-plan.md`
+4. **Document in Obsidian** — write to `Hermes Vault/Hermes/PROJECT_NAME-plan.md`
 
 ## pi.dev Task File Creation
 
@@ -189,7 +189,7 @@ pi -p "Read /tmp/pi-task.md and implement" --cwd PROJECT_DIR
 cd PROJECT_DIR && python main.py
 
 # Document in Obsidian
-hermes spawn --skill obsidian --prompt "Update GT Vault/hermes/PROJECT.md with: [PROGRESS]"
+hermes spawn --skill obsidian --prompt "Update Hermes Vault/Hermes/PROJECT.md with: [PROGRESS]"
 ```
 
 ## References

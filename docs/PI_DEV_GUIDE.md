@@ -22,7 +22,7 @@ The **GT Centralized System** is a unified AI operations platform that connects 
 - **Project registry** (`projects/` + dashboard API): Tracks active projects and their metadata
 - **Agent swarm** (`agents/` + `swarm/`): 8 specialized C-suite agents (CTO, CFO, COO, etc.)
 - **Dashboard** (`dashboard/`): Web UI on http://localhost:7373
-- **Obsidian vault** (`GT Vault/`): Persistent memory and diary
+- **Obsidian vault** (`Hermes Vault/`): Persistent memory and diary
 
 ### How pi.dev fits in
 - pi.dev reads skills from `gt-core/skills-repo/` before starting work
@@ -137,7 +137,7 @@ The **GT Centralized System** is a unified AI operations platform that connects 
 │
 ├── memories/                          # Session memories
 │
-└── GT Vault/                          # Obsidian vault (persistent memory)
+└── Hermes Vault/                          # Obsidian vault (persistent memory)
     └── hermes/
         ├── system/
         ├── diary/
@@ -650,15 +650,15 @@ ls -la /Users/gt/Public/MyFiles/agent-home/dashboard/logs/
 | Health check | `python3 gt-core/scripts/integration-test.py` |
 | Install cron | `python3 gt-core/scripts/setup-cron.py --install` |
 | Dashboard | http://localhost:7373 |
-| Obsidian vault | `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/GT Vault` |
+| Obsidian vault | `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Hermes Vault` |
 
 ---
 
 ## 11. Contact & Updates
 
 - This guide is maintained in `/Users/gt/Public/MyFiles/agent-home/docs/PI_DEV_GUIDE.md`
-- System updates are tracked in `GT Vault/hermes/system/upgrade-suggestions.md`
-- Daily diary entries go to `GT Vault/hermes/diary/`
+- System updates are tracked in `Hermes Vault/Hermes/system/upgrade-suggestions.md`
+- Daily diary entries go to `Hermes Vault/Hermes/diary/`
 - For issues, run `integration-test.py` and check logs
 
 **When in doubt, read the README:** `/Users/gt/Public/MyFiles/agent-home/README.md`

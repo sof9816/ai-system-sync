@@ -94,7 +94,7 @@
 | `~/.hermes/skills/` | Hermes skills (synced) |
 | `~/.agents/skills/` | pi.dev skills (synced) |
 | `/Users/gt/.claude/skills/` | Claude Code skills (7 skills) |
-| `/Users/gt/Library/Mobile Documents/iCloud~md~obsidian/Documents/GT Vault/` | Obsidian vault |
+| `/Users/gt/Library/Mobile Documents/iCloud~md~obsidian/Documents/Hermes/` | Obsidian vault |
 
 ---
 
