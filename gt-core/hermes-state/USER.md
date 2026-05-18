@@ -7,3 +7,5 @@ Rules: python3.11 for venvs, Kimi base=https://api.kimi.com/coding (NO /v1), ski
 Security: tokens.json + Important Stuff/ in ~/Public/MyFiles/99-Misc/ — needs Keychain migration.
 §
 User wants pi.dev as primary coding agent. AI stack: Dashboard → Hermes (orchestrator) + pi.dev (coder, tiny chunks) + Kimi + Obsidian. MUST use skills proactively EVERY session. Swarm: max 3 concurrent agents, test checkpoints between phases. Hermes NEVER writes game code (.gd/.tscn) — spawns agents only. Mobile-first UI: big fonts (20-32px), big buttons (60px+), touch-friendly 44pt+, no nested scrollers, horizontal splits (skins right 2/3, achievements left 1/3), back buttons 120x60. Prefers AlertManager over ConfirmationDialog. Revert-to-working > debug broken screens.
+§
+When a website/app is broken (blank page, crash), user wants immediate revert to last working commit — don't debug first. Get back to working state, then iterate.
