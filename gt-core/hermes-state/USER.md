@@ -1,10 +1,4 @@
-GT: iOS/Swift & full-stack dev, gamer, investor. Short/direct/no-fluff. macOS + Obsidian + Xcode + Ghostty. Wants full assistant/second brain. Proactive ideation when requirements vague. High quality bar. Prefers zero-interaction delegation. Uses multiple Ghostty terminals for parallel workstreams.
-
-Stack: Dashboard → Hermes (orchestrator) + pi.dev (coder, tiny chunks only) + Kimi k2.6 + Obsidian memory.
-
-Rules: python3.11 for venvs, Kimi base=https://api.kimi.com/coding (NO /v1), skills repo=gt-core/skills-repo/.
-
-Security: tokens.json + Important Stuff/ in ~/Public/MyFiles/99-Misc/ — needs Keychain migration.
+Newsletter/Zone Dispatch: Old-newspaper + modern UI hybrid. When site breaks → revert to last working commit FIRST, then iterate. Images must relate to article content (rejected random/seeded). PDF must be custom per-article (not HTML screenshot) with elegant layout. All cards need date badge + description + padding. Wants 100+ articles/day with juicy breaking news from Reddit/X/social, not just slow blog RSS. Prioritizes fast-breaking sources (forums, social media) over traditional news. Example scoop: Apple M5 cracked by Claude Mythos — wants this kind of news immediately, not 3 days later.
 §
 User wants pi.dev as primary coding agent. AI stack: Dashboard → Hermes (orchestrator) + pi.dev (coder, tiny chunks) + Kimi + Obsidian. MUST use skills proactively EVERY session. Swarm: max 3 concurrent agents, test checkpoints between phases. Hermes NEVER writes game code (.gd/.tscn) — spawns agents only. Mobile-first UI: big fonts (20-32px), big buttons (60px+), touch-friendly 44pt+, no nested scrollers, horizontal splits (skins right 2/3, achievements left 1/3), back buttons 120x60. Prefers AlertManager over ConfirmationDialog. Revert-to-working > debug broken screens.
 §

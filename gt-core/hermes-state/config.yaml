@@ -184,11 +184,11 @@ auxiliary:
     extra_body: {}
 display:
   compact: false
-  personality: kawaii
+  personality: gt
   resume_display: full
   busy_input_mode: interrupt
   tui_auto_resume_recent: false
-  bell_on_complete: false
+  bell_on_complete: true
   show_reasoning: true
   streaming: false
   timestamps: false
@@ -224,7 +224,7 @@ privacy:
 tts:
   provider: edge
   edge:
-    voice: en-US-AriaNeural
+    voice: en-US-GuyNeural
   elevenlabs:
     voice_id: pNInz6obpgDQGcFmaJgB
     model_id: eleven_multilingual_v2
@@ -259,11 +259,11 @@ stt:
     model: voxtral-mini-latest
 voice:
   record_key: ctrl+b
-  max_recording_seconds: 120
-  auto_tts: false
+  max_recording_seconds: 60
+  auto_tts: true
   beep_enabled: true
   silence_threshold: 200
-  silence_duration: 3.0
+  silence_duration: 2.0
 human_delay:
   mode: 'off'
   min_ms: 800
@@ -456,25 +456,3 @@ known_plugin_toolsets:
   - spotify
   telegram:
   - spotify
-
-# ── Fallback Model ────────────────────────────────────────────────────
-# Automatic provider failover when primary is unavailable.
-# Uncomment and configure to enable. Triggers on rate limits (429),
-# overload (529), service errors (503), or connection failures.
-#
-# Supported providers:
-#   openrouter   (OPENROUTER_API_KEY)  — routes to any model
-#   openai-codex (OAuth — hermes auth) — OpenAI Codex
-#   nous         (OAuth — hermes auth) — Nous Portal
-#   zai          (ZAI_API_KEY)         — Z.AI / GLM
-#   kimi-coding  (KIMI_API_KEY)        — Kimi / Moonshot
-#   kimi-coding-cn (KIMI_CN_API_KEY)   — Kimi / Moonshot (China)
-#   minimax      (MINIMAX_API_KEY)     — MiniMax
-#   minimax-cn   (MINIMAX_CN_API_KEY)  — MiniMax (China)
-#   bedrock      (AWS IAM / boto3)     — AWS Bedrock (Converse API)
-#
-# For custom OpenAI-compatible endpoints, add base_url and key_env.
-#
-# fallback_model:
-#   provider: openrouter
-#   model: anthropic/claude-sonnet-4
