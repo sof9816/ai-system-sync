@@ -1,0 +1,238 @@
+{
+  "main": {
+    "id": "517daf0c0db8c124",
+    "type": "split",
+    "children": [
+      {
+        "id": "0c859ee22696c655",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d5e4a909c0a18da3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hermes Vault.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Hermes Vault"
+            }
+          }
+        ]
+      },
+      {
+        "id": "32b83fbf5c69c9da",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ef67dfeca133ffcc",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "122b374052095c35",
+    "type": "split",
+    "children": [
+      {
+        "id": "12d48b85c2df76c0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d2ab5da0f5f99f22",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ed86a592d8a3daa2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "54f3d6b295deb365",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a488ef4c18749559",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef9da9522bc6a1fd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "01fe7bdf97e93a51",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "claude/docs/miswag-ios/analytics/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
+            }
+          },
+          {
+            "id": "6fbb6830469db914",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "claude/docs/miswag-ios/analytics/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
+            }
+          },
+          {
+            "id": "e79570cd13d92806",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c8678bb6c232a887",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Hermes Vault.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Hermes Vault"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "d5e4a909c0a18da3",
+  "lastOpenFiles": [
+    "hermes/MOVED-TO-HERMES-VAULT.md",
+    "hermes",
+    "hermes-ARCHIVED-2026-05-15/system/health-reports/2026-05-09.md",
+    "hermes-ARCHIVED-2026-05-15/agents/pi/projects.md",
+    "hermes-ARCHIVED-2026-05-15/agents/reviewer/memory.md",
+    "hermes-ARCHIVED-2026-05-15/agents/researcher/memory.md",
+    "hermes-ARCHIVED-2026-05-15/agents/reviewer/projects.md",
+    "hermes-ARCHIVED-2026-05-15/agents/cmo/memory.md",
+    "hermes-ARCHIVED-2026-05-15/agents/researcher/projects.md",
+    "hermes-ARCHIVED-2026-05-15/agents/coo/memory.md",
+    "hermes-ARCHIVED-2026-05-15/agents/pi/memory.md",
+    "hermes-ARCHIVED-2026-05-15/agents/cto/projects.md",
+    "hermes-ARCHIVED-2026-05-15/agents/cfo/memory.md",
+    "hermes-ARCHIVED-2026-05-15/agents/cto/memory.md",
+    "hermes-ARCHIVED-2026-05-15/agents/coo/projects.md",
+    "hermes-ARCHIVED-2026-05-15/agents/cmo/projects.md",
+    "hermes-ARCHIVED-2026-05-15/agents/architect/memory.md",
+    "hermes-ARCHIVED-2026-05-15/agents/cfo/projects.md",
+    "hermes-ARCHIVED-2026-05-15/agents/architect/projects.md",
+    "hermes-ARCHIVED-2026-05-15/system/config-history.md",
+    "hermes-ARCHIVED-2026-05-15/diary/2026-05-09.md",
+    "hermes-ARCHIVED-2026-05-15/system/health-reports",
+    "hermes-ARCHIVED-2026-05-15/diary/2026-05-15.md",
+    "hermes-ARCHIVED-2026-05-15/diary/2026-05-10.md",
+    "hermes-ARCHIVED-2026-05-15/specs/2026-05-08-gt-centralized-system-design.md",
+    "hermes-ARCHIVED-2026-05-15/diary/2026-05-07.md",
+    "hermes-ARCHIVED-2026-05-15/diary/2026-05-08.md",
+    "hermes-ARCHIVED-2026-05-15/diary/2026-05-06.md",
+    "hermes-ARCHIVED-2026-05-15/agents/reviewer",
+    "hermes-ARCHIVED-2026-05-15/agents/researcher",
+    "hermes-ARCHIVED-2026-05-15/agents/pi",
+    "hermes-ARCHIVED-2026-05-15/agents/orchestrator",
+    "hermes-ARCHIVED-2026-05-15/agents/cto",
+    "hermes-ARCHIVED-2026-05-15/agents/coo",
+    "hermes-ARCHIVED-2026-05-15/agents/cmo",
+    "hermes-ARCHIVED-2026-05-15/agents/cfo",
+    "Screenshot 2024-08-26 at 10.42.12 AM.png",
+    "Apple Notes Attachments/Screen Shot 2023-08-02 at 11.26.08 AM.png",
+    "Apple Notes Attachments/Screen Shot 2023-08-02 at 11.00.33 AM.png",
+    "Pragmatic Engineer/Pasted image 20240718110447.png",
+    "Apple Notes Attachments/IMG_8814.jpeg",
+    "Apple Notes Attachments/Screenshot 2024-02-09 at 6.21.48 PM.png",
+    "Apple Notes Attachments/Screen Shot 2023-08-02 at 11.29.46 AM.png",
+    "Apple Notes Attachments/Screen Shot 2023-08-02 at 11.27.07 AM.png",
+    "Apple Notes Attachments/Screen Shot 2023-08-02 at 11.26.27 AM.png",
+    "Apple Notes Attachments/Screen Shot 2023-08-02 at 11.36.01 AM.png"
+  ]
+}

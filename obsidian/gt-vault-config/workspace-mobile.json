@@ -1,0 +1,182 @@
+{
+  "main": {
+    "id": "7bdb1b03d218b08f",
+    "type": "split",
+    "children": [
+      {
+        "id": "b209097d4b51b4a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9ec338124e1cd3ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Preview UIKit as SwiftUI.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Preview UIKit as SwiftUI"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c3f1633498b80a81",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "7c7a1542f9f27ace",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "47d3634139864673",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "2eb190cb066cff66",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "6a9c0384520d35cc",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "78b477a21738f267",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "2bdbdd130c9768b0",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Preview UIKit as SwiftUI.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "cdd5131351856c11",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Preview UIKit as SwiftUI.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "d6d3a98ca59e37f3",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Preview UIKit as SwiftUI.md"
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "remotely-save:Remotely Save": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-importer:Open Importer": false
+    }
+  },
+  "active": "9ec338124e1cd3ef",
+  "lastOpenFiles": [
+    "Pragmatic Engineer/What we should change in team structure.md",
+    "Miswag July Tasks.md",
+    "iOS appstoreconnect process for staged application.md",
+    "Atomic habits daily record/July 22.md",
+    "1-1 with msoa.md",
+    "🥸 Mosa Folder/July/Notes.md",
+    "🥸 Mosa Folder/July",
+    "🥸 Mosa Folder/1-1, Mosa, 11-8-2024.md",
+    "🥸 Mosa Folder/Mosa Year Plan.md",
+    "🥸 Mosa Folder/1-1 W Mosa.md",
+    "🥸 Mosa Folder",
+    "😎 GT's monthly work",
+    "Mosa Folder/1-1, Mosa, 11-8-2024.md",
+    "Mosa Folder/Mosa Year Plan.md",
+    "Mosa Folder/1-1 W Mosa.md",
+    "Mosa Folder",
+    "1-1 W Mosa.md",
+    "July 21.md",
+    "Atomic habits daily record/July 20.md",
+    "Atomic habits daily record/July 19.md",
+    "Atomic habits daily record",
+    "waqe3a.md",
+    "Size of collection cells 2.md",
+    "Size of collection cells.md",
+    "Findings of pragmatic article.md",
+    "Apple Notes/23-24 progression plan.md",
+    "Findings of pragmatic article 2.md"
+  ]
+}
