@@ -303,3 +303,92 @@
     }
   ]
 }
+{
+  "generated_at": "2026-05-23T02:00:08.434823",
+  "suggestions": [
+    {
+      "type": "new_skill",
+      "skill": "senior-engineer",
+      "week": 19,
+      "count": 19,
+      "reason": "senior-engineer used 19 times in week 19"
+    },
+    {
+      "type": "model_change",
+      "reason": "Success rate 62.9% < 80%",
+      "current_rate": 62.857142857142854
+    },
+    {
+      "type": "thinking_adjust",
+      "reason": "4 token spikes > 1111",
+      "spikes": 4
+    },
+    {
+      "type": "dependency",
+      "package": "hermes-agent",
+      "latest": "0.14.0",
+      "action": "Check if hermes-agent needs upgrade to 0.14.0"
+    },
+    {
+      "type": "dependency",
+      "package": "pi",
+      "latest": "0.1.2",
+      "action": "Check if pi needs upgrade to 0.1.2"
+    },
+    {
+      "type": "dependency",
+      "package": "dashboard",
+      "latest": "0.0.1",
+      "action": "Check if dashboard needs upgrade to 0.0.1"
+    }
+  ],
+  "stats": {
+    "sessions": 21,
+    "skills": {
+      "senior-engineer": 19
+    },
+    "errors": {
+      "PermissionDeniedError": 1,
+      "OpenAI PermissionDenied": 1,
+      "403 Forbidden": 1,
+      "Access Terminated": 1,
+      "Missing File": 2,
+      "Playback Failed": 2,
+      "Sandbox Restriction": 1,
+      "Stat Path Failure": 1,
+      "CoreData Error": 1,
+      "Xcode Signing": 1,
+      "Swift Main Attribute": 1
+    }
+  },
+  "research": [
+    {
+      "source": "r/LocalLLaMA",
+      "title": "[NEW] Supra-50M Released!",
+      "category": "model_release",
+      "priority": "medium",
+      "action": "Update model aliases and test compatibility"
+    },
+    {
+      "source": "r/LocalLLaMA",
+      "title": "New Release of ROCm based MLX LLM Engine - lemon-mlx-engine",
+      "category": "model_release",
+      "priority": "medium",
+      "action": "Update model aliases and test compatibility"
+    },
+    {
+      "source": "r/ClaudeAI",
+      "title": "If you use the \"Get Shit Done\" (GSD) AI tool, you need to migrate immediately (Original creator rug-pulled)",
+      "category": "new_skill_category",
+      "priority": "medium",
+      "action": "Consider adding support to GT"
+    },
+    {
+      "source": "r/ClaudeAI",
+      "title": "Anthropic officially launched 13+ FREE AI courses with certificates (Including Agentic AI and Claude Code!)",
+      "category": "cost_effective_api",
+      "priority": "high",
+      "action": "Evaluate provider for GT integration"
+    }
+  ]
+}
