@@ -6,6 +6,8 @@ set -e
 
 PROJECT_DIR="/Users/gt/Public/MyFiles/08-Web-Node/newsletter-mvp"
 LOG_FILE="/Users/gt/.hermes/cron/output/zone-dispatch-deploy.log"
+PUBLIC_URL="https://newsletter-mvp-rho.vercel.app"
+FULL_URL="https://newsletter-mvp-rho.vercel.app/full"
 
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Starting..." > "$LOG_FILE"
 
@@ -34,3 +36,20 @@ echo "[$(date)] Deploying..." >> "$LOG_FILE"
 npx vercel@latest deploy --prod --yes --cwd "$PROJECT_DIR" 2>> "$LOG_FILE" || true
 
 echo "[$(date)] Done" >> "$LOG_FILE"
+
+# Step 5: Send links to GT via Telegram
+# Uses hermes message gateway if available
+echo "Zone Dispatch deployed!
+
+Public (free): $PUBLIC_URL
+Full (paid): $FULL_URL" > /tmp/zone-dispatch-links.txt
+
+# Try to send via Telegram bot if configured
+if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
+    curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+        -d "chat_id=$TELEGRAM_CHAT_ID" \
+        -d "text=Zone Dispatch deployed!%0A%0APublic (free): $PUBLIC_URL%0AFull (paid): $FULL_URL" \
+        > /dev/null 2>&1 || true
+fi
+
+echo "[$(date)] Links sent" >> "$LOG_FILE
