@@ -52,4 +52,4 @@ if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
         > /dev/null 2>&1 || true
 fi
 
-echo "[$(date)] Links sent" >> "$LOG_FILE
+echo "[$(date)] Links sent" >> "$LOG_FILE"
