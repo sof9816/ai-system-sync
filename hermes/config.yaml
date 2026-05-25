@@ -374,7 +374,9 @@ command_allowlist:
 - ^cat | grep
 - ^pip3? install
 - ^source .*/venv/bin/activate
-quick_commands: {}
+quick_commands:
+  newsletter: https://newsletter-mvp-rho.vercel.app
+  newsletter-full: https://newsletter-mvp-rho.vercel.app/full
 hooks: {}
 hooks_auto_accept: false
 personalities: {}
