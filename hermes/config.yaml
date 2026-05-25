@@ -20,6 +20,7 @@ agent:
   image_input_mode: auto
   disabled_toolsets: []
   verbose: true
+  reasoning_effort: high
   default_skills:
   - caveman
   - brainstorming

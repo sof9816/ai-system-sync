@@ -4,6 +4,5 @@
   "apiKeyEnv": "KIMI_CODE_API_KEY",
   "skillsDir": "/Users/gt/Public/MyFiles/agent-home/skills",
   "memoryDir": "/Users/gt/Public/MyFiles/agent-home/hermes/memory",
-  "effortLevel": "high",
   "baseUrl": "https://api.kimi.com/coding"
 }
