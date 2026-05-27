@@ -31,9 +31,14 @@ echo "[$(date)] Building..." >> "$LOG_FILE"
 npx vite build --emptyOutDir 2>> "$LOG_FILE"
 echo "[$(date)] Build done" >> "$LOG_FILE"
 
-# Step 4: Deploy
+# Step 4: Deploy (npx --no-install skips registry checks that can hang)
 echo "[$(date)] Deploying..." >> "$LOG_FILE"
-npx vercel@latest deploy --prod --yes --cwd "$PROJECT_DIR" 2>> "$LOG_FILE" || true
+
+# macOS has no 'timeout' — use perl alarm
+perl -e 'alarm shift; exec @ARGV' 60 npx --no-install vercel deploy --prod --yes --cwd "$PROJECT_DIR" >> "$LOG_FILE" 2>&1 || {
+    echo "[$(date)] Deploy failed or timed out" >> "$LOG_FILE"
+    exit 1
+}
 
 echo "[$(date)] Done" >> "$LOG_FILE"
 
