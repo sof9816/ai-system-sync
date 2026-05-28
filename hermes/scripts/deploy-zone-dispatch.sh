@@ -42,17 +42,41 @@ perl -e 'alarm shift; exec @ARGV' 60 npx --no-install vercel deploy --prod --yes
 
 echo "[$(date)] Done" >> "$LOG_FILE"
 
-# Step 5: Send links to GT via Telegram
-# Uses hermes message gateway if available
-echo "Zone Dispatch deployed!
+# Step 5: Collect build artifacts with links
+BUILD_OUTPUT=$(cat <<EOF
+Zone Dispatch deployed!
 
 Public (free): $PUBLIC_URL
-Full (paid): $FULL_URL" > /tmp/zone-dispatch-links.txt
+Full (paid): $FULL_URL
+
+Build artifacts:
+EOF
+)
+
+# Add links to each dist file
+for file in "$PROJECT_DIR"/dist/assets/*; do
+    if [ -f "$file" ]; then
+        filename=$(basename "$file")
+        size=$(du -h "$file" | cut -f1)
+        BUILD_OUTPUT="$BUILD_OUTPUT
+- [$filename]($PUBLIC_URL/assets/$filename) — $size"
+    fi
+done
+
+# Add index.html
+BUILD_OUTPUT="$BUILD_OUTPUT
+- [index.html]($PUBLIC_URL/index.html) — $(du -h "$PROJECT_DIR/dist/index.html" | cut -f1)"
+
+echo "$BUILD_OUTPUT" > /tmp/zone-dispatch-links.txt
+
+# Output to stdout for cron delivery
+echo "$BUILD_OUTPUT"
 
 # Try to send via Telegram bot if configured
 if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
     curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
         -d "chat_id=$TELEGRAM_CHAT_ID" \
+        -d "parse_mode=Markdown" \
         -d "text=Zone Dispatch deployed!%0A%0APublic (free): $PUBLIC_URL%0AFull (paid): $FULL_URL" \
         > /dev/null 2>&1 || true
 fi
