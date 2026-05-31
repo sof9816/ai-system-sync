@@ -34,8 +34,8 @@ echo "[$(date)] Build done" >> "$LOG_FILE"
 # Step 4: Deploy (npx --no-install skips registry checks that can hang)
 echo "[$(date)] Deploying..." >> "$LOG_FILE"
 
-# macOS has no 'timeout' — use perl alarm
-perl -e 'alarm shift; exec @ARGV' 60 npx --no-install vercel deploy --prod --yes --cwd "$PROJECT_DIR" >> "$LOG_FILE" 2>&1 || {
+# macOS has no 'timeout' — use perl alarm. Vercel deploy can take 2-3 min.
+perl -e 'alarm shift; exec @ARGV' 180 npx --no-install vercel deploy --prod --yes --cwd "$PROJECT_DIR" >> "$LOG_FILE" 2>&1 || {
     echo "[$(date)] Deploy failed or timed out" >> "$LOG_FILE"
     exit 1
 }
@@ -77,7 +77,7 @@ if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
     curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
         -d "chat_id=$TELEGRAM_CHAT_ID" \
         -d "parse_mode=Markdown" \
-        -d "text=Zone Dispatch deployed!%0A%0APublic (free): $PUBLIC_URL%0AFull (paid): $FULL_URL" \
+        -d "text=Zone Dispatch deployed!%0A%0A🌐 Public (free): $PUBLIC_URL%0A🔒 Full (paid): $FULL_URL%0A%0A✅ Build: SUCCESS%0A📦 Deploy: SUCCESS" \
         > /dev/null 2>&1 || true
 fi
 
