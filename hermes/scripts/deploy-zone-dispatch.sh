@@ -42,30 +42,14 @@ perl -e 'alarm shift; exec @ARGV' 180 npx --no-install vercel deploy --prod --ye
 
 echo "[$(date)] Done" >> "$LOG_FILE"
 
-# Step 5: Collect build artifacts with links
+# Step 5: Output clean deploy summary with only the two website links
 BUILD_OUTPUT=$(cat <<EOF
-Zone Dispatch deployed!
+✅ Zone Dispatch deployed!
 
-Public (free): $PUBLIC_URL
-Full (paid): $FULL_URL
-
-Build artifacts:
+🌐 Public (free): $PUBLIC_URL
+🔒 Full (paid): $FULL_URL
 EOF
 )
-
-# Add links to each dist file
-for file in "$PROJECT_DIR"/dist/assets/*; do
-    if [ -f "$file" ]; then
-        filename=$(basename "$file")
-        size=$(du -h "$file" | cut -f1)
-        BUILD_OUTPUT="$BUILD_OUTPUT
-- [$filename]($PUBLIC_URL/assets/$filename) — $size"
-    fi
-done
-
-# Add index.html
-BUILD_OUTPUT="$BUILD_OUTPUT
-- [index.html]($PUBLIC_URL/index.html) — $(du -h "$PROJECT_DIR/dist/index.html" | cut -f1)"
 
 echo "$BUILD_OUTPUT" > /tmp/zone-dispatch-links.txt
 
